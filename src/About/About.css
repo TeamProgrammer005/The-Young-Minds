@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #ECF0F3;
+}
+.aboutDOM{
+  width: 97vw;
+  overflow: hidden;
+}
+.title{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #193566;
+}
+.title i{
+  font-size: 40px;
+  margin-right: 5px;
+}
+.aboutDOM .blank{
+  width: 302px;
+  margin: auto;
+  height: 0px;
+  border: 1px solid #C3BFBF;
+}
+.fields{
+  display: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 30px;
+}
+.fields_content{
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -7px 4px 4px rgba(255, 255, 255, 0.25);
+  margin: 20px 0px;
+  border-radius: 12px;
+}
+.fields_img{
+  margin: 10px 0;
+  width: 280px;
+  max-width: 1900px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: inset -2.5px -2.5px 5px #FFFFFF, inset 2.5px 2.5px 5px rgba(151, 167, 195, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fields_img img{
+  width: 250px; 
+  border-radius: 10px;
+  height: 180px;
+}
+.fields_desc{
+  text-align: center;
+  width: 250px;
+  margin-bottom: 15px;
+}
+.fields_desc h2{
+  text-decoration: dashed;
+  color: #193566;
+  margin-bottom: 10px;
+}
+.fields_desc p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #193566e2;
+}
+.slider{
+  width: 90vw;
+  max-width: 620px ;
+  height: auto;
+  margin: 0 4vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -7px 4px 4px rgba(255, 255, 255, 0.25);
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+.current{
+  transform: translateX(0%);
+  opacity: 1;
+}
+.slide .imgDOM{
+  margin: 20px auto auto auto;
+  background: #ECF0F3;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  box-shadow: inset -2.5px -2.5px 5px #FFFFFF, inset 2.5px 2.5px 5px rgba(151, 167, 195, 0.5);
+  border-radius: 10px;
+  height: auto;
+}
+.slide .imgDOM img{
+  margin: 10px;
+  border-radius: 10px;
+  width: 76vw;
+  height: 240px;
+}
+.aboutDOM .icons{
+  display: flex;
+  width: 90%;
+  z-index: 1;
+  position: absolute;
+  top: 42%;
+  justify-content: space-between;
+}
+.aboutDOM .icons i{
+  display: grid;
+  place-items: center;
+  color: #193566;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 0 8px;
+  box-shadow: -2px 4px 4px rgba(151, 167, 195, 0.5);
+}
+.aboutDOM .icons i:hover{
+  color: rgb(96, 93, 250);
+  box-shadow: inset -2.5px -2.5px 5px #FFFFFF, inset 2.5px 2.5px 5px rgba(151, 167, 195, 0.5);
+}
+.btnDOM{
+  display: flex;
+  justify-content: center;
+}
+.btnDOM .btn{ 
+  cursor: pointer;
+  background: rgb(163, 163, 163);
+  height: 13px;
+  width: 13px;
+  border: 1px solid #ffffff ;
+  margin: 10px 5px;
+  box-shadow: 0px -4px 4px #FFFFFF, 0px 4px 4px rgba(151, 167, 195, 0.5);
+  border-radius: 15px;
+}
+.btnDOM .active{
+  background: #193566;
+  width: 17px;
+  height: 17px;
+}
+.description{
+  margin-top: 10px;
+  width: 100%;
+}
+.description h2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #193566;
+}
+.description p{
+  padding: 0 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #193566e2;
+}
+.anyBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+.any{
+  margin: 20px 0 ;
+  padding: 5px 14px;
+  font-size: 20px;
+  background: grey;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: 6px solid white;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px rgba(151, 167, 195, 0.5);
+}
+.any:hover{
+  box-shadow: 0px -4px 4px rgba(151, 167, 195, 0.5);
+}
+@media screen and (min-width: 550px){
+  .slide .imgDOM img{
+    height: 340px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .slider{
+    display: none !important;
+  }
+  .fields{
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .description p{
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: normal;
+  }
+  .slider{
+    margin-top: 18px;
+  }
+}
