@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Name goes here",
+        "designation": "Designation",
+        "star": 1,
+        "review": "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+    },
+    {
+        "name": "Name goes here",
+        "designation": "Designation",
+        "star": 2,
+        "review": "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+    },
+    {
+        "name": "Name goes here",
+        "designation": "Designation",
+        "star": 3,
+        "review": "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+    },
+    {
+        "name": "Name goes here",
+        "designation": "Designation",
+        "star": 4,
+        "review": "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+    },
+    {
+        "name": "Name goes here",
+        "designation": "Designation",
+        "star": 5,
+        "review": "5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+    }
+]

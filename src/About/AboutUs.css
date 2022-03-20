@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    background: #e5e5e59c;
+}
+.utility{
+    cursor: pointer;
+    color:#193566
+}
+.aboutDOM{
+    width: 100vw;
+    max-width: 500px;
+    display: grid;
+    place-items: center;
+}
+.introductionAbout{
+    width: 100%;
+    height: auto;
+}
+.navigation{
+    color: #193566;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    margin-top: 30px;
+}
+.fa-bars{
+   margin-top: 5px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+.navigation ul li i{
+    font-size: 20px;
+}
+.navigation ul li{
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    align-items: center;
+}
+.navigation .user{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #193566;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.introductionAbout span{
+    color: #97A7C3;
+    margin: 0 50px;
+}
+.section{
+    z-index: 1 !important;
+}
+.content{
+    position:absolute;
+    top: 80px;
+    font-weight: lighter;
+    height: 250px;
+    z-index: 1 !important;
+}
+/* .content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("D:\youngminds\public\img\about.png") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+} */
+.section img{
+    width: 100%;
+    height: auto;
+}
+.content .title{
+    margin: 20px;
+    color: #97A7C3;
+    font-weight: 500;
+}
+.content .midHeading{
+    margin: 20px;
+    margin-top: 30px;
+    color: #193566;
+}
+.content .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.content .midHeading h4, .wordFromYoungMinds h4{
+    font-size: 12px;
+}
+.para{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.para i{
+    font-size: 16px;
+}
+.para i::before{
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.para p{
+    text-align: center;
+    color: #193566cb;
+    line-height: 24px;
+    font-size: 12px;
+}
+.blank{
+    width: 90%;
+    margin: 20px 5%;
+    border: 0.5px dashed #97A7C3;
+}
+.wordFromYoungMinds{
+    color:#193566 ;
+    margin-left: 20px ;
+    margin-top: 30px;
+    margin-bottom: 60px;        
+}
+.something{
+    display: flex;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+.current{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+.something .thoughts{
+    display: grid;
+    place-items: center;
+}
+.something .thoughts p{
+    color: #193566cb;
+    font-size: 12px;
+    margin: 15px 20px 10px 0;
+}
+.thoughts .socialMediaIcons{
+    display: flex ;
+}
+.thoughts .socialMediaIcons li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    background: #ECF0F3;
+    margin-right: 15px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    border-radius: 50%;
+}
+.thoughts .socialMediaIcons li:hover{
+    box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5);
+}
+.presidentDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.presidentDetails .imgBox{
+    height: 120px;
+    margin: 10px 0;
+    margin-right: 20px;
+    width: 120px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.presidentDetails .imgBox img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.presidentDetails h3{
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    margin-right: 30px;
+    line-height: 28px;
+    color: #193566;
+}
+.presidentDetails span{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #8A9BBD; ;
+    text-align: center;
+    margin-right: 70px;
+}
+.btnDOM{
+    display: flex;
+    justify-content: center;
+  }
+.btnDOM .btn{ 
+    box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5);
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+.btnDOM .active{
+    box-shadow: 0px -4px 4px #FFFFFF, 0px 4px 4px rgba(151, 167, 195, 0.5);
+    background: #193566;
+    border: 2px solid white;
+}
+.whyYoungMind .answer{
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+}
+.whyYoungMind .answer h2, .testimonials h2{
+    padding-top: 30px;
+    letter-spacing: 0.03rem;
+    margin-left: 20px;
+    color: #193566;
+}
+.answer .logo{
+    display: grid;
+    place-items: center;
+}
+.answer .logo img{
+    width: 120px;
+    height: 110px;
+    margin-top: 40px;
+}
+.answer .logo p{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    color: #193566cb;
+}
+.whyYoungMind .studentCount{
+    display: flex;
+    justify-content: space-evenly;
+}
+.studentCount .empty, .reviews .empty{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.studentCount .student h2{
+    font-size: 18px;
+    text-align: center;
+    color: #193566;
+    margin-top: 10px;
+}
+.studentCount .student h3{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    text-align: center;
+    color: #193566;
+}
+.testimonials{
+    margin-top: 70px;
+    position: relative;
+}
+.testimonials span{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: #97A7C3;
+    margin-left: 20px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.detail span{
+    margin:0;
+}
+.reviews .detail h4{
+    margin-top: 10px;
+    color: #193566;
+    font-size: 12px;
+}
+.rating{
+    display: flex;
+}
+.fa-star{
+    margin: 3px;
+    margin-left: 0;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.testimonials .reviews{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0;
+    transform: translateX(-20%);
+    transition: all 1s ease;
+    opacity: 0;
+}
+.testimonials .present{
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    transform: translateX(0%);
+    opacity: 1;
+}
+.testimonials .reviews p{
+    font-size: 10px;
+    margin-top: 10px;
+    line-height: 138.31%;
+    text-align: center;
+    color: #193566;
+}
+.testimonials .icons{
+    position: absolute;
+    top: 60%;
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+.testimonials .icons i{
+    margin: 0 5%;
+    display: grid;
+    color: #193566;
+    place-items: center;
+    height: 30px;
+    font-size: 20px;
+    width: 30px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.testimonials .icons i:hover{
+    box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5); 
+}
+.reviewsBox{
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+@media screen and (max-width: 380px){
+    .content .midHeading .heading{
+        font-size: 16px;
+    }
+    .content .midHeading{
+        margin-top: 20px;
+    }
+    .something .thoughts p{
+        margin: 15px 4px 10px 0;
+    }
+}

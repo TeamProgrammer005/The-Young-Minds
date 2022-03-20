@@ -1,9 +1,11 @@
-import About from './About/About';
+
+import AboutUs from "./About/AboutUs";
+
 
 function App() {
   return (
     <>
-    <About/>
+  <AboutUs/>
     </>
   );
 }
