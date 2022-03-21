@@ -1,32 +1,37 @@
 [
     {
-        "name": "Name goes here",
-        "designation": "Designation",
-        "star": 1,
-        "review": "1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
-    },
-    {
-        "name": "Name goes here",
-        "designation": "Designation",
-        "star": 2,
-        "review": "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
-    },
-    {
-        "name": "Name goes here",
-        "designation": "Designation",
-        "star": 3,
-        "review": "3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
-    },
-    {
-        "name": "Name goes here",
-        "designation": "Designation",
-        "star": 4,
-        "review": "4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
-    },
-    {
-        "name": "Name goes here",
-        "designation": "Designation",
+        "key": 1,
+        "name": "Dilshad Khan",
+        "designation": "Developer",
         "star": 5,
-        "review": "5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quo voluptatibus! In, qui? Dolores, repellendus quis. Ratione."
+        "review": "A good platfrom to learn about 3D modeling & desing and also much more ..."
+    },
+    {
+        "key": 2,
+        "name": "Avijit Sahoo",
+        "designation": "Developer",
+        "star": 5,
+        "review": "A good platfrom to learn about 3D modeling & desing and also much more ..."
+    },
+    {
+        "key": 3,
+        "name": "Keshav Kumar",
+        "designation": "Developer",
+        "star": 5,
+        "review": "A good platfrom to learn about 3D modeling & desing and also much more ..."
+    },
+    {
+        "key": 4,
+        "name": "Inish",
+        "designation": "Developer",
+        "star": 5,
+        "review": "A good platfrom to learn about 3D modeling & desing and also much more ..."
+    },
+    {
+        "key": 5,
+        "name": "Harsh Singh",
+        "designation": "Developer",
+        "star": 5,
+        "review": "A good platfrom to learn about 3D modeling & desing and also much more ..."
     }
 ]

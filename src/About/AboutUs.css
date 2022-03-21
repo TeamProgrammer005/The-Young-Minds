@@ -48,30 +48,26 @@ body{
     text-transform: capitalize;
     align-items: center;
 }
-.navigation .user{
+.navigation .user img{
     width: 30px;
     height: 30px;
-    border: 1px solid #193566;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
 }
 .introductionAbout span{
     color: #97A7C3;
     margin: 0 50px;
 }
-.section{
+.sectionAbout{
     z-index: 1 !important;
 }
-.content{
+.contentAbout{
     position:absolute;
     top: 80px;
     font-weight: lighter;
     height: 250px;
     z-index: 1 !important;
 }
-/* .content::before{
-    content: "";
+/* .contentAbout::before{
+    contentAbout: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -79,25 +75,25 @@ body{
     z-index: -1;
     opacity: 0.9;
 } */
-.section img{
+.sectionAbout img{
     width: 100%;
     height: auto;
 }
-.content .title{
+.contentAbout .title{
     margin: 20px;
     color: #97A7C3;
     font-weight: 500;
 }
-.content .midHeading{
+.contentAbout .midHeading{
     margin: 20px;
     margin-top: 30px;
     color: #193566;
 }
-.content .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2{
+.contentAbout .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2{
     font-size: 20px;
     text-transform: uppercase;
 }
-.content .midHeading h4, .wordFromYoungMinds h4{
+.contentAbout .midHeading h4, .wordFromYoungMinds h4{
     font-size: 12px;
 }
 .para{
@@ -150,10 +146,10 @@ body{
     font-size: 12px;
     margin: 15px 20px 10px 0;
 }
-.thoughts .socialMediaIcons{
+.thoughts .socialMediaIcons, .footer .socialMediaIcons{
     display: flex ;
 }
-.thoughts .socialMediaIcons li{
+.thoughts .socialMediaIcons li, .footer .socialMediaIcons li{
     list-style: none;
     width: 20px;
     height: 20px;
@@ -165,7 +161,7 @@ body{
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
     border-radius: 50%;
 }
-.thoughts .socialMediaIcons li:hover{
+.thoughts .socialMediaIcons li:hover, .footer .socialMediaIcons li:hover{
     box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5);
 }
 .presidentDetails{
@@ -289,6 +285,13 @@ body{
 .detail span{
     margin:0;
 }
+.reviews .profile{
+    display: grid;
+    place-items: center;
+}
+.reviews .profile i{
+    font-size: 25px;
+}
 .reviews .detail h4{
     margin-top: 10px;
     color: #193566;
@@ -355,11 +358,54 @@ body{
     place-items: center;
     margin-top: 30px;
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    box-shadow: -4px -4px 8px #FFFFFF;
+}
+.footer .navigate li{
+    list-style: none;
+}
+.footer .socialMedia h4, .footer .shortIntro h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: #193566;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer .navigate li a{
+    color: #97A7C3;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+}
+.footer .shortIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.footer .shortIntro img{
+    width: 60px;
+    height: 60px;
+}
+.copyright{
+    position: relative;
+    bottom: 2%;
+    left: 20%;
+    margin: 20px 0;
+    text-align: center;
+     color: #193566;
+    font-size: 12px;
+}
 @media screen and (max-width: 380px){
-    .content .midHeading .heading{
+    .contentAbout .midHeading .heading{
         font-size: 16px;
     }
-    .content .midHeading{
+    .contentAbout .midHeading{
         margin-top: 20px;
     }
     .something .thoughts p{
