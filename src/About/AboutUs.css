@@ -66,15 +66,6 @@ body{
     height: 250px;
     z-index: 1 !important;
 }
-/* .contentAbout::before{
-    contentAbout: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("D:\youngminds\public\img\about.png") no-repeat center center/cover;
-    z-index: -1;
-    opacity: 0.9;
-} */
 .sectionAbout img{
     width: 100%;
     height: auto;
@@ -365,22 +356,24 @@ body{
     padding-top: 20px;
     margin-top: 30px;
     flex-wrap: wrap;
-    box-shadow: -4px -4px 8px #FFFFFF;
+    box-shadow: 0px -4px 8px #FFFFFF;
 }
 .footer .navigate li{
     list-style: none;
+    margin-bottom: 10px;
 }
-.footer .socialMedia h4, .footer .shortIntro h4{
+.footer .socialMedia h4{
     text-align: center;
     text-transform: uppercase;
     color: #193566;
     font-size: 12px;
     margin-bottom: 10px;
 }
-.footer .navigate li a{
+.footer .navigate li a, .footer .shortIntro h4{
+    margin-bottom: 10px;
     color: #97A7C3;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
 }
 .footer .shortIntro{
@@ -388,9 +381,9 @@ body{
     flex-direction: column;
     justify-content: flex-end;
 }
-.footer .shortIntro img{
-    width: 60px;
-    height: 60px;
+.footer .shortIntro img, .footer .navigate li img{
+    width: 50px;
+    height: 50px;
 }
 .copyright{
     position: relative;

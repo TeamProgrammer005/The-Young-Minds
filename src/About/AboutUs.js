@@ -80,7 +80,6 @@ export default function AboutUs() {
                 <div className="introductionAbout">
                     <div className="navigation">
                         <ul>
-                            {/* <li><i className="fas fa-solid fa-bars utility"></i></li> */}
                             <li><h2>Young Minds</h2></li>
                             
                         </ul>
@@ -117,10 +116,9 @@ export default function AboutUs() {
                                             <div className="thoughts" key={slide.id}>
                                                 <p>{slide.para}</p>
                                                 <ul className='socialMediaIcons'>
-                                                    <li><a href="/"><i className="fas fa-envelope utility"></i></a></li>
-                                                    <li><a href="/"><i className="fab fa-yahoo utility"></i></a></li>
-                                                    <li><a href="/"><i className="fab fa-linkedin-in utility"></i></a></li>
-                                                    <li><a href="/"><i className="fab fa-apple utility"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i class="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i class="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i class="fab fa-twitter utility"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div className="presidentDetails">
@@ -169,7 +167,6 @@ export default function AboutUs() {
                     </div>
                     <div className="testimonials">
                         <h2>Testimonials</h2>
-                        <span>Description goes here...</span>
                         <div className="reviewsBox">
                             {reviewsData.map((review, index) => {
                                 return (
@@ -213,19 +210,15 @@ export default function AboutUs() {
                 </div>
                 <div className="footer">
                     <ul className="navigate">
-                        <li><a href="/">Home</a></li>
                         <li><a href="/">About Us</a></li>
-                        <li><a href="/">Serivces</a></li>
-                        <li><a href="/">Our store</a></li>
-                        <li><a href="/">Term's & condition</a></li>
+                        <li><a href="/"><img src="img/young minds watermark 1.png" alt="logo" /></a></li>
                     </ul>
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
                     <ul className='socialMediaIcons'>
-                        <li><a href="/"><i className="fas fa-envelope utility"></i></a></li>
-                        <li><a href="/"><i className="fab fa-yahoo utility"></i></a></li>
-                        <li><a href="/"><i className="fab fa-linkedin-in utility"></i></a></li>
-                        <li><a href="/"><i className="fab fa-apple utility"></i></a></li>
+                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i class="fab fa-facebook-f utility"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i class="fab fa-instagram utility"></i></a></li>
+                        <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i class="fab fa-twitter utility"></i></a></li>
                     </ul>
                     </div>
                     <div className="shortIntro">
