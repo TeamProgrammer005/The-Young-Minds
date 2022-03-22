@@ -354,7 +354,6 @@ body{
 }
 .footer .navigate li{
     list-style: none;
-    margin-bottom: 10px;
 }
 .footer .socialMedia h4{
     text-align: center;
@@ -373,9 +372,9 @@ body{
 .footer .shortIntro{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
-.footer .shortIntro img, .footer .navigate li img{
+.footer .shortIntro img{
     width: 50px;
     height: 50px;
 }

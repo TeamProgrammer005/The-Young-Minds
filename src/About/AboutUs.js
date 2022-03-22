@@ -210,8 +210,11 @@ export default function AboutUs() {
                 </div>
                 <div className="footer">
                     <ul className="navigate">
+                        <li><a href="/">Home</a></li>
                         <li><a href="/">About Us</a></li>
-                        <li><a href="/"><img src="img/young minds watermark 1.png" alt="logo" /></a></li>
+                        <li><a href="/">Privacy Policy</a></li>
+                        <li><a href="/">Terms & Condition</a></li>
+                        <li><a href="/">Contact Us</a></li>
                     </ul>
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
