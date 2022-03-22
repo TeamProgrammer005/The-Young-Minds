@@ -84,7 +84,7 @@ export default function AboutUs() {
                             
                         </ul>
                         <div className="user">
-                           <img src="img/young minds watermark 1.png" alt="" />
+                           <img src="img/young minds watermark 1.png" alt="logo" />
                         </div>
                     </div>
                     <span>Welcome Back!</span>
