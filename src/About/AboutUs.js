@@ -113,7 +113,7 @@ export default function AboutUs() {
                                 <div className={index === currentSlide ? "something current" : "something"} key={slide.id}>
                                     {index === currentSlide && (
                                         <>
-                                            <div className="thoughts" key={slide.id}>
+                                            <div className="thoughts">
                                                 <p>{slide.para}</p>
                                                 <ul className='socialMediaIcons'>
                                                     <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
@@ -136,7 +136,7 @@ export default function AboutUs() {
                         <div className="btnDOM">
                             {Array.from({ length: YMDataLength }).map((item, index) => {
                                 return (
-                                    <div className={currentSlide === index ? "btn active" : "btn"} onClick={() => togglePage(index)}></div>
+                                    <div className={currentSlide === index ? "btn active" : "btn"} key={index} onClick={() => togglePage(index)}></div>
                                 )
                             })}
                         </div>
@@ -180,9 +180,9 @@ export default function AboutUs() {
                                                     <h4>{review.name}</h4>
                                                     <span>{review.designation}</span>
                                                     <div className="rating">
-                                                        {Array.from({ length: review.star }).map(item => {
+                                                        {Array.from({ length: review.star }).map((item,index) => {
                                                             return (
-                                                                <i className="fas fa-star utility"></i>
+                                                                <i className="fas fa-star utility" key={index}></i>
                                                             )
                                                         })}
 
@@ -202,7 +202,7 @@ export default function AboutUs() {
                         <div className="btnDOM">
                             {Array.from({ length: reviewLength }).map((item, index) => {
                                 return (
-                                    <div className={currentReview === index ? "btn active" : "btn"} onClick={() => change(index)} ></div>
+                                    <div className={currentReview === index ? "btn active" : "btn"} key={index} onClick={() => change(index)} ></div>
                                 )
                             })}
                         </div>
