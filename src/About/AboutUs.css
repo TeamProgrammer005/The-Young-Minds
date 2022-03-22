@@ -380,9 +380,7 @@ body{
     height: 50px;
 }
 .copyright{
-    position: relative;
-    bottom: 2%;
-    left: 20%;
+    width: 100%;
     margin: 20px 0;
     text-align: center;
      color: #193566;
