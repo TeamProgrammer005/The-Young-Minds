@@ -80,7 +80,7 @@ export default function AboutUs() {
                 <div className="introductionAbout">
                     <div className="navigation">
                         <ul>
-                            <li><h2>Young Minds</h2></li>
+                            <li><h2>YOUNG MINDS</h2></li>
                             
                         </ul>
                         <div className="user">
@@ -116,9 +116,9 @@ export default function AboutUs() {
                                             <div className="thoughts" key={slide.id}>
                                                 <p>{slide.para}</p>
                                                 <ul className='socialMediaIcons'>
-                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i class="fab fa-facebook-f utility"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i class="fab fa-instagram utility"></i></a></li>
-                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i class="fab fa-twitter utility"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div className="presidentDetails">
@@ -216,9 +216,9 @@ export default function AboutUs() {
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
                     <ul className='socialMediaIcons'>
-                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i class="fab fa-facebook-f utility"></i></a></li>
-                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i class="fab fa-instagram utility"></i></a></li>
-                        <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i class="fab fa-twitter utility"></i></a></li>
+                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
+                        <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
                     </ul>
                     </div>
                     <div className="shortIntro">

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
 }
 body{
     display: grid;
@@ -43,9 +44,7 @@ body{
     margin-right: 5px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 140%;
     letter-spacing: 0.03em;
-    text-transform: capitalize;
     align-items: center;
 }
 .navigation .user img{
@@ -398,6 +397,10 @@ body{
     }
     .something .thoughts p{
         margin: 15px 4px 10px 0;
+        font-size: 11px;
+    }
+    .navigation ul li{
+        font-size: 16px;
     }
     .presidentDetails .imgBox{
         margin-right: 5px;
