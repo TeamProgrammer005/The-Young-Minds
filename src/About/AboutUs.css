@@ -128,10 +128,6 @@ body{
     transform: translateY(0%);
     opacity: 1;
   }
-.something .thoughts{
-    /* display: grid;
-    place-items: center; */
-}
 .something .thoughts p{
     color: #193566cb;
     font-size: 12px;
@@ -180,10 +176,8 @@ body{
 }
 .presidentDetails h3{
     font-style: italic;
-    font-family: 'Tangerine';
-    font-weight: 700;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: 12px;
+    margin-right: 20px;
     line-height: 28px;
     color: #193566;
 }
@@ -404,5 +398,11 @@ body{
     }
     .something .thoughts p{
         margin: 15px 4px 10px 0;
+    }
+    .presidentDetails .imgBox{
+        margin-right: 5px;
+    }
+    .presidentDetails h3{
+        margin-right: 5px;
     }
 }
