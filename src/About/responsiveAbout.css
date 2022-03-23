@@ -21,7 +21,7 @@
 }
 @media screen and (min-width: 600px){
     .contentAbout{
-        top: 20%;
+        top: 160px;
     }
     .para p{
         font-size: 16px;
@@ -50,12 +50,12 @@
 }
 @media screen and (max-width: 700px){
     .contentAbout{
-        top: 10%;
+        top: 85px;
     }
 }
 @media screen and (max-width: 600px){
     .contentAbout{
-        top: 8.5%;
+        top: 75px;
     }
 }
 @media screen and (min-width: 750px){
@@ -88,7 +88,7 @@
         font-size: 2.4rem;
     }
     .contentAbout{
-        top: 22%;
+        top: 170px;
     }
     .contentAbout .midHeading {
         margin-left: 60px;
