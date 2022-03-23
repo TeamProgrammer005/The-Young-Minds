@@ -1,0 +1,121 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    box-shadow: 0px -4px 8px #FFFFFF;
+}
+.footer .navigate li{
+    list-style: none;
+}
+.toggle{
+    display: none;
+}
+.footer .socialMedia h4, .footer .shortIntro h4, .footer .shortIntro h5{
+    text-align: center;
+    text-transform: uppercase;
+    color: #193566;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer .shortIntro h5{
+    font-size: 10px;
+    text-transform: none;
+}
+.footer .navigate li a{
+    margin-bottom: 10px;
+    color: #97A7C3;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer .shortIntro{
+    display: flex;
+    flex-direction: column;
+}
+.footer .shortIntro img{
+    width: 50px;
+    height: 50px;
+}
+.footer .socialMediaIcons{
+    display: flex ;
+    justify-content: flex-start;
+}
+.footer .socialMediaIcons li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    background: #ECF0F3;
+    margin-right: 15px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    border-radius: 50%;
+}
+.footer .socialMediaIcons li:hover{
+    box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5);
+}
+.copyright{
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+     color: #193566;
+    font-size: 12px;
+}
+@media screen and (max-width: 490px) {     
+    .footer .shortIntro h5{
+        font-size: 8px;
+    }
+    .footer .navigate li a{
+        font-size: 10px;
+    }
+    .footer .socialMediaIcons li{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 375px){
+    .footer .socialMediaIcons li{
+        width: 15px;
+        height: 15px;
+        margin-right: 9px;
+        font-size: 10px;
+    }
+    .toggle{
+        display: block;
+    }
+    .try{
+        display: none;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 350px){
+    .footer{
+        padding: 0 5px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 310px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navigate{
+        display: flex;
+        width: 65px;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer .shortIntro{
+        margin-bottom: 20px;
+    }
+    .footer .socialMediaIcons{
+         justify-content: center;
+    }
+}

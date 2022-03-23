@@ -1,0 +1,121 @@
+@media screen and (min-width: 500px) {
+    .something .thoughts p{
+        font-size: 14px;
+    }
+    .para p{
+        font-size: 14px;
+    }
+    .contentAbout .midHeading{
+        margin-left: 30px;
+    }
+    .contentAbout .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+        font-size: 22px;
+    }
+    .contentAbout .midHeading h4, .wordFromYoungMinds h4{
+       font-size: 14px; 
+    }
+    .aboutDOM{
+        max-width: 1200px;
+    }
+    
+}
+@media screen and (min-width: 600px){
+    .contentAbout{
+        top: 20%;
+    }
+    .para p{
+        font-size: 16px;
+    }
+    .contentAbout .midHeading{
+        margin-left: 40px;
+    }
+    .contentAbout .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+        font-size: 2rem;
+    }
+    .contentAbout .title ,.contentAbout .midHeading h4, .wordFromYoungMinds h4{
+        font-size: 1.4rem; 
+    }
+     .answer .logo p{
+        font-size: 14px;
+    }
+     .studentCount{
+        max-width: 600px;
+        margin: auto;
+    }
+    .testimonials .icons{
+        max-width: 500px;
+        position: static;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 700px){
+    .contentAbout{
+        top: 10%;
+    }
+}
+@media screen and (max-width: 600px){
+    .contentAbout{
+        top: 8.5%;
+    }
+}
+@media screen and (min-width: 750px){
+    .para{
+        margin-top: 50px;
+    }
+    .para p{
+        font-size: 18px;
+    }
+    .contentAbout .title {
+        font-size: 2.5rem;
+    }
+    .answer .logo p{
+        font-size: 16px;
+        padding: 0 50px;
+    }
+    .contentAbout .midHeading {
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    .contentAbout .midHeading h4{
+        font-size: 1.6rem;
+    }
+    .contentAbout .midHeading .heading{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 850px){
+    .contentAbout .midHeading .heading{
+        font-size: 2.4rem;
+    }
+    .contentAbout{
+        top: 22%;
+    }
+    .contentAbout .midHeading {
+        margin-left: 60px;
+        margin-top: 70px;
+    }
+    .answer .logo img{
+        width: 160px;
+        height: 140px;
+    }
+}
+@media screen and (min-width: 940px){
+    .contentAbout .midHeading {
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+    .contentAbout .midHeading h4{
+        font-size: 1.8rem;
+    }
+    .answer .logo p{
+        font-size: 18px;
+        padding: 0 70px;
+    }
+    .contentAbout .midHeading .heading{
+        font-size: 2.7rem;
+        letter-spacing: 0.4rem;
+    }
+    .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+        letter-spacing: 0.3rem;
+    }
+}

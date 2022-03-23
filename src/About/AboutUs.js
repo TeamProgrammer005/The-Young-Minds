@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import reviewsData from "./reviewsData.json"
 import "./AboutUs.css"
+import "./responsiveAbout.css"
 
 export default function AboutUs() {
     const YMData = [
@@ -78,7 +79,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <div className="navigation">
+                    {/* <div className="navigation">
                         <ul>
                             <li><h2>YOUNG MINDS</h2></li>
                             
@@ -87,7 +88,7 @@ export default function AboutUs() {
                            <img src="img/young minds watermark 1.png" alt="logo" />
                         </div>
                     </div>
-                    <span>Welcome Back!</span>
+                    <span>Welcome Back!</span> */}
                     <div className="sectionAbout">
                         <img src="img/about.png" alt="" />
                         <div className="contentAbout">
@@ -152,8 +153,8 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="studentCount">
-                        <div className="empty"></div>
-                        <div className="empty"></div>
+                        <div className="empty new"></div>
+                        <div className="empty new"></div>
                     </div>
                     <div className="studentCount">
                         <div className="student">
@@ -208,28 +209,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <div className="footer">
-                    <ul className="navigate">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/">Privacy Policy</a></li>
-                        <li><a href="/">Terms & Condition</a></li>
-                        <li><a href="/">Contact Us</a></li>
-                    </ul>
-                    <div className="socialMedia">
-                        <h4>Follow Us</h4>
-                    <ul className='socialMediaIcons'>
-                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
-                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
-                        <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
-                    </ul>
-                    </div>
-                    <div className="shortIntro">
-                        <h4>The Young Minds</h4>
-                        <img src="img/young minds watermark 1.png" alt="logo" />
-                    </div>
-                <span className='copyright'>&copy; 2022 Theyoungminds all rights reserved.</span>
-                </div>
+              
             </div>
         </>
     )

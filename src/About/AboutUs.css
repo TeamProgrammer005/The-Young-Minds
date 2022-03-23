@@ -15,7 +15,7 @@ body{
 }
 .aboutDOM{
     width: 100vw;
-    max-width: 500px;
+    max-width: 600px;
     display: grid;
     place-items: center;
 }
@@ -23,34 +23,7 @@ body{
     width: 100%;
     height: auto;
 }
-.navigation{
-    color: #193566;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px;
-    margin-top: 30px;
-}
-.fa-bars{
-   margin-top: 5px;
-}
-.navigation ul{
-    display: flex;
-    list-style: none;
-}
-.navigation ul li i{
-    font-size: 20px;
-}
-.navigation ul li{
-    margin-right: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    align-items: center;
-}
-.navigation .user img{
-    width: 30px;
-    height: 30px;
-}
+
 .introductionAbout span{
     color: #97A7C3;
     margin: 0 50px;
@@ -60,7 +33,7 @@ body{
 }
 .contentAbout{
     position:absolute;
-    top: 80px;
+    top: 20%;
     font-weight: lighter;
     height: 250px;
     z-index: 1 !important;
@@ -68,6 +41,7 @@ body{
 .sectionAbout img{
     width: 100%;
     height: auto;
+    max-height: 600px;
 }
 .contentAbout .title{
     margin: 20px;
@@ -89,7 +63,7 @@ body{
 .para{
     display: flex;
     margin-top: 15px;
-    justify-content: space-between;
+    justify-content: center;
 }
 .para i{
     font-size: 16px;
@@ -105,6 +79,7 @@ body{
     color: #193566cb;
     line-height: 24px;
     font-size: 12px;
+    max-width: 600px;
 }
 .blank{
     width: 90%;
@@ -119,24 +94,28 @@ body{
 }
 .something{
     display: flex;
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
     transition: all 1s ease;
     opacity: 0;
-    transform: translateY(-50%);
+    transform: translateX(-30%);
 }
 .current{
-    transform: translateY(0%);
+    transform: translateX(0%);
     opacity: 1;
   }
 .something .thoughts p{
     color: #193566cb;
     font-size: 12px;
+    max-width: 300px;
     margin: 15px 20px 20px 0;
 }
-.thoughts .socialMediaIcons, .footer .socialMediaIcons{
+.thoughts .socialMediaIcons{
     display: flex ;
     justify-content: flex-start;
 }
-.thoughts .socialMediaIcons li, .footer .socialMediaIcons li{
+.thoughts .socialMediaIcons li{
     list-style: none;
     width: 20px;
     height: 20px;
@@ -148,7 +127,7 @@ body{
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
     border-radius: 50%;
 }
-.thoughts .socialMediaIcons li:hover, .footer .socialMediaIcons li:hover{
+.thoughts .socialMediaIcons li:hover{
     box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5);
 }
 .presidentDetails{
@@ -291,10 +270,18 @@ body{
     font-size: 10px;
     font-weight: bolder;
 }
+.reviewsBox{
+    display: grid;
+    place-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 .testimonials .reviews{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    max-width: 290px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 0;
@@ -321,6 +308,7 @@ body{
     display: flex;
     width: 100%;
     border-radius: 50%;
+    z-index: 3;
     justify-content: space-between;
 }
 .testimonials .icons i{
@@ -337,53 +325,6 @@ body{
 }
 .testimonials .icons i:hover{
     box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5); 
-}
-.reviewsBox{
-    display: grid;
-    place-items: center;
-    margin-top: 30px;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    padding-top: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    box-shadow: 0px -4px 8px #FFFFFF;
-}
-.footer .navigate li{
-    list-style: none;
-}
-.footer .socialMedia h4{
-    text-align: center;
-    text-transform: uppercase;
-    color: #193566;
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-.footer .navigate li a, .footer .shortIntro h4{
-    margin-bottom: 10px;
-    color: #97A7C3;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
-}
-.footer .shortIntro{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: flex-end; */
-}
-.footer .shortIntro img{
-    width: 50px;
-    height: 50px;
-}
-.copyright{
-    width: 100%;
-    margin: 20px 0;
-    text-align: center;
-     color: #193566;
-    font-size: 12px;
 }
 @media screen and (max-width: 380px){
     .contentAbout .midHeading .heading{
