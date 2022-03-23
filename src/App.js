@@ -14,7 +14,7 @@ function App() {
     <Router>
      <Nav/>
       <Routes>
-      <Route path="/about_us" element={<AboutUs/>}/>
+      <Route path="/" element={<AboutUs/>}/>
       </Routes>
     <Footer/>
     </Router>
