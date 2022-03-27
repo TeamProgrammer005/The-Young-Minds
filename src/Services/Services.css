@@ -1,0 +1,329 @@
+.serviceDOM{
+    width: 100vw;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.services_idea h4{
+    margin-left: 20px;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 93.9%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #193566;
+}
+.services_idea h2{
+    font-family: 'Montserrat';
+    margin-left: 20px;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #193566;
+    margin-bottom: 30px;
+}
+.serviceIdeaSection{
+    display: flex;
+    align-items: center;
+}
+.serviceIdeaSection .khali{
+ width: 700px;
+ height: 200px;
+ margin: 15px 0;
+ border-radius: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transform: translateX(-30%);
+}
+.firstOuterGradiant{
+    background:  linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%);
+}
+.secondOuterGradiant{
+    background: linear-gradient(228.72deg, #FE089C 26.63%, #BD02FF 108.3%);
+}
+.thirdOuterGradiant{
+    background: linear-gradient(199.69deg, #BD02FF 13.18%, #1400FF 85.24%);
+}
+.fourthOuterGradiant{
+    background: linear-gradient(174.3deg, #1400FF 4.53%, #00D1FF 96.33%);
+}
+.fifthOuterGradiant{
+    background: linear-gradient(174.3deg, #00D1FF 4.53%, #05FF00 96.33%);
+}
+.khali .outerBox{
+box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5), inset -4px -4px 8px #FFFFFF;
+border-radius: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+ width: 90%;
+ height: 170px;
+ background: #f3f3f3f5;
+}
+.outerBox .innerKhali{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.firstInnerGradiant{
+    background: linear-gradient(123.79deg, rgba(255, 230, 1, 0.5) 12.55%, rgba(255, 77, 0, 0.5) 85.99%);
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.secondInnerGradiant{
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    background: linear-gradient(123.79deg, rgba(254, 8, 156, 0.5) 12.55%, rgba(189, 2, 255, 0.5) 85.99%);
+}
+.thirdInnerGradiant{
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    background: linear-gradient(123.79deg, rgba(189, 2, 255, 0.5) 12.55%, rgba(20, 0, 255, 0.5) 85.99%);
+}
+.fourthInnerGradiant{
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    background: linear-gradient(123.79deg, rgba(20, 0, 255, 0.5) 12.55%, rgba(0, 209, 255, 0.5) 85.99%);
+}
+.fifthInnerGradiant{
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    background: linear-gradient(123.79deg, rgba(0, 209, 255, 0.5) 12.55%, rgba(5, 255, 0, 0.5) 85.99%);
+}
+.innerBox{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+    align-items: center;
+    background: #f3f3f3f5;
+}
+.innerBox span{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 93.9%;
+    color: #193566;
+}
+.innerBox b{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 110%;
+    color: #193566;
+}
+.ideas h4{
+    font-size: 25px;
+}
+.ideas p{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 30px;
+    color: #193566;
+}
+.additionalService, .field_expertise, .our_clients{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    color: #193566;
+}
+.additionalService h3, .field_expertise h3{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 18px 20px;
+    font-size: 18px;
+    line-height: 11px;  
+}
+.additionalService h2, .field_expertise h2, .our_clients h2{  
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 11px;
+    margin: 5px 20px;
+}
+.additionalService p, .field_expertise p, .our_clients p{
+    font-family: 'Montserrat';
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 37px;
+}
+.additional_feature_slide{
+    display: none;
+} 
+.additional_feature{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.additional_feature_section{
+    margin: 40px 20px;
+    height: 320px;
+}
+.additional_feature_section, .additional_feature_section_slide{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 250px;
+    background: #ECF0F3;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 12px;
+}
+.additional_feature_section_slide{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: 1s ease-in-out;
+}
+.additional_feature_slide .show{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.additional_feature_section img, .additional_feature_section_slide img{
+    width: 60%;
+    z-index: 1;
+    height: auto;
+}
+.additional_feature_section p, .additional_feature_section_slide p{
+    margin: 15px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    padding: 0 20px;
+}
+.additional_feature_section h4, .additional_feature_section_slide h4{
+    margin: 10px 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 211.9%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.additional_feature_section .btn_service a, .additional_feature_section_slide .btn_service a{
+    color: #193566;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.additional_feature_section .btn_service, .additional_feature_section_slide .btn_service{
+    position: absolute;
+    outline: none;
+    padding: 10px 30px;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 30px;
+}
+.additional_feature_section .btn_service:hover, .additional_feature_section_slide .btn_service:hover{
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.additional_feature_section::before, .additional_feature_section_slide::before{
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    width: 90%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.additional_feature_section::after, .additional_feature_section_slide::after{
+    content: "";
+    position: absolute;
+    bottom: -9.5%;
+    width: 80%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.field_expertise h3, .additionalService .btnDOM {
+    margin-top: 40px;
+}
+.field_expertise .fieldsBox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.field_expertise .fieldsBox .empty{
+    width: 100px;
+    margin: 30px 0 20px 10px;
+    height: 100px;
+    border-radius: 50%; 
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.field_expertise .fieldsBox h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+}
+.field_expertise .fieldsBox h4{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.our_clients{
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+    padding-top: 30px;
+}
+.our_clients .clientImg_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.clientImg_container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.our_clients .clients_para{
+    font-size: 18px;
+    margin: 30px;
+    text-align: center;
+}
+.subscribe{
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px;
+}
+.subscribe input{
+    width: 500px;
+    height: 40px;
+    box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5), inset -4px -4px 8px #FFFFFF;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #193566;
+    font-size: 16px;
+}
+.subscribe input:invalid{
+    box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5), inset -4px -4px 8px #FFFFFF,4px 4px 8px rgba(245, 56, 50, 0.631),-4px -4px 8px rgba(245, 56, 50, 0.631);
+    animation: shake 300ms;
+}
+.subscribe input::placeholder{
+   padding: 0 20px;
+    color: #19356643;
+}
+@keyframes shake{
+    25%{ transform: translateX(2%);}
+    50%{ transform: translateX(-2%);}
+    75%{ transform: translateX(2%);}
+}
+.subscribe .subscribe_now{
+    margin-left: 20px;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background:#193566;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}

@@ -1,0 +1,259 @@
+@media screen and (max-width : 1170px){
+    .outerBox .innerKhali{
+        margin-left: 70px;
+    }
+    .clientImg_container img{
+        height: 180px;
+        width: 180px;
+    }
+ 
+}
+@media screen and (max-width : 1000px){
+    .serviceIdeaSection .khali{
+        height: 170px;
+    }
+    .khali .outerBox{
+        height: 150px;
+    }
+    .outerBox .innerKhali{
+        width: 100px;
+        height: 100px;
+    }
+    .innerBox{
+        width: 80px;
+        height: 80px;
+    }
+    .clientImg_container img{
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and (max-width : 880px){
+    .outerBox .innerKhali{
+        margin-left: 50px;
+    }
+    .ideas p{
+        line-height: 20px;
+    }
+    .field_expertise .fieldsBox .empty{
+        height: 80px;
+        width: 80px;
+    }
+}
+@media screen and (max-width : 800px){
+    .serviceIdeaSection .khali{
+        height: 150px;
+    }
+    .khali .outerBox{
+        height: 130px;
+    }
+    .innerBox span{
+        font-size: 17px;
+    }
+    .innerBox b{
+        font-size: 24px;
+    }
+    .services_idea h2{
+        font-size: 32px;
+    }
+    .ideas h4, .services_idea h4{
+        font-size: 24px;
+    }
+    .ideas p{
+        font-size: 16px;
+    }
+    .additionalService h2, .field_expertise h2, .our_clients h2{
+        font-size: 22px;
+    }
+    .field_expertise .fieldsBox h3{
+        font-size: 24px;
+    }
+    .field_expertise .fieldsBox h4{
+        font-size: 18px;
+    }
+    .clientImg_container img{
+        height: 120px;
+        width: 120px;
+    }
+    
+    .our_clients .clients_para{
+        line-height: 25px;
+    }
+    .subscribe input{
+        width: 50vw;
+        min-width:250px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width : 670px){
+    .serviceIdeaSection .khali{
+        height: 130px;
+        width: 600px;
+    }
+    .khali .outerBox{
+        height: 110px;
+    }
+    .outerBox .innerKhali{
+        margin-left: 40px;
+    }
+    .outerBox .innerKhali{
+        width: 80px;
+        height: 80px;
+    }
+    .innerBox{
+        width: 60px;
+        height: 60px;
+    }
+    .innerBox span{
+        font-size: 14px;
+    }
+    .innerBox b{
+        font-size: 18px;
+    }
+    .ideas h4{
+        font-size: 20px;
+    }
+    .ideas p{
+        font-size: 13px;
+        padding-right: 5px;
+        line-height: 17px;
+    }
+    .field_expertise .fieldsBox .empty{
+        height: 70px;
+        width: 70px;
+    }
+    .field_expertise .fieldsBox h3{
+        font-size: 20px;
+    }
+    .field_expertise .fieldsBox h4{
+        font-size: 16px;
+    }
+    .clientImg_container img{
+        height: 100px;
+        width: 100px;
+    }
+    .our_clients .clients_para{
+        line-height: 20px;
+    }
+    .additional_feature{
+        display: none;
+    }
+    .additional_feature_slide{
+        display: grid;
+        place-items: center; 
+        margin: 40px 0;
+  }
+}
+@media screen and (max-width : 530px){
+    .serviceIdeaSection .khali{
+        height: 110px;
+        width: 600px;
+        border-radius: 160px;
+    }
+    .khali .outerBox{
+        height: 90px;
+        border-radius: 160px;
+    }
+    .outerBox .innerKhali{
+        margin-left: 40px;
+        width: 65px;
+        height: 65px;
+    }
+    .innerBox{
+        width: 50px;
+        height: 50px;
+    }
+    .innerBox span{
+        font-size: 11px;
+    }
+    .innerBox b{
+        font-size: 15px;
+    }
+    .ideas h4{
+        font-size: 18px;
+    }
+    .ideas p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .additionalService p, .field_expertise p, .our_clients p {
+        font-size: 12px;
+    }
+    .field_expertise .fieldsBox h3{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .field_expertise .fieldsBox h4{
+        font-size: 12px;
+    }
+    .clientImg_container img{
+        height: 70px;
+        width: 70px;
+    }
+    .our_clients .clients_para{
+        line-height: 20px;
+        font-size: 14px;
+        margin: 20px;
+    }
+}
+@media screen and (max-width : 420px){
+    .services_idea h4{
+        font-size: 20px;
+    }
+    .services_idea h2{
+        font-size: 24px;
+    }
+    .serviceIdeaSection .khali{
+        height: 110px;
+        width: 700px;
+        border-radius: 160px;
+    }
+    .outerBox .innerKhali{
+        width: 55px;
+        height: 55px;
+    }
+    .innerBox{
+        width: 40px;
+        height: 40px;
+    }
+    .innerBox span{
+        font-size: 10px;
+    }
+    .innerBox b{
+        font-size: 13px;
+    }
+    .ideas h4{
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+    .ideas p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .field_expertise .fieldsBox .empty{
+        height: 50px;
+        width: 50px;
+        margin: 30px 0 0 10px;
+    }
+    .field_expertise .fieldsBox h3{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .field_expertise .fieldsBox h4{
+        font-size: 9px;
+        font-weight: 0;
+        text-align: center;
+    }
+    .clientImg_container img{
+        height: 50px;
+        width: 50px;
+    }
+    .subscribe{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width : 320px){
+    .outerBox .innerKhali{
+        margin-left: 20px;
+    }
+}

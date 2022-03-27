@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Footer from "./Footer/Footer";
+import Services from "./Services/Services";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Nav/>
       <Routes>
       <Route path="/" element={<AboutUs/>}/>
+      <Route path="/services" element={<Services/>}/>
       </Routes>
     <Footer/>
     </Router>

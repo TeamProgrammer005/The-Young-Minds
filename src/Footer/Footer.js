@@ -10,7 +10,7 @@ export default function
                     <ul className="navigate">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about_us">About Us</Link></li>
-                        <li><Link to="/">Privacy Policy</Link></li>
+                        <li><Link to="/services">Privacy Policy</Link></li>
                         <li className='try'><Link to="/">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/">T & C</Link></li>
                         <li><Link to="/">Contact Us</Link></li>

@@ -77,18 +77,9 @@ export default function AboutUs() {
 
     return (
         <>
+      
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    {/* <div className="navigation">
-                        <ul>
-                            <li><h2>YOUNG MINDS</h2></li>
-                            
-                        </ul>
-                        <div className="user">
-                           <img src="img/young minds watermark 1.png" alt="logo" />
-                        </div>
-                    </div>
-                    <span>Welcome Back!</span> */}
                     <div className="sectionAbout">
                         <img src="img/about.png" alt="" />
                         <div className="contentAbout">
