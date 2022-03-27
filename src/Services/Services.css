@@ -118,8 +118,9 @@ align-items: center;
 }
 .ideas p{
     font-family: 'Montserrat';
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 10px;
     color: #193566;
 }
 .additionalService, .field_expertise, .our_clients{
@@ -133,7 +134,7 @@ align-items: center;
     text-transform: uppercase;
     font-weight: 600;
     margin: 18px 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 11px;  
 }
 .additionalService h2, .field_expertise h2, .our_clients h2{  
