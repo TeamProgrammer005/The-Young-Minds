@@ -1,0 +1,27 @@
+[
+    {
+        
+        "name": "Name goes here",
+        "designation":"Designation",
+        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "img": "img/image 4.png",
+        "time": "21 hours ago"
+        
+    },
+    {
+
+        "name": "Name goes here",
+        "designation":"Designation",
+        "img": "img/image 4.png",
+        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "time": "21 hours ago"
+    },
+    {
+  
+        "name": "Name goes here",
+        "designation":"Designation",
+        "img": "img/image 4.png",
+        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "time": "21 hours ago"
+    }
+]

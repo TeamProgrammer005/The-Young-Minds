@@ -1,0 +1,24 @@
+[
+    {
+        "star": 4.8,
+        "name": "Name goes here",
+        "desc": "Description of the course",
+        "img": "img/image 4.png",
+        "views": 23
+        
+    },
+    {
+        "star": 4.8,
+        "name": "Name goes here",
+        "desc": "Description of the course",
+        "img": "img/image 4.png",
+        "views": 23
+    },
+    {
+        "star": 4.8,
+        "name": "Name goes here",
+        "desc": "Description of the course",
+        "img": "img/image 4.png",
+        "views": 23
+    }
+]

@@ -1,0 +1,414 @@
+.homeDOM{
+    width: 100vw;
+    max-width: 1200px;
+}
+.startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{ 
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 93.9%;
+    color: #193566;
+    margin-top: 30px;
+}
+.startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 110%;
+    margin-left: 20px;
+    text-transform: uppercase;
+    
+    color: #193566;
+}
+.startYourJourney span{
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #97A7C3;
+    margin-left: 20px;
+}
+.basic_journeys_collection{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.basic_journey{
+    position: relative;
+    height: 370px;
+    width: 22%;
+    color :  #193566;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 12px;
+}
+.basic_journey:hover{
+    background: #193566;
+    color: #ECF0F3;
+}
+.basic_journey:hover .basic_journey::after{
+    background: #193566;
+}
+.basic_journey img{
+    position: absolute;
+    bottom: -20%;
+    width: 80%;
+    height: 300px;
+}
+.basic_journey h3{
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 93.9%;
+    margin:  20px 10px;
+}
+.basic_journey h2{
+    
+font-style: normal;
+font-weight: 600;
+margin: 0 10px;
+margin-bottom: 10px;
+font-size: 26px;
+line-height: 110%;
+text-transform: uppercase;
+}
+.basic_journey p{
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 10px;
+}
+.basic_journey::after{
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: 3%;
+    width: 90%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.basic_journey::before{
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: -9.5%;
+    width: 80%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.category_section{
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+    padding-bottom: 40px;
+}
+.category_nav, .featured_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.category_section .category_nav p, .home_featured .featured_nav p, .updateFromCommunity p,.headingWorkshop p{
+    font-size: 14px;
+    color: #193566;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.category_nav .viewAll, .featured_nav .viewAll{
+    color:#97A7C3;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.viewAll i{
+    margin-left: 5px;
+}
+.category_section .typeOf{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.category_section .typeOf ul{
+    display: flex;
+    color: #193566;
+    margin: 15px 0;
+    justify-content: space-evenly;
+}
+.category_section .typeOf ul li{
+    list-style: none;
+    border: 1px solid rgba(151, 167, 195, 0.5);
+    border-radius: 100px;
+    padding: 15px 40px;
+    background: #ECF0F3;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.category_section h2{
+    padding-top: 15px;
+}
+.home_featured .courses{
+    display : flex;
+    margin-bottom: 40px;
+    overflow-x: scroll;
+}
+.featured_nav .viewAll{
+    margin-top: 0;
+}
+.courses .courseDetail{
+    position: relative;
+    min-width: 500px;
+    height: auto;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+.courses .courseDetail img{
+    width: 100%;
+    height: 65%;
+    
+}
+.courseDetail .video{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 30%;
+    left: 43%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 50px;
+    z-index: 2;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.375);
+    border: 2.5px solid #FFFFFF;
+}
+.courseDetail h4{
+    font-size: 20px;
+    line-height: 87.4%;
+    margin: 10px 50px;
+    text-transform: capitalize;
+    
+    color: #193566;
+}
+::-webkit-scrollbar{
+   background: transparent;
+}
+.course-desc{
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+.course-desc p{
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #97A7C3;
+}
+.course-desc i{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid #193566;
+}
+.courseDetail .ratingOfCourse{
+    margin: 10px 0;
+    margin-left: 60px;
+    color:  #97A7C3;;
+}
+.ratingOfCourse i{
+    font-size: 16px;
+}
+.updatedDOM{
+    display: flex;
+    overflow-x: scroll;
+    /* justify-content: space-around; */
+}
+.updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+    min-width: 450px;
+    margin: 20px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.fa-share-alt{
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+.updates .update_intro{
+    display: flex;
+    
+}
+.update_intro .blank{
+    width: 60px;
+    height: 60px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+    border-radius: 50%;
+    border: none;
+    margin: 10px 20px;
+}
+.update_intro .intro{
+    margin: 20px 0;
+    color: #193566;
+    display: flex;
+    flex-direction: column;
+}
+.update_intro .intro h6{
+    font-size: 15px;
+}
+.update_intro .intro span{
+    color: #97A7C3;
+    font-size: 12px
+}
+.update_intro .intro .time{
+    margin-top: 10px;
+}
+.updates_desc{
+    display: flex;
+}
+.updates_desc .empty{
+    width: 120px;
+    height: 100px;
+    border-radius: 18px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.updates_desc p{
+    font-size: 13px;
+    width: 60%;
+    color: #193566;
+   
+}
+.upcomingEvents{
+    padding: 20px 0;
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+}
+.eventDOM{
+    display: flex;
+    overflow-x: scroll;
+}
+.eventDOM .eventDetails{
+    background: #ECF0F3;
+}
+.eventDOM .eventDetails img{
+    width: 100%;
+    border-radius: 14px;
+}
+.eventDOM .eventDetails span{
+    color: #97A7C3;
+    padding: 10px;
+}
+.eventDetails .eventTiming{
+    display: flex;
+    width: 85%;
+    margin-left: 18px;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;
+}
+.eventDetails .eventTiming span{
+    color: #193566;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    background: #ECF0F3;
+    border-radius: 8px
+} 
+.eventDetails .eventTiming span:hover{
+    background: #193566;
+    color: #ECF0F3;
+}
+.workshopDOM{
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+.workshop-details::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    top: 32%;
+    border-radius: 14px;
+    clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+    left: 0%;
+    background: #193566;
+    z-index: -1;
+    opacity: 1;
+}
+.workshopDOM .workshop-details{
+    min-width: 350px;
+}
+.workshop-details .fa-bookmark{
+    padding: 10px;
+    background: #FFFFFF;
+    position: absolute;
+    border-radius: 10px;
+    top: 4%;
+    right: 4%;
+}
+.workshop-details .fa-bookmark:hover{
+    background: #193566;
+    color: #ECF0F3;
+}
+.workshop-details .workshop-time{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #193566;
+    position: absolute;
+    top: 30%;
+    background: #FFFFFF;
+}
+.workshopDOM .workshop-details img{
+    width: 100%;
+    height: 40%;
+    clip-path: polygon(0 0, 100% 0%, 100% 76%, 0% 100%);
+}
+.workshop-details h5{
+    color: white;
+    margin-top: 50px;
+    font-size: 16px;
+
+}
+.workshop-details p{
+    color: white;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.workshop-details button{
+    outline: none;
+    border: none;
+    min-width: 70px;
+    color: #193566;
+    cursor: pointer;
+    font-weight: bold;
+    background: #ECF0F3;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 100px;
+
+}
+.workshop-details button:hover{
+    box-shadow: none;
+}
+

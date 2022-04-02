@@ -1,0 +1,205 @@
+@media screen and (max-width: 855px) {
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
+        font-size: 25px;
+    }
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+        font-size: 40px;
+    }
+    .basic_journey p{
+        font-size: 12px;
+        margin: 0 7px;
+        line-height: normal;
+    }
+    .basic_journey h2{
+        font-size: 20px;
+        margin:  0 5px;
+    }
+    .basic_journey h3{
+        font-size: 16px;
+        margin:  20px 5px;
+    }
+    .courses .courseDetail{
+        min-width: 400px;
+        max-width: 400px; 
+    }
+    .category_section .typeOf ul{
+        overflow-x: scroll;
+    }
+    .category_section .typeOf ul li{
+        margin: 0 10px;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+        min-width: 400px;
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
+        font-size: 20px;
+    }
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+        font-size: 28px;
+    }
+    .startYourJourney span{
+        font-size: 15px;
+    }
+    /* .basic_journeys_collection{
+        overflow-x: scroll;
+    } */
+    .category_section .typeOf{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .category_section .typeOf ul{
+        flex-direction: column;
+    }
+    .category_section .typeOf ul li{
+        margin: 10px 20px;
+    }
+    .course-desc p{
+        font-size: 12px;
+    }
+    .courseDetail h4{
+        font-size: 12px;
+    }
+    .basic_journey img{
+        height: 250px;
+    }
+    .basic_journey{
+        width:20%;
+        height: 310px;
+        min-width: 70px;
+    }
+    .basic_journey p{
+        font-size: 10px;
+        margin: 7px 4px;
+        line-height: normal;
+    }
+    .basic_journey h2{
+        font-size: 16px;
+        margin:  0 5px;
+    }
+    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+        min-width: 370px;
+        max-width: 370px;
+    }
+    .courses .courseDetail{
+        min-width: 370px;
+        max-width: 370px; 
+    }
+    .basic_journey h3{
+        font-size: 13px;
+        margin:  20px 5px;
+    }
+}
+@media screen and (max-width: 500px){
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
+        font-size: 16px;
+    }
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+        font-size: 20px;
+    }
+    .category_section .category_nav p, .home_featured .featured_nav p, .updateFromCommunity p,.headingWorkshop p{
+        font-size: 10px;
+    }
+    .category_nav .viewAll, .featured_nav .viewAll{
+        font-size: 14px;
+        text-align: center;
+    }
+    .startYourJourney span{
+        font-size: 12px;
+    }
+    .basic_journey{
+        height: 280px;
+        }
+    .basic_journey p{
+        font-size: 8px;
+        margin: 7px 4px;
+        line-height: normal;
+    }
+    .basic_journey h2{
+        font-size: 10px;
+        margin:  0 5px;
+    }
+    .basic_journey h3{
+        font-size: 10px;
+        margin:  12px 5px;
+    }
+    .basic_journey img{
+        height: 230px;
+    }
+    .courses .courseDetail{
+        min-width: 340px;
+        max-width: 340px; 
+        min-height: 250px;
+    }
+    .courseDetail .ratingOfCourse{
+        margin: 0 0;
+        margin-left: 50px;
+    }
+    .ratingOfCourse i{
+        font-size: 13px;
+    }
+    .ratingOfCourse span{
+        font-size: 13px;
+    }
+    .category_section .typeOf ul li{
+        margin: 10px 14px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+        min-width: 340px;
+        max-width: 340px;
+    }
+    .updates_desc p {
+        font-size: 10px;
+    }
+    .workshop-details p{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .basic_journey{
+        height: 250px;
+    }
+    .basic_journey p{
+        font-size: 7px;
+        margin: 7px 4px;
+        line-height: normal;
+    }
+    .basic_journey h2{
+        font-size: 10px;
+        margin:  0 5px;
+    }
+    .basic_journey h3{
+        font-size: 8px;
+        margin:  12px 1px;
+    }
+    .courses .courseDetail{
+        min-width: 300px;
+        max-width: 300px; 
+    }
+    .category_section .typeOf ul li{
+        margin: 10px 10px;
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+        min-width: 300px;
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 350px){
+    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+        min-width: 280px;
+        max-width: 280px;
+    }
+    .courses .courseDetail{
+        min-width: 280px;
+        max-width: 280px; 
+    }
+}

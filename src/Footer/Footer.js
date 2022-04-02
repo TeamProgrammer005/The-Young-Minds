@@ -8,12 +8,12 @@ export default function
     <div>
           <div className="footer">
                     <ul className="navigate">
-                        <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/">About Us</Link></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
-                        <li className='try'><Link to="/">Terms & Condition</Link></li>
+                        <li className='try'><Link to="/conditions">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/">T & C</Link></li>
-                        <li><Link to="/">Contact Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                     <div className="shortIntro">
                         <h4>Contact Us</h4>

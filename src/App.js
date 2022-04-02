@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Footer from "./Footer/Footer";
+import Home from "./Home/Home"
 import Services from "./Services/Services";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     <Router>
      <Nav/>
       <Routes>
-      <Route path="/" element={<AboutUs/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<AboutUs/>}/>
       <Route path="/services" element={<Services/>}/>
       </Routes>
     <Footer/>

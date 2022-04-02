@@ -22,8 +22,8 @@ function Nav() {
                     <li><i className="fas fa-solid fa-user"></i></li>
                 </ul>
                 <ul className='mainNav'>
-                    <li><NavLink to="/" activelassname='active'>About Us</NavLink></li>
-                    <li><NavLink to="/Home" activelassname='active'>Home</NavLink></li>
+                    <li><NavLink to="/" activelassname='active'>Home</NavLink></li>
+                    <li><NavLink to="/about" activelassname='active'>About Us</NavLink></li>
                     <li><NavLink to="/services" activeclassname='active'>Services</NavLink></li>
                     <li><NavLink to="/our_store" activeclassname='active'>Our Store</NavLink></li>
                     <li><NavLink to="/contact_us" activeclassname='active'>Contact Us</NavLink></li>
