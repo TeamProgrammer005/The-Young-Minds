@@ -1,0 +1,203 @@
+.sectionAbout {
+    z-index: 1 !important;
+}
+
+.contentAbout {
+    position: absolute;
+    top: 160px;
+    font-weight: lighter;
+    height: 250px;
+    z-index: 1 !important;
+}
+
+.sectionAbout img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+.contentAbout .title {
+    margin: 20px;
+    color: #97A7C3;
+    font-weight: 500;
+}
+
+.contentAbout .midHeading {
+    margin: 20px;
+    margin-top: 30px;
+    color: #193566;
+}
+
+.contentAbout .midHeading .heading {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.contentAbout .midHeading h4 {
+    font-size: 12px;
+}
+
+.para {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.para i {
+    font-size: 16px;
+}
+
+.para i::before {
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.para p {
+    text-align: center;
+    color: #193566cb;
+    line-height: 24px;
+    font-size: 12px;
+    max-width: 600px;
+}
+
+.blank {
+    width: 90%;
+    margin: 20px 5%;
+    border: 0.5px dashed #97A7C3;
+}
+
+@media screen and (min-width: 500px) {
+
+    .para p {
+        font-size: 14px;
+    }
+
+    .contentAbout .midHeading {
+        margin-left: 30px;
+    }
+
+    .contentAbout .midHeading .heading {
+        font-size: 22px;
+    }
+
+    .contentAbout .midHeading h4 {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .contentAbout {
+        top: 160px;
+    }
+
+    .para p {
+        font-size: 16px;
+    }
+
+    .contentAbout .midHeading {
+        margin-left: 40px;
+    }
+
+    .contentAbout .midHeading .heading {
+        font-size: 2rem;
+    }
+
+    .contentAbout .title,
+    .contentAbout .midHeading h4 {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .contentAbout {
+        top: 85px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contentAbout {
+        top: 75px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .para {
+        margin-top: 50px;
+    }
+
+
+    .para p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .contentAbout .title {
+        font-size: 2.5rem;
+    }
+
+    .contentAbout .midHeading {
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+
+    .contentAbout .midHeading h4 {
+        font-size: 1.6rem;
+    }
+
+    .contentAbout .midHeading .heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .contentAbout .midHeading .heading {
+        font-size: 2.4rem;
+    }
+
+    .contentAbout {
+        top: 170px;
+    }
+
+    .contentAbout .midHeading {
+        margin-left: 60px;
+        margin-top: 70px;
+    }
+
+}
+
+@media screen and (min-width: 940px) {
+    .contentAbout .midHeading {
+        margin-left: 70px;
+        margin-top: 80px;
+    }
+
+    .contentAbout .midHeading h4 {
+        font-size: 1.8rem;
+    }
+
+    .contentAbout .midHeading .heading {
+        font-size: 2.7rem;
+        letter-spacing: 0.4rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .contentAbout {
+        top: 65px;
+    }
+
+    .contentAbout .midHeading .heading {
+        font-size: 16px;
+    }
+
+    .contentAbout .midHeading {
+        margin-top: 20px;
+    }
+
+}

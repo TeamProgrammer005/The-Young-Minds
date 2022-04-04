@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import reviewsData from "./reviewsData.json"
 import "./AboutUs.css"
 import "./responsiveAbout.css"
+import Mainpage from '../Mainpage/Mainpage'
 
 export default function AboutUs() {
     const YMData = [
@@ -77,26 +78,9 @@ export default function AboutUs() {
 
     return (
         <>
-      
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <div className="sectionAbout">
-                        <img src="img/about.png" alt="" />
-                        <div className="contentAbout">
-                            <h3 className='title'>About us</h3>
-                            <div className="midHeading">
-                                <h4>The Heart Of</h4>
-                                <h2 className="heading">Young Minds <br /> Education</h2>
-                                <h4>community</h4>
-                            </div>
-                        </div>
-                        <div className="para">
-                            <i className="fas fa-solid fa-quote-left"></i>
-                            <p>We’re on a mission to build the world’s best community for making education Equitable & Accessible</p>
-                            <i className="fas fa-solid fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div className="blank"></div>
+                    <Mainpage title = "About Us" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community"/>
                     <div className="wordFromYoungMinds">
                         <h4>Words From</h4>
                         <h2>Young {currentName}</h2>
@@ -205,3 +189,4 @@ export default function AboutUs() {
         </>
     )
 }
+

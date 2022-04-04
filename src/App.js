@@ -9,6 +9,7 @@ import {
 import Footer from "./Footer/Footer";
 import Home from "./Home/Home"
 import Services from "./Services/Services";
+import Store from "./Our_Store/Store";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/services" element={<Services/>}/>
+      <Route path="/our_store" element={<Store/>}/>
       </Routes>
     <Footer/>
     </Router>

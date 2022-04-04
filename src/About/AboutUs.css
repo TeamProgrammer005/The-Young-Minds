@@ -29,64 +29,16 @@ body{
     color: #97A7C3;
     margin: 0 50px;
 }
-.sectionAbout{
-    z-index: 1 !important;
-}
-.contentAbout{
-    position:absolute;
-    top: 160px;
-    font-weight: lighter;
-    height: 250px;
-    z-index: 1 !important;
-}
-.sectionAbout img{
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-}
-.contentAbout .title{
-    margin: 20px;
-    color: #97A7C3;
-    font-weight: 500;
-}
-.contentAbout .midHeading{
-    margin: 20px;
-    margin-top: 30px;
-    color: #193566;
-}
-.contentAbout .midHeading .heading, .wordFromYoungMinds h2, .answer h2, .testimonials h2{
+
+ .wordFromYoungMinds h2, .answer h2, .testimonials h2{
     font-size: 20px;
     text-transform: uppercase;
 }
-.contentAbout .midHeading h4, .wordFromYoungMinds h4{
+ .wordFromYoungMinds h4{
     font-size: 12px;
 }
-.para{
-    display: flex;
-    margin-top: 15px;
-    justify-content: center;
-}
-.para i{
-    font-size: 16px;
-}
-.para i::before{
-    color: white;
-    border-radius: 5px;
-    margin: 0 10px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.para p{
-    text-align: center;
-    color: #193566cb;
-    line-height: 24px;
-    font-size: 12px;
-    max-width: 600px;
-}
-.blank{
-    width: 90%;
-    margin: 20px 5%;
-    border: 0.5px dashed #97A7C3;
-}
+
+
 .wordFromYoungMinds{
     color:#193566 ;
     margin-left: 20px ;
@@ -328,15 +280,6 @@ body{
     box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5); 
 }
 @media screen and (max-width: 380px){
-    .contentAbout{
-        top: 65px;
-    }
-    .contentAbout .midHeading .heading{
-        font-size: 16px;
-    }
-    .contentAbout .midHeading{
-        margin-top: 20px;
-    }
     .something .thoughts p{
         margin: 15px 4px 10px 0;
         font-size: 11px;

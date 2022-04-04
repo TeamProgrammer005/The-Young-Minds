@@ -1,0 +1,214 @@
+.storeDOM{
+    width: 100vw;
+    max-width: 1200px;
+}
+.store_featured{
+    margin-top: 30px;
+}
+.featured_nav .nav_heading h4, .store_categories h4, .featured_story h4{ 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 93.9%;
+    color: #193566;
+    margin-top: 30px;
+}
+.featured_nav .nav_heading h2, .store_categories h2, .featured_story h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 110%;
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: #193566;
+}
+.side_icons{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.side_icons i{
+    font-size: 30px;
+}
+.store_products, .categories_DOM{
+    display: flex;
+    overflow-x: scroll;
+}
+.store_products .store-product_details{
+    min-width: 350px;
+    margin: 20px;
+    height: auto;
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.store_products .store-product_details::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 64%;
+    top: 36%;
+    border-radius: 14px 0 14px 14px;
+    clip-path: polygon(0 31%, 100% 0%, 100% 100%, 0% 100%);
+    left: 0%;
+    background: #193566;
+    z-index: -1;
+    opacity: 1;
+}
+.store_products .store-product_details img{
+    width: 105.5%;
+    height: 60%;
+    transform: translate(-4%, -4%); 
+}
+.store-product_details .product_desc{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+.product_desc h4{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.store-product_details h6{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.product_carting{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #193566;
+}
+.product_carting i{
+    cursor: pointer;
+    margin: 0 10px;
+}
+.categories_DOM{
+    height: auto;
+    min-height: 400px;
+}
+.categories_DOM .categories_box{
+    min-width: 250px;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    height: 300px;
+    position: relative;
+    border-radius: 14px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.categories_DOM .categories_box::after{
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    width: 90%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.categories_DOM .categories_box::before{
+    content: "";
+    position: absolute;
+    bottom: -10.5%;
+    width: 80%;
+    height: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
+}
+.categories_box h4{
+    color: #193566;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.categories_box img{
+    width: 80%;
+    height: 80%;
+    border-radius: 12px;
+}
+.categories_box button{
+    background: #ECF0F3;
+    color: #193566;
+    position: absolute;
+    bottom: 5%;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.featured_story{
+    padding-top: 20px;
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+}
+.stories-intro{
+    display: flex;
+    justify-content: space-between;
+    min-height: 270px;
+    margin: 0 20px;
+}
+.stories-intro .story-teller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    color: #193566;
+}
+.stories-intro .story-teller h4{
+    text-transform: uppercase;
+    font-size: 23px;
+    margin: 20px 0;
+}
+.stories-intro .story-teller p{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px
+}
+.stories-intro .story-teller h5{
+    text-transform: uppercase;
+    margin-right: 5px;
+    font-size: 15px;
+}
+.stories-intro .story-teller i{
+    font-size: 20px;
+}
+.stories-frame{
+    width: 50%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.stories-frame .stroy{
+    background: #ECF0F3;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 12px;
+    height: auto;
+}
+.stories-frame .story1{
+    grid-row: 1/-1;
+    display: grid;
+    place-items: center;
+}
+.stories-frame .story1 img{
+    width: 100%;
+    height: 80%;
+    border-radius: 12px
+}
+.stories-frame .story2 img{
+    width: 98%;
+    height: 70%;
+}
