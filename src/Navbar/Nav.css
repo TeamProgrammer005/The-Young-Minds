@@ -3,8 +3,10 @@
     padding: 0;
 }
 .navigation{
+    max-width: 1200px;
+    width: 100vw;
     margin-top: 10px;
-    max-height: 100vw;
+    /* max-height: 100vw; */
 }
 .navigation .topNav{
     color: #193566;

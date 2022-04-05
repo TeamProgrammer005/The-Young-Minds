@@ -80,7 +80,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community"/>
+                    <Mainpage title = "About Us" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community" display="none" />
                     <div className="wordFromYoungMinds">
                         <h4>Words From</h4>
                         <h2>Young {currentName}</h2>

@@ -10,6 +10,8 @@ import Footer from "./Footer/Footer";
 import Home from "./Home/Home"
 import Services from "./Services/Services";
 import Store from "./Our_Store/Store";
+import PrivacyPolicy from "./Legal/PrivacyPolicy"
+import Condition from "./Legal/Condition";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/our_store" element={<Store/>}/>
+      <Route path="/privacy_policy" element={<PrivacyPolicy/>}/>
+      <Route path="/conditions" element={<Condition/>}/>
       </Routes>
     <Footer/>
     </Router>

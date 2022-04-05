@@ -37,6 +37,37 @@
     font-size: 12px;
 }
 
+.inputDOM {
+    margin-top: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.inputDOM input {
+    background: #FFFFFF;
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgba(20, 24, 31, 0.08);
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: none;
+    color: rgba(20, 24, 31, 0.48);
+}
+
+.inputDOM input::placeholder {
+    padding-left: 10px;
+    font-size: 10px;
+    color: rgba(20, 24, 31, 0.48);
+}
+
+.inputDOM i {
+    font-size: 10px;
+    color: rgba(20, 24, 31, 0.48);
+    cursor: pointer;
+    position: absolute;
+    transition: 1s ease;
+}
+
 .para {
     display: flex;
     margin-top: 15px;
@@ -77,7 +108,17 @@
     .contentAbout .midHeading {
         margin-left: 30px;
     }
-
+    .inputDOM input{
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+    }
+    .inputDOM i , .inputDOM input::placeholder{
+        font-size: 10px;
+    }
+    .inputDOM input::placeholder{
+        padding-left: 20px;
+    }
     .contentAbout .midHeading .heading {
         font-size: 22px;
     }
@@ -94,6 +135,20 @@
         top: 160px;
     }
 
+    .inputDOM {
+        margin-top: 10px;
+    }
+    .inputDOM input{
+        width: 180px;
+        height: 40px;
+        border-radius: 14px;
+    }
+    .inputDOM i , .inputDOM input::placeholder{
+        font-size: 12pxx;
+    }
+    .inputDOM input::placeholder{
+        padding-left: 25px;
+    }
     .para p {
         font-size: 16px;
     }
@@ -129,7 +184,17 @@
     .para {
         margin-top: 50px;
     }
-
+    .inputDOM input{
+        width: 220px;
+        height: 45px;
+        border-radius: 14px;
+    }
+    .inputDOM i , .inputDOM input::placeholder{
+        font-size: 12px;
+    }
+    .inputDOM input::placeholder{
+        padding-left: 30px;
+    }
 
     .para p {
         font-size: 18px;
@@ -162,6 +227,11 @@
     .contentAbout {
         top: 170px;
     }
+    .inputDOM input{
+        width: 260px;
+        height: 50px;
+        border-radius: 16px;
+    }
 
     .contentAbout .midHeading {
         margin-left: 60px;
@@ -175,11 +245,14 @@
         margin-left: 70px;
         margin-top: 80px;
     }
+    .inputDOM input{
+        width: 300px;
+    }
 
     .contentAbout .midHeading h4 {
         font-size: 1.8rem;
     }
-
+    
     .contentAbout .midHeading .heading {
         font-size: 2.7rem;
         letter-spacing: 0.4rem;
@@ -191,7 +264,17 @@
     .contentAbout {
         top: 65px;
     }
-
+    .inputDOM input{
+        width: 100px;
+        height: 25px;
+        border-radius: 10px;
+    }
+    .inputDOM i , .inputDOM input::placeholder{
+        font-size: 8px;
+    }
+    .inputDOM input::placeholder{
+        padding-left: 10px;
+    }
     .contentAbout .midHeading .heading {
         font-size: 16px;
     }

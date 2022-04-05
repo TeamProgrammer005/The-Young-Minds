@@ -7,7 +7,7 @@ export default function Store() {
   return (
     <div>
       <div className="storeDOM">
-        <Mainpage title="Our Store" midHeading="Title" companyName="Streamline" purpose="" community="Your Design" />
+        <Mainpage title="Our Store" midHeading="Title" companyName="Streamline" purpose="" community="Your Design" display="flex" />
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">

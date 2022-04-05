@@ -11,10 +11,10 @@ export default function
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/privacy_policy">Privacy Policy</Link></li>
                         <li className='try'><Link to="/conditions">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/conditions">T & C</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
-                        <li><Link to="/Legal">Legal</Link></li>
                     </ul>
                     <div className="shortIntro">
                         <h4>Contact Us</h4>

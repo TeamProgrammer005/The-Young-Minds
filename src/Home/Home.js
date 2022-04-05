@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
         <div className="homeDOM">
-        <Mainpage title = "Home" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community"/>
+        <Mainpage title = "Home" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community" display="none"/>
             <div className="startYourJourney">
                 <h4>Start Your</h4>
                 <h2 className='topHeading'>Journey</h2>
