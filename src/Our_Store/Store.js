@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Mainpage from '../Mainpage/Mainpage'
 import "./Store.css"
 import "./responsiveStore.css"
@@ -49,7 +50,7 @@ export default function Store() {
                     <h4>3D PRINTER FOR</h4>
                     <h4>EDUCATION</h4>
                     <img src="img/categories.png" alt="" />
-                    <button>MORE</button>
+                    <Link to="/our_store/more" className='navButton'><button>More</button></Link>
                   </div>
                 </>
               )

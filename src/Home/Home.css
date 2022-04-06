@@ -126,6 +126,10 @@ text-transform: uppercase;
     margin-top: 30px;
     cursor: pointer;
 }
+.category_nav .viewAll a, .featured_nav .viewAll a{
+    text-decoration: none;
+    color: #97A7C3;
+}
 .viewAll i{
     margin-left: 5px;
 }

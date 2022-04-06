@@ -77,7 +77,7 @@ export default function Services() {
                                             <h4>{data.title}</h4>
                                             <img src="img/young minds watermark 1.png" alt="logo" />
                                             <p>{data.desc}</p>
-                                            <button className='btn_service'><Link to="/read_more">Read More</Link></button>
+                                            <Link to="/services/features" className='btn_service'><button >Read More</button></Link>
                                         </>
                                     )}
 
@@ -100,7 +100,7 @@ export default function Services() {
                                         <h4>{data.title}</h4>
                                         <img src="img/young minds watermark 1.png" alt="logo" />
                                         <p>{data.desc}</p>
-                                        <button className='btn_service'><Link to="/read_more">Read More</Link></button>
+                                        <Link to="/services/features" className='btn_service'><button >Read More</button></Link>
                                     </div>
                                 </>
                             )

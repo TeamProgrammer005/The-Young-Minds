@@ -137,18 +137,25 @@
     height: 80%;
     border-radius: 12px;
 }
-.categories_box button{
+.categories_box .navButton{
     background: #ECF0F3;
-    color: #193566;
     position: absolute;
     bottom: 5%;
-    font-weight: bold;
-    outline: none;
     cursor: pointer;
-    border: none;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 20px;
     padding: 10px 30px;
+}
+.categories_box .navButton:hover{
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.categories_box .navButton button{
+    border: none;
+    outline: none;
+    color: #193566;
+    font-weight: bold;
+  
+    cursor: pointer;
 }
 .featured_story{
     padding-top: 20px;

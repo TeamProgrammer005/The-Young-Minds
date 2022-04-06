@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./Home.css"
 import "./resposiveHome.css"
 import homeData from "./homeData.json"
@@ -37,7 +38,7 @@ export default function Home() {
                             <p>A sneak peak of fun and interactive sessions.</p>
                         </div>
                         <div className="viewAll">
-                            <span>view all</span>
+                            <Link to="./home/categories"><span>view all</span></Link>
                             <i className='fas fa-chevron-right'></i>
                         </div>
                     </div>
@@ -63,7 +64,7 @@ export default function Home() {
                             <p>A sneak peak of fun and interactive sessions.</p>
                         </div>
                         <div className="viewAll">
-                            <span>view all</span>
+                        <Link to="./home/fetuared" ><span>view all</span></Link>
                             <i className='fas fa-chevron-right'></i>
                         </div>
                     </div>   
@@ -153,7 +154,7 @@ export default function Home() {
                                     </div>
                                     <h5>Title</h5>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reiciendis ea minima libero expedita a?</p>
-                                    <button>Know More</button>
+                                    <Link to='/home/workshop'><button>Know More</button></Link>
                                 </div>
                             )
                         })}

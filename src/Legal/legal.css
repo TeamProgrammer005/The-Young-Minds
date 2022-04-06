@@ -1,13 +1,25 @@
 .privacy_policyDOM, .conditionDOM{
     width: 90vw;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
     color: #193566;
 }
 .privacy_policyDOM h1, .conditionDOM h1{
     text-transform: uppercase;
     text-align: center;
     margin: 40px auto;
+    margin-top: 20px ;
+}
+.privacy_policyDOM span, .conditionDOM span{
+    color: #193566;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30%;
+    margin-top: 20px;
+    box-shadow:-4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.privacy_policyDOM span:hover, .conditionDOM span:hover{
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .privacy_policyDOM p, .conditionDOM p, .conditionDOM ul{
     line-height: 30px;

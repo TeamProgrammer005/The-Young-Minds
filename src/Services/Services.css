@@ -203,23 +203,26 @@ align-items: center;
     text-transform: uppercase;
     text-align: center;
 }
-.additional_feature_section .btn_service a, .additional_feature_section_slide .btn_service a{
-    color: #193566;
+.additional_feature_section .btn_service, .additional_feature_section_slide .btn_service{
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
-}
-.additional_feature_section .btn_service, .additional_feature_section_slide .btn_service{
     position: absolute;
-    outline: none;
     padding: 10px 30px;
     top: 50%;
     z-index: 2;
     cursor: pointer;
-    border: none;
-    background: transparent;
+
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 30px;
+}
+.additional_feature_section .btn_service button,  .additional_feature_section_slide .btn_service button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #193566;
+    font-weight: bold;
 }
 .additional_feature_section .btn_service:hover, .additional_feature_section_slide .btn_service:hover{
     box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);

@@ -1,10 +1,12 @@
 import React from 'react'
 import "./legal.css"
+import { Link } from 'react-router-dom'
 
 export default function PravicyPolicy() {
   return (
     <div>
       <div className="privacy_policyDOM">
+      <Link to="/"><span className="fas fa-chevron-left" ></span></Link>
         <h1>Privacy policy and desclaimer</h1>
         <p>Thank you for choosing to be part of our community at Young Minds Private Limited, doing
           business as Young Minds <b>(“Young Minds”, “we”, “us”, “our”)</b>, we are committed to
