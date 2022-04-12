@@ -338,9 +338,7 @@
         font-size: 8px;
         margin:  12px 1px;
     }
-    .basic_journeys_collection{
-        /* overflow-x: scroll; */
-    }
+
     .courses .courseDetail{
         min-width: 300px;
         max-width: 300px; 
