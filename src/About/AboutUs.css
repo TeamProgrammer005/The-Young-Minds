@@ -47,7 +47,7 @@ body{
 }
 .something{
     display: flex;
-    max-width: 600px;
+    max-width: 1000px;
     justify-content: center;
     margin: 0 auto;
     transition: all 1s ease;
@@ -58,10 +58,15 @@ body{
     transform: translateX(0%);
     opacity: 1;
   }
+  .something .thoughts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 .something .thoughts p{
     color: #193566cb;
+    max-width: 500px;
     font-size: 12px;
-    max-width: 300px;
     margin: 15px 20px 20px 0;
 }
 .thoughts .socialMediaIcons{
@@ -100,8 +105,8 @@ body{
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .presidentDetails .imgBox img{
-    width: 110px;
-    height: 110px;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
@@ -166,7 +171,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-.studentCount .empty, .reviews .empty{
+.studentCount .empty, .reviews .empty, .newReview .empty{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -202,14 +207,14 @@ body{
 .detail span{
     margin:0;
 }
-.reviews .profile{
+.reviews .profile, .newReview .profile{
     display: grid;
     place-items: center;
 }
-.reviews .profile i{
+.reviews .profile i, .newReview .profile i{
     font-size: 25px;
 }
-.reviews .detail h4{
+.reviews .detail h4, .newReview .detail h4{
     margin-top: 10px;
     color: #193566;
     font-size: 12px;
@@ -242,18 +247,38 @@ body{
     transition: all 1s ease;
     opacity: 0;
 }
+.newReviewsBox .newReview{
+    width: 300px;
+    min-width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 20px;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+}
+.newReviewsBox{
+    width: 100vw;
+    display: none;
+    max-width: 1200px;
+    overflow-x: scroll;
+}
 .testimonials .present{
     padding: 20px;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     transform: translateX(0%);
     opacity: 1;
 }
-.testimonials .reviews p{
+.testimonials .reviews p, .newReview p{
     font-size: 10px;
     margin-top: 10px;
     line-height: 138.31%;
     text-align: center;
     color: #193566;
+}
+.newReview p{
+    font-size: 12px;
 }
 .testimonials .icons{
     position: absolute;

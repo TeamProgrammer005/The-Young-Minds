@@ -1,14 +1,21 @@
 @media screen and (max-width: 855px) {
-    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
-        font-size: 25px;
-    }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
         font-size: 40px;
     }
+    .updateFromCommunity h2::before, .headingWorkshop h2::before{    
+        left: 18%;
+    }
+  
     .basic_journey p{
         font-size: 12px;
         margin: 0 7px;
         line-height: normal;
+    }
+    .basic_journey{
+        height: 270px;
+    }
+    .basic_journey img{
+        height: 220px;
     }
     .basic_journey h2{
         font-size: 20px;
@@ -22,28 +29,64 @@
         min-width: 400px;
         max-width: 400px; 
     }
-    .category_section .typeOf ul{
-        overflow-x: scroll;
+    .startYourJourney .categoryDOM{
+        justify-content: space-evenly;
+        margin-left: 20px;
     }
-    .category_section .typeOf ul li{
-        margin: 0 10px;
-        font-size: 18px;
-        padding: 10px 20px;
+    .categoryDOM .categoryIcon{
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+        margin: 0;
+    }
+    .categoryDOM .align{
+        margin: 0;
+    }
+    .journeyCategories p{
+        margin: 0;
+        padding: 0;
+    }
+    .categoryIcon i{
+        font-size: 22px;
+    }
+    .headingWorkshop p, .upcomingEvents p{
+        margin-bottom: 20px;
     }
     .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
         min-width: 400px;
         max-width: 400px;
     }
+    .updatedDOM .updates{
+        padding: 0;
+    }
 }
 @media screen and (max-width: 600px) {
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
-        font-size: 20px;
+        font-size: 16px;
     }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
         font-size: 28px;
     }
+    .upcomingEvents h2::before, .headingWorkshop h2::before{    
+        left: 6%;
+    }
+  
     .startYourJourney span{
         font-size: 15px;
+    }
+   .categoryDOM{
+       margin: 40px 0;
+   }
+   .stepForJourney button, .updateFromCommunity button{
+    padding: 8px 16px;
+    font-size: 12px;
+   }
+   .updateFromCommunity button{
+     top: 10%;
+   }
+    .stepForJourney .stepping{
+        font-size: 20px;
+        margin-top: 10px;
     }
     /* .basic_journeys_collection{
         overflow-x: scroll;
@@ -65,17 +108,29 @@
         font-size: 12px;
     }
     .basic_journey img{
-        height: 250px;
+        height: 150px;
     }
     .basic_journey{
         width:20%;
-        height: 310px;
+        height: 220px;
         min-width: 70px;
     }
     .basic_journey p{
         font-size: 10px;
         margin: 7px 4px;
         line-height: normal;
+    }
+    .viewAll span{
+        display: none;
+    }
+    .viewAll .fa-chevron-right{
+        display: none;
+    }
+    .socialMediaIcons li{
+        margin: 5px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
     }
     .basic_journey h2{
         font-size: 16px;
@@ -85,6 +140,20 @@
         min-width: 370px;
         max-width: 370px;
     }
+    .workshopDOM .workshop-details{
+        min-width: 350px;
+        max-width: 350px;
+        max-height: 310px;
+    }
+    .eventDOM .eventDetails{
+        max-height: 350px;
+    }
+    .eventTitle span{
+        font-size: 15px;
+    }
+    .eventDOM .eventDetails img{
+        height: 55%;
+    }
     .courses .courseDetail{
         min-width: 370px;
         max-width: 370px; 
@@ -93,16 +162,66 @@
         font-size: 13px;
         margin:  20px 5px;
     }
+    .startYourJourney p{
+        font-size: 10px;
+    }
+    .basic_journeys_collection{
+        margin-bottom: 40px;
+    }
+    .workshop-details p{
+        display: none;
+    }
 }
 @media screen and (max-width: 500px){
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
-        font-size: 16px;
+        font-size: 10px;
+    }
+.upcomingEvents h4, .headingWorkshop h4{
+    margin-top: 0;
     }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
         font-size: 20px;
     }
+    .updateFromCommunity h2,.startYourJourney .topHeading{
+        margin-bottom: 5px;
+    }
+    .stepForJourney .stepping{
+        font-size: 18px;
+        margin-left: 10px;
+    }
     .category_section .category_nav p, .home_featured .featured_nav p, .updateFromCommunity p,.headingWorkshop p{
         font-size: 10px;
+    }
+    .categoryDOM .categoryIcon{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        margin: 0;
+    }
+    .eventTitle span{
+        font-size: 12px;
+    }
+    .eventTitle h4{
+        font-size: 15px;
+    }
+    .updates_desc p{
+        margin-bottom: 10px;
+        padding: 0;
+        line-height: 16px;
+    }
+    .stepForJourney button, .updateFromCommunity button{
+        padding: 6px 12px;
+        font-size: 10px;
+       }
+    .categoryIcon i{
+        font-size: 17px;
+    }
+    .startYourJourney .categoryDOM {
+        margin-top: 40px;
+    }
+    .journeyCategories p{
+        font-size: 7px;
+        max-width: 50px;
     }
     .category_nav .viewAll, .featured_nav .viewAll{
         font-size: 14px;
@@ -112,7 +231,7 @@
         font-size: 12px;
     }
     .basic_journey{
-        height: 280px;
+        height: 180px;
         }
     .basic_journey p{
         font-size: 8px;
@@ -128,7 +247,16 @@
         margin:  12px 5px;
     }
     .basic_journey img{
-        height: 230px;
+        height: 120px;
+    }
+    .startYourJourney .categoryDOM {
+        justify-content: center;
+        /* min-width: 400px; */
+        /* overflow-x: scroll; */
+        margin-left: 0;
+    }
+    .journeyCategoriesP{
+        max-width: 60px;
     }
     .courses .courseDetail{
         min-width: 340px;
@@ -154,6 +282,20 @@
         min-width: 340px;
         max-width: 340px;
     }
+    .eventDOM .eventDetails{
+        margin-bottom: 10px;
+        margin-top: 0;
+        max-height: 300px;
+    }
+    .eventTitle h4{
+        margin-top: 10px;
+    }
+    .upcomingEvents p{
+        font-size: 10px;
+    }
+    .workshopDOM .workshop-details{
+        margin-top: 0;
+    }
     .updates_desc p {
         font-size: 10px;
     }
@@ -164,24 +306,51 @@
 }
 @media screen and (max-width: 400px){
     .basic_journey{
-        height: 250px;
+        height: 160px;
+        /* margin: auto 5px; */
     }
     .basic_journey p{
         font-size: 7px;
         margin: 7px 4px;
         line-height: normal;
     }
+    .startYourJourney .categoryDOM{
+        justify-content: none;
+    }
+  
+    .journeyCategories p{
+        font-size: 7px;
+    }
+    .stepForJourney .stepping{
+        font-size: 16px;
+    }
     .basic_journey h2{
         font-size: 10px;
         margin:  0 5px;
+    }
+    .eventDuration span{
+        font-size: 10px;
+    }
+    .basic_journey img{
+        height: 100px;
     }
     .basic_journey h3{
         font-size: 8px;
         margin:  12px 1px;
     }
+    .basic_journeys_collection{
+        /* overflow-x: scroll; */
+    }
     .courses .courseDetail{
         min-width: 300px;
         max-width: 300px; 
+    }
+    .categoryDOM .categoryIcon{
+        width: 30px;
+        height: 30px;
+    }
+    .categoryIcon i{
+        font-size: 15px;
     }
     .category_section .typeOf ul li{
         margin: 10px 10px;
@@ -202,4 +371,11 @@
         min-width: 280px;
         max-width: 280px; 
     }
+    .journeyCategories p{
+        font-size: 6px;
+    }
+    .stepForJourney button, .updateFromCommunity button{
+        padding: 4px 8px;
+        font-size: 8px;
+       }
 }

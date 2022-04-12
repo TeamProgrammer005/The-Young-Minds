@@ -1,0 +1,30 @@
+[
+    {
+        "Title": "Tete-a-tete",
+        "date": "01",
+        "month": "Mar",
+        "img": "img/event 1.png",
+        "desc":"Career, Lifecycle and Growth"
+    },
+    {
+        "Title": "Chess",
+        "date": "01",
+        "month": "Mar",
+        "img": "img/event 2.png",
+        "desc":"Brain Excercise, Pattern Recognition"
+    },
+    {
+        "Title": "Book Reading",
+        "date": "01",
+        "month": "Mar",
+        "img": "img/event 3.png",
+        "desc":"Brain Excercise, Pattern Recognition"
+    },
+    {
+        "Title": "Career Counsultancy",
+        "date": "01",
+        "month": "Mar",
+        "img": "img/event 4.png",
+        "desc":"Brain Excercise, Pattern Recognition"
+    }
+]

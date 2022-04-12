@@ -1,6 +1,7 @@
 @media screen and (min-width: 500px) {
     .something .thoughts p{
         font-size: 14px;
+        line-height: 20px;
     }
     
    
@@ -16,9 +17,29 @@
     
 }
 @media screen and (min-width: 600px){
-  
-   
-  
+    .testimonials .icons{
+        display: none;
+    }
+    .testimonials .btnDOM{
+        display: none;
+    }
+    .something{
+        justify-content: space-evenly;
+    }
+    .reviewsBox{
+        display: none;
+    }
+    .newReviewsBox{
+        display: flex;
+    }
+    .something .thoughts p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .presidentDetails .imgBox{
+        width: 150px;
+        height: 150px;
+    }
      .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
         font-size: 2rem;
     }
@@ -42,11 +63,18 @@
 @media screen and (min-width: 750px){
 
     .something .thoughts p{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 28px;
     }    
-
- 
+    .presidentDetails .imgBox{
+        width: 180px;
+        height: 180px;
+    }
+    .thoughts .socialMediaIcons li{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
     .answer .logo p{
         font-size: 16px;
         padding: 0 50px;
@@ -55,16 +83,12 @@
     
 }
 @media screen and (min-width: 850px){
-   
-   
     .answer .logo img{
         width: 160px;
         height: 140px;
     }
 }
 @media screen and (min-width: 940px){
-    
-   
     .answer .logo p{
         font-size: 18px;
         padding: 0 70px;

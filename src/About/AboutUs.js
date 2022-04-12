@@ -143,6 +143,30 @@ export default function AboutUs() {
                     </div>
                     <div className="testimonials">
                         <h2>Testimonials</h2>
+                        <div className="newReviewsBox">
+                            {reviewsData.map((review, index) => {
+                                return (
+                                    <div className="newReview">
+                                                <div className="empty profile" key={index}>
+                                                <i className="fas fa-solid fa-user utility"></i>
+                                                </div>
+                                                <div className="detail">
+                                                    <h4>{review.name}</h4>
+                                                    <span>{review.designation}</span>
+                                                    <div className="rating">
+                                                        {Array.from({ length: review.star }).map((item,index) => {
+                                                            return (
+                                                                <i className="fas fa-star utility" key={index}></i>
+                                                            )
+                                                        })}
+
+                                                    </div>
+                                                </div>
+                                                <p>{review.review}</p>
+                                    </div>
+                                )                     
+                            })}
+                        </div>
                         <div className="reviewsBox">
                             {reviewsData.map((review, index) => {
                                 return (
@@ -190,3 +214,74 @@ export default function AboutUs() {
     )
 }
 
+
+
+
+
+
+
+
+                {/* <div className="category_section">
+                    <div className="category_nav">
+                        <div className="nav_heading">
+                            <h2>CATEGORIES</h2>
+                        </div>
+                        <div className="viewAll">
+
+                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                        <Link to="./home/categories"><span>view all</span></Link>
+                        <i className='fas fa-chevron-right'></i>
+                        </div>
+                    </div>
+                            <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
+                        <div className="typeOf">
+                           <ul>
+                               <li>Science</li>
+                               <li>technology</li>
+                               <li>engineering</li>
+                               <li>arts</li>
+                           </ul>
+                           <ul>
+                               <li>mathematics</li>
+                               <li>Physics</li>
+                               <li>chemistry</li>
+                               <li>Biology</li>
+                           </ul>
+                        </div>
+                </div> */}
+                 {/* <div className="home_featured">
+                 <div className="featured_nav">
+                        <div className="nav_heading">
+                            <h2>FEATURED</h2>
+                            <p>A sneak peak of fun and interactive sessions.</p>
+                        </div>
+                        <div className="viewAll">
+                        <Link to="./home/fetuared" ><span>view all</span></Link>
+                            <i className='fas fa-chevron-right'></i>
+                        </div>
+                    </div>   
+                        <div className="courses">
+                            {homeData.map((data, index)=>{
+                                return (
+                                    <div className="courseDetail" key={index}>
+                                        <img src={data.img} alt="course banner" />
+                                        <div className="video">
+
+                                        <i className="fas fa-play utility"></i>
+                                        </div>
+                                        <h4>{data.name}</h4>
+                                        <div className="course-desc">
+                                        <i className="fas fa-play utility"></i>
+                                        <p>{data.desc}</p>
+                                        <i className="fas fa-bookmark utility"></i>
+                                        </div>
+                                        <div className="ratingOfCourse">
+
+                                        <span><i className="fas fa-star utility"></i></span>
+                                        <span>{data.star}({data.views}K)</span>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                </div> */}

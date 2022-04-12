@@ -1,21 +1,30 @@
-.sectionAbout {
-    z-index: 1 !important;
-}
-
 .contentAbout {
     position: absolute;
-    top: 160px;
+    top: 140px;
     font-weight: lighter;
     height: 250px;
     z-index: 1 !important;
 }
-
 .sectionAbout img {
     width: 100%;
     height: auto;
     max-height: 600px;
 }
-
+.shadow{
+    position: relative;
+}
+.shadow::before{
+    content: "";
+    position: absolute;
+    right: 12%;
+    bottom: 2%;
+    height: 50%;
+    width: 30%;
+    transform: skewX(20deg);
+    background: #97A7C3;
+    opacity: 0.4;
+    z-index: -1;
+}
 .contentAbout .title {
     margin: 20px;
     color: #97A7C3;
@@ -29,12 +38,26 @@
 }
 
 .contentAbout .midHeading .heading {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
+    line-height: 26px;
 }
-
+.contentAbout .midHeading button{
+    cursor: pointer;
+    outline: none;
+    background: #193566;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 10px;
+    border: none;
+    margin: 10px;
+    margin-left: 0;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 20px;
+}
 .contentAbout .midHeading h4 {
     font-size: 12px;
+    color: #97A7C3;
 }
 
 .inputDOM {
@@ -87,10 +110,11 @@
 
 .para p {
     text-align: center;
-    color: #193566cb;
+    color: #193566;
     line-height: 24px;
+    font-weight: bold;
     font-size: 12px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .blank {
@@ -99,7 +123,7 @@
     border: 0.5px dashed #97A7C3;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and ( min-width: 500px) {
 
     .para p {
         font-size: 14px;
@@ -107,6 +131,7 @@
 
     .contentAbout .midHeading {
         margin-left: 30px;
+        line-height: 30px;
     }
     .inputDOM input{
         width: 150px;
@@ -120,12 +145,18 @@
         padding-left: 20px;
     }
     .contentAbout .midHeading .heading {
-        font-size: 22px;
+        font-size: 18px;
+        line-height: 28px;
     }
 
     .contentAbout .midHeading h4 {
-        font-size: 14px;
+        font-size: 12px;
     }
+    .contentAbout .midHeading button{
+        font-size: 12px;
+        margin: 20px;
+    }
+ 
 
 
 }
@@ -158,13 +189,15 @@
     }
 
     .contentAbout .midHeading .heading {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        line-height: 30px;
     }
 
-    .contentAbout .title,
     .contentAbout .midHeading h4 {
-        font-size: 1.4rem;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
     }
+
 
 }
 
@@ -172,6 +205,7 @@
     .contentAbout {
         top: 85px;
     }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -195,7 +229,7 @@
     .inputDOM input::placeholder{
         padding-left: 30px;
     }
-
+    
     .para p {
         font-size: 18px;
         line-height: 30px;
@@ -211,18 +245,25 @@
     }
 
     .contentAbout .midHeading h4 {
-        font-size: 1.6rem;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .contentAbout .midHeading .heading {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 34px;
     }
 }
 
 @media screen and (min-width: 850px) {
     .contentAbout .midHeading .heading {
-        font-size: 2.4rem;
+        font-size: 2rem;
+        line-height: 40px;
     }
+    .contentAbout .midHeading button{
+        font-size: 20px;
+    }
+ 
 
     .contentAbout {
         top: 170px;
@@ -250,19 +291,21 @@
     }
 
     .contentAbout .midHeading h4 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     
     .contentAbout .midHeading .heading {
-        font-size: 2.7rem;
-        letter-spacing: 0.4rem;
+        font-size: 2.3rem;
+        line-height: 50px;
+        letter-spacing: 0.1rem;
     }
 
 }
 
 @media screen and (max-width: 380px) {
     .contentAbout {
-        top: 65px;
+        top: 55px;
     }
     .inputDOM input{
         width: 100px;
@@ -276,11 +319,22 @@
         padding-left: 10px;
     }
     .contentAbout .midHeading .heading {
-        font-size: 16px;
+        font-size: 13px;
+        line-height: 20px;
     }
 
     .contentAbout .midHeading {
         margin-top: 20px;
+    }
+    .contentAbout .midHeading h4{
+        font-size: 8px;
+    }
+    .para p{
+        line-height: 20px;
+    }
+    .contentAbout .midHeading button{
+        padding: 6px 12px;
+        font-size: 10px;
     }
 
 }

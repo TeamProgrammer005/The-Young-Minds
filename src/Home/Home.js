@@ -1,117 +1,202 @@
 import React from 'react'
+import { useState} from 'react'
 import { Link } from 'react-router-dom'
 import "./Home.css"
 import "./resposiveHome.css"
 import homeData from "./homeData.json"
+import homeEvent from "./homeEvent.json"
 import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
+    const categoryData =[{title: "Learner"},{title: "Teacher"},{title: "Parent"},{title: "Institute"}]
+    const categoryNameData=[{title: "Science", class: "fab fa-react"},{title: "Technology",class: "fas fa-code"},{title: "Engineering",class:"fas fa-cog"},{title: "Arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", class:"fas fa-calculator"}]
+    const [color, setcolor] = useState("#97A7C3")
+    const [firstColor, setfirstColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
+    const [secondColor, setsecondColor] = useState("#97A7C3");
+    const [thirdColor, setthirdColor] = useState("#97A7C3");
+
+    const [buttonLink, setbuttonLink] = useState("/")
+    const changeColor = ()=>{
+        setcolor("#193566");
+        setthirdColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
+        setsecondColor("#97A7C3")
+        setbuttonLink("/home/learning")
+        setfirstColor("#97A7C3")
+    }
+    const backgroundChange = ()=>{
+        setcolor("#97A7C3");
+        setthirdColor("#97A7C3")
+        setbuttonLink("/")
+        setfirstColor("#97A7C3")
+        setsecondColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
+
+    }
     // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
   return (
-    <div>
         <div className="homeDOM">
-        <Mainpage title = "Home" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community" display="none"/>
+        <Mainpage title = "Home" midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "MAKE AN IMPACT" community="" display="none"/>
             <div className="startYourJourney">
-                <h4>Start Your</h4>
-                <h2 className='topHeading'>Journey</h2>
-                <span>Description goes here...</span>
-            <div className="basic_journeys_collection">
-                        {Array.from({length : 4}).map((data, index) => {
+            <div className="category_nav">
+                        <div className="nav_heading">
+                        <h4>Start Your</h4>
+                        <h2 className='topHeading'>Journey</h2>
+                        </div>
+                        <div className="viewAll">
+                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                        <Link to="./home/categories"><span>view all</span></Link>
+                        <i className='fas fa-chevron-right'></i>
+                        </div>
+                    </div>
+                            <p>The Young Minds Education is dedicated to enhance <strong>Science, Technology, Engineering, Arts and Mathematics</strong> capacity of our future builders. Our engaging programs are focused around the three pillars - <strong> Ideate, Build and Innovate..</strong></p>
+                            <div className="stepForJourney">
+                                <div className="cricleBlank" style={{background: firstColor}}>
+                                    <div className="innerBlank"></div>
+                                </div>
+                                <div className="stepping">
+                                    <h6>Step 1</h6>
+                                    <h5>Who you are ?</h5>
+                                </div>
+                             </div>                  
+                        <div className="basic_journeys_collection">
+                           {categoryData.map((data, index) => {
                             return (
                                 <>
-                                   <div className="basic_journey" key={index}>
-                                       <h3>Looking to boost your</h3>
-                                       <h2>learning?</h2>
-                                       <p>Start my journey as learner</p>
+                                   <div className="basic_journey"  key={index} onClick={backgroundChange}  >
+                                       <h3 style={{display : "none"}}>Looking to boost your</h3>
+                                       <h2>{data.title}</h2>
+                                       {/* <p>Start my journey as learner</p> */}
                                        <img src="img/homeOnlineTool.png" alt="" />
                                    </div>
                                 </>
                             )
                         })}
                     </div>  
-                </div> 
-                <div className="category_section">
+                    <div className="stepForJourney">
+                                <div className="cricleBlank" style={{background: secondColor}}>
+                                    <div className="innerBlank"></div>
+                                </div>
+                                <div className="stepping">
+                                    <h6>Step 2</h6>
+                                    <h5>select category</h5>
+                                </div>
+                             </div>
+                             <div className="categoryDOM">
+                                 {categoryNameData.map((data, index)=>{
+                                     return (
+                                         <div className="journeyCategories" key={index}>
+                                             <div className="categoryIcon" onClick={changeColor}>
+                                             <i className={data.class}></i>
+                                             </div>
+                                             <p className={data.className}>{data.title}</p>
+                                         </div>
+                                     )
+                                 })}
+                             </div>
+                             <div className="stepForJourney">
+                                <div className="cricleBlank" style={{background: thirdColor}}>
+                                    <div className="innerBlank"></div>
+                                </div>
+                                <Link to= {buttonLink} ><button style={{background: color}}>START LEARNING</button></Link>
+                             </div>
+                      </div> 
+             
+                      <div className="headingWorkshop">
                     <div className="category_nav">
                         <div className="nav_heading">
-                            <h2>CATEGORIES</h2>
-                            <p>A sneak peak of fun and interactive sessions.</p>
+                            <h4>Heading</h4>
+                            <h2>Workshop</h2>
+                            <p>Expert sessions for better learning, handcrafted for you.</p>
                         </div>
                         <div className="viewAll">
+                            <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
                             <Link to="./home/categories"><span>view all</span></Link>
                             <i className='fas fa-chevron-right'></i>
                         </div>
+                    </div>       
+                     <div className="workshopDOM">
+                        {homeData.map((data, index)=>{
+                            return(
+                                <div className="workshop-details" key={index}>
+                                    <img src={data.img} alt="" />
+                                    <span className="fas fa-bookmark utility"></span>
+                                    <div className="workshop-time">
+                                        <span>{data.Date} <br /> {data.month}</span>
+                                    </div>
+                                    <h5>{data.Title}</h5>
+                                    <p>{data.desc}</p>
+                                    <Link to='/home/workshop'><button>Know More</button></Link>
+                                </div>
+                            )
+                        })}
                     </div>
-                        <div className="typeOf">
-                           <ul>
-                               <li>Science</li>
-                               <li>technology</li>
-                               <li>engineering</li>
-                               <li>arts</li>
-                           </ul>
-                           <ul>
-                               <li>mathematics</li>
-                               <li>Physics</li>
-                               <li>chemistry</li>
-                               <li>Biology</li>
-                           </ul>
-                        </div>
                 </div>
-                 <div className="home_featured">
-                 <div className="featured_nav">
+                <div className="upcomingEvents">
+                  <div className="category_nav">
                         <div className="nav_heading">
-                            <h2>FEATURED</h2>
-                            <p>A sneak peak of fun and interactive sessions.</p>
+                        <h4>Upcoming</h4>
+                        <h2>Events</h2>
+                        <p>Expert sessions for better learning, handcrafted for you.</p>
                         </div>
                         <div className="viewAll">
-                        <Link to="./home/fetuared" ><span>view all</span></Link>
+                            <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                            <Link to="./home/categories"><span>view all</span></Link>
                             <i className='fas fa-chevron-right'></i>
                         </div>
-                    </div>   
-                        <div className="courses">
-                            {homeData.map((data, index)=>{
-                                return (
-                                    <div className="courseDetail" key={index}>
-                                        <img src={data.img} alt="course banner" />
-                                        <div className="video">
-
-                                        <i className="fas fa-play utility"></i>
-                                        </div>
-                                        <h4>{data.name}</h4>
-                                        <div className="course-desc">
-                                        <i className="fas fa-play utility"></i>
-                                        <p>{data.desc}</p>
-                                        <i className="fas fa-bookmark utility"></i>
-                                        </div>
-                                        <div className="ratingOfCourse">
-
-                                        <span><i className="fas fa-star utility"></i></span>
-                                        <span>{data.star}({data.views}K)</span>
-                                        </div>
+                    </div> 
+                    
+                    <div className="eventDOM">
+                        {homeEvent.map((data, index)=>{
+                            return(
+                                <div className="eventDetails" key={index}>
+                                    <img src={data.img} alt="Event" />
+                                    <div className='eventTiming'>
+                                       <span> {data.date} <br /> {data.month}</span>
                                     </div>
-                                )
-                            })}
-                        </div>
+                                    <div className="eventTitle">
+                                    <h4>{data.Title}</h4>
+                                        <span>Season 1</span>
+                                    </div>
+                                    <p>{data.desc}</p>
+                                    <div className="eventDuration">
+                                        <p>
+                                        <i className="far fa-clock utility" style={{cursor: "pointer", marginRight: "4px", fontWeight: "bold"}}></i>
+                                            12:00 PM - Until Done
+                                        </p>
+                                    <span><i className="fas fa-map-marker-alt"></i> Online</span>
+                                    </div>
+                                    <p className='lowerPara'>Indian Standard Time (IST)</p>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
+            
                 <div className="updateFromCommunity">
+                    <button>JOIN COMUNNITY</button>
                     <h4>Update From </h4>
                     <h2>Community</h2>
-                    <p>A sneak peak of fun and interactive sessions.</p>
+                    <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
                     <div className="updatedDOM">
                         {Update.map((data, index)=>{
                             return(
                                 <div className="updates" key={index}>
-                                    <i className="fas fa-share-alt utility"></i>
                                     <div className="update_intro">
-                                        <div className="blank"></div>
+                                        <div className="blank">
+                                            <img src={data.img} alt="" />
+                                        </div>
                                         <div className="intro">
-                                            <h6>{data.name}</h6>
+                                            <h6>Udit Sharma</h6>
                                             <span>{data.designation}</span>
-                                            <span className="time">{data.time}</span>
+                                            <ul className='socialMediaIcons'>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                                                    <li>  <i className="fas fa-share-alt utility"></i></li>
+                                                </ul>
                                         </div>
                                     </div>
                                     <div className="updates_desc">
-                                        <div className="empty"></div>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti placeat, deleniti tempore officia, voluptates hic soluta nobis porro sunt consequatur at provident pariatur, modi atque ipsa? Minima, nam ducimus.</p>
                                     </div>
                                 </div>
@@ -119,48 +204,7 @@ export default function Home() {
                         })}
                     </div>
                 </div>
-                <div className="upcomingEvents">
-                    <h4>Upcoming</h4>
-                    <h2>Events</h2>
-                    <div className="eventDOM">
-                        {Array.from({length: 4}).map((data, index)=>{
-                            return(
-                                <div className="eventDetails" key={index}>
-                                    <img src="img/Mask Group.png" alt="" />
-                                    <div className='eventTiming'>
-                                       <span> 01 Mar</span>
-                                       
-                                        <span className="fas fa-bookmark utility"></span>
-                                    </div>
-                                    <h4>Title</h4>
-                                    <span><i className="fas fa-map-marker-alt"></i> Location</span>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-                <div className="headingWorkshop">
-                    <h4>Heading</h4>
-                    <h2>Workshop</h2>
-                    <p>A sneak peak of fun and interactive sessions.</p>
-                    <div className="workshopDOM">
-                        {Array.from({length : 4}).map((data, index)=>{
-                            return(
-                                <div className="workshop-details" key={index}>
-                                    <img src="img/about.png" alt="" />
-                                    <span className="fas fa-bookmark utility"></span>
-                                    <div className="workshop-time">
-                                        <span>01 <br /> Mar</span>
-                                    </div>
-                                    <h5>Title</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum reiciendis ea minima libero expedita a?</p>
-                                    <Link to='/home/workshop'><button>Know More</button></Link>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
         </div>
-    </div>
+
   )
 }
