@@ -9,7 +9,7 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png"},{title: "Teacher", img:"/img/teacher.png"},{title: "Parent",img:"img/Parent 1.png"},{title: "Institute", img:"img/Parent 1.png"}]
+    const categoryData =[{title: "Learner", img:"img/Learner 1.png"},{title: "Teacher", img:"/img/teacher.png"},{title: "Parent",img:"img/parent 1.png"},{title: "Institute", img:"img/parent 1.png"}]
     const categoryNameData=[{title: "Science", class: "fab fa-react"},{title: "Technology",class: "fas fa-code"},{title: "Engineering",class:"fas fa-cog"},{title: "Arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
