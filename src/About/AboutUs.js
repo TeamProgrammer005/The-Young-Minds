@@ -80,7 +80,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="The Heart Of" companyName="Young Minds" purpose= "Education" community="Community" display="none" />
+                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" />
                     <div className="wordFromYoungMinds">
                         <h4>Words From</h4>
                         <h2>Young {currentName}</h2>
@@ -119,7 +119,7 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="whyYoungMind">
-                    <div className="answer">
+                    {/* <div className="answer">
                         <h2>Why Young Minds</h2>
                         <div className="logo">
                             <img src="img/young minds watermark 1.png" alt="" />
@@ -140,7 +140,7 @@ export default function AboutUs() {
                             <h2>36000+</h2>
                             <h3>Hours of fun classes</h3>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="testimonials">
                         <h2>Testimonials</h2>
                         <div className="newReviewsBox">

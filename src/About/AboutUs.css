@@ -33,6 +33,20 @@ body{
  .wordFromYoungMinds h2, .answer h2, .testimonials h2{
     font-size: 20px;
     text-transform: uppercase;
+    position: relative;
+}
+.wordFromYoungMinds h2::before, .answer h2::before, .testimonials h2::before{
+    content: "";
+    position: absolute;
+    left: 8%;
+    bottom: 0%;
+    height: 40%;
+    transform: skewX(20deg);
+    width: 20%;
+    border-radius: 10px;
+    background: #97A7C3;
+    opacity: 0.4;
+    z-index: -1;
 }
  .wordFromYoungMinds h4{
     font-size: 12px;
@@ -41,9 +55,11 @@ body{
 
 .wordFromYoungMinds{
     color:#193566 ;
+    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
     margin-left: 20px ;
-    margin-top: 30px;
-    margin-bottom: 60px;        
+    padding-top: 20px;
+    margin-top: 10px;
+    /* margin-bottom: 60px;         */
 }
 .something{
     display: flex;

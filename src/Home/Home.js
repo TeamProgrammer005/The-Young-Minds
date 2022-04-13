@@ -35,7 +35,7 @@ export default function Home() {
     // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
   return (
         <div className="homeDOM">
-        <Mainpage title = "Home" midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "MAKE AN IMPACT" community="" display="none"/>
+        <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "MAKE AN IMPACT" community="" display="none" img="img/about.png"/>
             <div className="startYourJourney">
             <div className="category_nav">
                         <div className="nav_heading">

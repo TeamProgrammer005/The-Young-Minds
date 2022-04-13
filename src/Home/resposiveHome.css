@@ -5,7 +5,6 @@
     .updateFromCommunity h2::before, .headingWorkshop h2::before{    
         left: 18%;
     }
-  
     .basic_journey p{
         font-size: 12px;
         margin: 0 7px;
@@ -37,7 +36,7 @@
         width: 60px;
         height: 60px;
         justify-content: center;
-        margin: 0;
+
     }
     .categoryDOM .align{
         margin: 0;
@@ -45,6 +44,9 @@
     .journeyCategories p{
         margin: 0;
         padding: 0;
+    }
+    .journeyCategories p{
+        text-align: center;
     }
     .categoryIcon i{
         font-size: 22px;
@@ -182,6 +184,9 @@
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
         font-size: 20px;
     }
+    .journeyCategories p{
+        text-align: justify;
+    }
     .updateFromCommunity h2,.startYourJourney .topHeading{
         margin-bottom: 5px;
     }
@@ -301,6 +306,9 @@
     }
     .workshop-details p{
         font-size: 10px;
+    }
+    .categoryDOM .align {
+    padding-left: 10px;
     }
 
 }

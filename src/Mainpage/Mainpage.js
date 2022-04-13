@@ -12,7 +12,7 @@ export default function (props) {
     return (
         <div>
             <div className="sectionAbout">
-                <img src="img/about.png" alt="" />
+                <img src={props.img} alt="" />
                 <div className="squareDOM"><div className="innerSquare"><div className="boxSquare"></div></div></div>
                 <div className="contentAbout">
                     <h3 className='title'>{props.title}</h3>

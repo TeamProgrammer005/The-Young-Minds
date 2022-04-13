@@ -14,7 +14,15 @@ function Nav() {
                     <i className="fas fa-solid fa-user utility"></i>
                 </div>
             </div>
-
+            <div className="mobileRouting">
+                <ul className="mobileNav">
+                <li><NavLink to="/" activelassname='active'><i className="fas fa-home "></i></NavLink></li>
+                    <li><NavLink to="/about" activelassname='active'><i className="fas fa-users"></i></NavLink></li>
+                    <li><NavLink to="/services" activeclassname='active'><i className="fas fa-business-time"></i></NavLink></li>
+                    <li><NavLink to="/our_store" activeclassname='active'><i className="fas fa-shopping-bag"></i></NavLink></li>
+                    <li><NavLink to="/blogs" activeclassname='active'><i className="fas fa-id-badge"></i></NavLink></li>
+                </ul>
+            </div>
             <div className="navigation">
                 <ul className="topNav">
                     <li><img src="img/young minds watermark 1.png" alt="logo" /></li>
