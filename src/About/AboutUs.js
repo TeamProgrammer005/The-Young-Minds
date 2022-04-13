@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import reviewsData from "./reviewsData.json"
 import "./AboutUs.css"
+import qualityEducation from "./qualityEducation.json"
 import "./responsiveAbout.css"
 import Mainpage from '../Mainpage/Mainpage'
 
@@ -23,12 +24,15 @@ export default function AboutUs() {
         }
     ]
     const [currentSlide, setCurrentSlide] = useState(0)
+    const [currentList, setCurrentList] = useState(0)
     const [currentName, setCurrentName] = useState("Minds")
     const [currentReview, setCurrentReview] = useState(0)
     const YMDataLength = YMData.length;
+    const currentListLength= qualityEducation.length;
     const reviewLength = reviewsData.length;
     const autoScroll = true;
     let slideInterval;
+    let listInterval;
     let reviewInterval;
 
     const nextSlide = () => {
@@ -37,6 +41,9 @@ export default function AboutUs() {
     }
     const nextReview = () => {
         setCurrentReview(currentReview === reviewLength - 1 ? 0 : currentReview + 1)
+    }
+    const nextList = () => {
+        setCurrentList(currentList === currentListLength - 1 ? 0 : currentList + 1)
     }
     const prevReview = () => {
         setCurrentReview(currentReview === 0 ? reviewLength - 1 : currentReview - 1)
@@ -48,6 +55,9 @@ export default function AboutUs() {
     function auto() {
         slideInterval = setInterval(nextSlide, 10000);
     }
+    function autoList() {
+        listInterval = setInterval(nextList, 5000);
+    }
 
     function autoReview() {
         reviewInterval = setInterval(nextReview, 10000);
@@ -56,6 +66,9 @@ export default function AboutUs() {
     const togglePage = (index) => {
         setCurrentSlide(index);
         setCurrentName(currentName === "Minds" ? "Leader" : "Minds");
+    }
+    const toggleList = (index) => {
+        setCurrentList(index);
     }
 
     const change = (index) => {
@@ -68,6 +81,12 @@ export default function AboutUs() {
         }
         return () => clearInterval(reviewInterval)
     }, [currentReview])
+    useEffect(() => {
+        if (autoScroll) {
+           autoList();
+        }
+        return () => clearInterval(listInterval)
+    }, [currentList])
 
     useEffect(() => {
         if (autoScroll) {
@@ -80,7 +99,60 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" />
+                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block"/>
+                    <div className="qualityEducation">
+                        {qualityEducation.map((data,index)=>{
+                            return (
+                                <>
+                                    <div className="educationListDOM" key={index}>
+                                        <div className={currentList === index ? "listUpperNav rotation" : "listUpperNav"}>
+                                
+                                            <img src={data.img} alt="" />
+                                         
+                                            <div className={currentList === index ? "listHeading rotateHead" : "listHeading"}>
+                                                <h4>Quality</h4>
+                                                <h3>Education</h3>
+                                            </div>
+                                        </div>
+                                        <ul className={index === currentList ? "toggleList changeDisplay" : "toggleList"}>
+                                            <li>{data.list1}</li>
+                                            <li>{data.list2}</li>
+                                            <li>{data.list3}</li>
+                                            <li>{data.list4}</li>
+                                            <li>{data.list5}</li>
+                                            <li>{data.list6}</li>
+                                            <li>{data.list7}</li>
+                                            <li>{data.list8}</li>
+                                            <li>{data.list9}</li>
+                                            <li>{data.list10}</li>
+                                            <li>{data.list11}</li>
+                                        </ul>
+                                    </div>
+                                </>
+                            )
+                        })}
+                    </div>
+                            <div className="btnDOM">
+                            {Array.from({ length: currentListLength}).map((item, index) => {
+                                return (
+                                    <div className={currentList === index ? "btn active" : "btn"} key={index} onClick={() => toggleList(index)}></div>
+                                )
+                            })}
+                        </div>
+                        <div className="answer">
+                            <h4>Why</h4>
+                        <h2>Young Minds</h2>
+                        <div className="ourStatement">
+                            <div className="statement">
+                                <p>Equal & Accessible Education.
+Strengthen the Science, Technology and Innovation Capacity
+Eliminate Discrimination in Education. 
+Universal Literacy and Numeracy.
+Universal Access to Information & Communication Technology
+Enhance SDG capacity and global partnership for sustainable development</p>
+                            </div>
+                        </div>
+                        </div>   
                     <div className="wordFromYoungMinds">
                         <h4>Words From</h4>
                         <h2>Young {currentName}</h2>

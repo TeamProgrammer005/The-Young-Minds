@@ -37,7 +37,7 @@ export default function Services() {
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="Services" midHeading="The Heart Of" companyName="Young Minds" purpose="Education" community="Community" display="none" img="img/about.png"/>
+                <Mainpage title="Services" midHeading="The Heart Of" companyName="Young Minds" purpose="Education" community="Community" display="none" img="img/about.png" toggleDisplay="none"/>
                 <div className="services_idea">
                     <h4>Turn your</h4>
                     <h2>ideas into life</h2>

@@ -8,7 +8,7 @@
      .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
         font-size: 22px;
     }
-    .wordFromYoungMinds h4{
+    .wordFromYoungMinds h4, .answer h4{
        font-size: 14px; 
     }
     .aboutDOM{
@@ -43,7 +43,7 @@
      .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
         font-size: 2rem;
     }
-     .wordFromYoungMinds h4{
+     .wordFromYoungMinds h4, .answer h4{
         font-size: 1.4rem; 
     }
      .answer .logo p{
@@ -66,6 +66,11 @@
         font-size: 18px;
         line-height: 28px;
     }    
+    .midHeading p{
+        opacity: 1;
+        width: 50vw;
+        max-width: 500px;
+    }
     .presidentDetails .imgBox{
         width: 180px;
         height: 180px;

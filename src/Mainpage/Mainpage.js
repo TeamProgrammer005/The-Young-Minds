@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 export default function (props) {
     const [left, setLeft] = useState(4)
+    const toggleDisplay= props.toggleDisplay;
     const display = props.display;
     const toggleLeft = ()=>{
         setLeft(74);
@@ -22,6 +23,7 @@ export default function (props) {
                         <h2 className="heading">{props.companyName}</h2>
                         <h2 className='heading shadow'>{props.purpose}</h2>
                         <h4>{props.community}</h4>
+                        <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>
                         <button>Know More</button>
                         <div className="inputDOM" style={{display: display}}>
                         <input type="text"  placeholder=' Search in store...' onClick={toggleLeft}/>

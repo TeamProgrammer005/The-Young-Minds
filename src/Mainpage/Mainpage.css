@@ -37,6 +37,7 @@
     color: #193566;
 }
 
+
 .contentAbout .midHeading .heading {
     font-size: 16px;
     text-transform: uppercase;
@@ -205,7 +206,7 @@
     .contentAbout {
         top: 100px;
     }
-
+  
 }
 
 @media screen and (max-width: 600px) {

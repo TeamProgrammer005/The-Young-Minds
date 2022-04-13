@@ -33,6 +33,7 @@ body{
  .wordFromYoungMinds h2, .answer h2, .testimonials h2{
     font-size: 20px;
     text-transform: uppercase;
+    color: #193566;
     position: relative;
 }
 .wordFromYoungMinds h2::before, .answer h2::before, .testimonials h2::before{
@@ -51,8 +52,66 @@ body{
  .wordFromYoungMinds h4{
     font-size: 12px;
 }
-
-
+.midHeading p{
+    opacity: 0;
+}
+.qualityEducation{
+    width: 100vw;
+    max-width: 1200px;
+}
+.qualityEducation{
+    display: flex;
+    justify-content: space-evenly;
+}
+.qualityEducation .educationListDOM{
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    min-height: 300px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.educationListDOM .listUpperNav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 2s ease;
+    height: 80%;
+}
+.educationListDOM .rotation{
+    height: auto;
+    flex-direction: row;
+    transition: 2s ease;
+}
+.listUpperNav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.educationListDOM .listHeading{
+    color: #193566;
+    transform: rotate(-90deg);
+    transition: 2s ease;
+}
+.educationListDOM .rotateHead {
+    transform: rotate(0deg);
+}
+.educationListDOM .toggleList{
+    display: none;
+    transition: 2s ease;
+    color: #193566;
+    margin: 20px 0;
+}
+.educationListDOM .toggleList li{
+    list-style: none;
+    line-height: 28px;
+}
+.educationListDOM .changeDisplay{
+    display: block;
+    transition: 2s ease;
+}
 .wordFromYoungMinds{
     color:#193566 ;
     background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
@@ -157,8 +216,25 @@ body{
     background: #193566;
     border: 2px solid white;
 }
-.whyYoungMind .answer{
-    background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
+ .answer{
+    /* background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%); */
+    margin-left: 20px;
+}
+.answer .ourStatement{
+    display: grid;
+    place-items: center;
+}
+.ourStatement .statement{
+    width: 80%;
+    margin: 30px 0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px -4px 4px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.statement p{
+    width: 80%;
+    line-height: 28px;
+    color: #193566;
 }
 .whyYoungMind .answer h2, .testimonials h2{
     padding-top: 30px;
@@ -230,11 +306,12 @@ body{
 .reviews .profile i, .newReview .profile i{
     font-size: 25px;
 }
-.reviews .detail h4, .newReview .detail h4{
+.reviews .detail h4, .newReview .detail h4,.answer h4{
     margin-top: 10px;
     color: #193566;
     font-size: 12px;
 }
+
 .rating{
     display: flex;
 }
