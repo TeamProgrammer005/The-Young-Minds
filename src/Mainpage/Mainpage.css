@@ -165,7 +165,10 @@
         font-size: 12px;
         margin: 20px;
     }
- 
+    .midHeading p{
+        font-size: 10px;
+        line-height: 18px;
+    }
 
 
 }
@@ -235,6 +238,10 @@
     .inputDOM i , .inputDOM input::placeholder{
         font-size: 12px;
     }
+    .midHeading p{
+        font-size: 13px;
+        line-height: 24px;
+    }
     .inputDOM input::placeholder{
         padding-left: 30px;
     }
@@ -283,6 +290,10 @@
         width: 260px;
         height: 50px;
         border-radius: 16px;
+    }
+    .midHeading p{
+        font-size: 15px;
+        line-height: 28px;
     }
 
     .contentAbout .midHeading {
