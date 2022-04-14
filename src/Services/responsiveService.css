@@ -44,6 +44,9 @@
     .serviceIdeaSection .khali{
         height: 150px;
     }
+    .additional_feature{
+        justify-content: flex-start;
+    }
     .khali .outerBox{
         height: 130px;
     }
@@ -135,14 +138,6 @@
     .our_clients .clients_para{
         line-height: 20px;
     }
-    .additional_feature{
-        display: none;
-    }
-    .additional_feature_slide{
-        display: grid;
-        place-items: center; 
-        margin: 40px 0;
-  }
 }
 @media screen and (max-width : 530px){
     .serviceIdeaSection .khali{

@@ -56,7 +56,7 @@ export default function AboutUs() {
         slideInterval = setInterval(nextSlide, 10000);
     }
     function autoList() {
-        listInterval = setInterval(nextList, 5000);
+        listInterval = setInterval(nextList, 10000);
     }
 
     function autoReview() {
@@ -99,16 +99,14 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block"/>
+                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none"/>
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
                             return (
                                 <>
-                                    <div className="educationListDOM" key={index}>
-                                        <div className={currentList === index ? "listUpperNav rotation" : "listUpperNav"}>
-                                
+                                    <div className={currentList === index ? "educationListDOM psuedoBg" : "educationListDOM"} key={index}>
+                                        <div className={currentList === index ? "listUpperNav rotation" : "listUpperNav"}> 
                                             <img src={data.img} alt="" />
-                                         
                                             <div className={currentList === index ? "listHeading rotateHead" : "listHeading"}>
                                                 <h4>Quality</h4>
                                                 <h3>Education</h3>
@@ -139,17 +137,22 @@ export default function AboutUs() {
                                 )
                             })}
                         </div>
-                        <div className="answer">
-                            <h4>Why</h4>
-                        <h2>Young Minds</h2>
+                        <div className= "answer">
+                            <div className="answerContainer">
+                                <div className="headingOf">
+                                    <h4>Why</h4>
+                                <h2>Young Minds</h2>
+                                </div>
+                                <img src="img/unnamed 1.png" alt="" />
+                            </div>
                         <div className="ourStatement">
                             <div className="statement">
                                 <p>Equal & Accessible Education.
-Strengthen the Science, Technology and Innovation Capacity
-Eliminate Discrimination in Education. 
-Universal Literacy and Numeracy.
-Universal Access to Information & Communication Technology
-Enhance SDG capacity and global partnership for sustainable development</p>
+                                    Strengthen the Science, Technology and Innovation Capacity
+                                    Eliminate Discrimination in Education. 
+                                    Universal Literacy and Numeracy.
+                                    Universal Access to Information & Communication Technology
+                                    Enhance SDG capacity and global partnership for sustainable development</p>
                             </div>
                         </div>
                         </div>   
@@ -190,7 +193,7 @@ Enhance SDG capacity and global partnership for sustainable development</p>
                         </div>
                     </div>
                 </div>
-                <div className="whyYoungMind">
+          
                     {/* <div className="answer">
                         <h2>Why Young Minds</h2>
                         <div className="logo">
@@ -281,79 +284,7 @@ Enhance SDG capacity and global partnership for sustainable development</p>
                     </div>
                 </div>
               
-            </div>
+          
         </>
     )
 }
-
-
-
-
-
-
-
-
-                {/* <div className="category_section">
-                    <div className="category_nav">
-                        <div className="nav_heading">
-                            <h2>CATEGORIES</h2>
-                        </div>
-                        <div className="viewAll">
-
-                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
-                        <Link to="./home/categories"><span>view all</span></Link>
-                        <i className='fas fa-chevron-right'></i>
-                        </div>
-                    </div>
-                            <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
-                        <div className="typeOf">
-                           <ul>
-                               <li>Science</li>
-                               <li>technology</li>
-                               <li>engineering</li>
-                               <li>arts</li>
-                           </ul>
-                           <ul>
-                               <li>mathematics</li>
-                               <li>Physics</li>
-                               <li>chemistry</li>
-                               <li>Biology</li>
-                           </ul>
-                        </div>
-                </div> */}
-                 {/* <div className="home_featured">
-                 <div className="featured_nav">
-                        <div className="nav_heading">
-                            <h2>FEATURED</h2>
-                            <p>A sneak peak of fun and interactive sessions.</p>
-                        </div>
-                        <div className="viewAll">
-                        <Link to="./home/fetuared" ><span>view all</span></Link>
-                            <i className='fas fa-chevron-right'></i>
-                        </div>
-                    </div>   
-                        <div className="courses">
-                            {homeData.map((data, index)=>{
-                                return (
-                                    <div className="courseDetail" key={index}>
-                                        <img src={data.img} alt="course banner" />
-                                        <div className="video">
-
-                                        <i className="fas fa-play utility"></i>
-                                        </div>
-                                        <h4>{data.name}</h4>
-                                        <div className="course-desc">
-                                        <i className="fas fa-play utility"></i>
-                                        <p>{data.desc}</p>
-                                        <i className="fas fa-bookmark utility"></i>
-                                        </div>
-                                        <div className="ratingOfCourse">
-
-                                        <span><i className="fas fa-star utility"></i></span>
-                                        <span>{data.star}({data.views}K)</span>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                </div> */}

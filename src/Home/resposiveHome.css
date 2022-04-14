@@ -143,8 +143,8 @@
         max-width: 370px;
     }
     .workshopDOM .workshop-details{
-        min-width: 350px;
-        max-width: 350px;
+        min-width: 320px;
+        max-width: 320px;
         max-height: 310px;
     }
     .eventDOM .eventDetails{
@@ -283,7 +283,7 @@
         padding: 10px 20px;
         font-size: 15px;
     }
-    .updatedDOM .updates, .eventDOM .eventDetails,.workshopDOM .workshop-details{
+    .updatedDOM .updates, .eventDOM .eventDetails{
         min-width: 340px;
         max-width: 340px;
     }

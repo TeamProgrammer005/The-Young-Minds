@@ -12,14 +12,15 @@
 }
 .shadow{
     position: relative;
+    display: inline;
 }
 .shadow::before{
     content: "";
     position: absolute;
-    right: 12%;
+  
     bottom: 2%;
     height: 50%;
-    width: 30%;
+    width: 100%;
     transform: skewX(20deg);
     background: #97A7C3;
     opacity: 0.4;
@@ -36,8 +37,15 @@
     margin-top: 30px;
     color: #193566;
 }
-
-
+.contentAbout .title {
+    opacity: 0;
+}
+.midHeading p{
+    width: 40vw;
+    max-width: 500px;
+    font-size: 9px;
+    line-height: 15px;
+}
 .contentAbout .midHeading .heading {
     font-size: 16px;
     text-transform: uppercase;
@@ -54,7 +62,7 @@
     margin: 10px;
     margin-left: 0;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 .contentAbout .midHeading h4 {
     font-size: 12px;
@@ -238,6 +246,7 @@
 
     .contentAbout .title {
         font-size: 2.5rem;
+        opacity: 0;
     }
 
     .contentAbout .midHeading {
@@ -262,7 +271,8 @@
         line-height: 40px;
     }
     .contentAbout .midHeading button{
-        font-size: 20px;
+        font-size: 16px;
+        padding: 10px 30px;
     }
  
 
@@ -307,6 +317,10 @@
 @media screen and (max-width: 380px) {
     .contentAbout {
         top: 75px;
+    }
+    .midHeading p{
+        font-size: 8px;
+        line-height: 13px;
     }
     .inputDOM input{
         width: 100px;

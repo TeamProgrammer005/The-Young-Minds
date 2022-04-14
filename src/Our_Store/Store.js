@@ -2,22 +2,26 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Mainpage from '../Mainpage/Mainpage'
 import "./Store.css"
+import storeCategory from "./storeCateogry.json"
 import "./responsiveStore.css"
 
 export default function Store() {
   return (
     <div>
       <div className="storeDOM">
-        <Mainpage title="Our Store" midHeading="Title" companyName="Streamline" purpose="" community="Your Design" display="flex" img="img/about.png" toggleDisplay="none"/>
+      <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/about.png" toggleDisplay="none" buttonDisplay= "none"/>
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">
               <h4>FEATURED</h4>
               <h2>PRODUCT</h2>
             </div>
-            <div className="side_icons">
+            <div className="viewAll">
             <i className="fas fa-thumbtack utility"></i>
-            </div>
+                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                        <Link to="./home/categories"><span>view all</span></Link>
+                        <i className='fas fa-chevron-right'></i>
+                        </div>
           </div>
           <div className="store_products">
             {Array.from({ length: 8 }).map((data, index) => {
@@ -43,12 +47,12 @@ export default function Store() {
           <h4>TOP</h4>
           <h2>Categories</h2>
           <div className="categories_DOM">
-            {Array.from({ length: 4 }).map((data, index) => {
+            {storeCategory.map((data, index) => {
               return (
                 <>
                   <div className='categories_box' key={index}>
-                    <h4>3D PRINTER FOR</h4>
-                    <h4>EDUCATION</h4>
+                    <h4>{data.title}</h4>
+                    <h4>{data.title2}</h4>
                     <img src="img/categories.png" alt="" />
                     <Link to="/our_store/more" className='navButton'><button>More</button></Link>
                   </div>
@@ -82,9 +86,12 @@ export default function Store() {
               <h4>NOW IN</h4>
               <h2>TREND</h2>
             </div>
-            <div className="side_icons">
+            <div className="viewAll">
             <i className="fas fa-thumbtack utility"></i>
-            </div>
+                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                        <Link to="./home/categories"><span>view all</span></Link>
+                        <i className='fas fa-chevron-right'></i>
+                        </div>
           </div>
           <div className="store_products">
             {Array.from({ length: 8 }).map((data, index) => {

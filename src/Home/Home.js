@@ -9,33 +9,40 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png"},{title: "Teacher", img:"/img/teacher.png"},{title: "Parent",img:"img/parent 1.png"},{title: "Institute", img:"img/parent 1.png"}]
+    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0},{title: "Teacher", img:"/img/teacher.png", id: 1},{title: "Parent",img:"img/parent 1.png", id: 2},{title: "Institute", img:"img/parent 1.png", id: 3}]
     const categoryNameData=[{title: "Science", class: "fab fa-react"},{title: "Technology",class: "fas fa-code"},{title: "Engineering",class:"fas fa-cog"},{title: "Arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
     const [secondColor, setsecondColor] = useState("#97A7C3");
     const [thirdColor, setthirdColor] = useState("#97A7C3");
+    // const [toggleClass, settoggleClass] = useState("basic_journey");
+    const [currentClass, setcurrentClass] = useState(5);
+    const [currentCategory, setcurrentCategory] = useState(6);
 
     const [buttonLink, setbuttonLink] = useState("/")
-    const changeColor = ()=>{
+    const changeColor = (index)=>{
         setcolor("#193566");
         setthirdColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setsecondColor("#97A7C3")
         setbuttonLink("/home/learning")
         setfirstColor("#97A7C3")
+        setcurrentCategory(index)
+     
     }
-    const backgroundChange = ()=>{
+    const backgroundChange = (index)=>{
         setcolor("#97A7C3");
         setthirdColor("#97A7C3")
         setbuttonLink("/")
         setfirstColor("#97A7C3")
         setsecondColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
-
+        setcurrentClass(index)
+        setcurrentCategory(6)
+        // settoggleClass(index === id ? "basic_journey backgroundChange" : "basic_journey")
     }
     // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "MAKE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none"/>
+        <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block"/>
             <div className="startYourJourney">
             <div className="category_nav">
                         <div className="nav_heading">
@@ -62,7 +69,7 @@ export default function Home() {
                            {categoryData.map((data, index) => {
                             return (
                                 <>
-                                   <div className="basic_journey"  key={index} onClick={backgroundChange}  >
+                                   <div className={currentClass === index ? "basic_journey backgroundChange" : "basic_journey"}  key={index} onClick= {() => backgroundChange(index)}  >
                                        <h3 style={{display : "none"}}>Looking to boost your</h3>
                                        <h2>{data.title}</h2>
                                        {/* <p>Start my journey as learner</p> */}
@@ -85,7 +92,7 @@ export default function Home() {
                                  {categoryNameData.map((data, index)=>{
                                      return (
                                          <div className="journeyCategories" key={index}>
-                                             <div className="categoryIcon" onClick={changeColor}>
+                                             <div className={currentCategory === index ? "categoryIcon colorChange" : "categoryIcon"} onClick={() => changeColor(index)}>
                                              <i className={data.class}></i>
                                              </div>
                                              <p className={data.className}>{data.title}</p>

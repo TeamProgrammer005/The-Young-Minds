@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
+  
 }
 body{
     display: grid;
+    font-family: Montserrat, sans-serif;
     place-items: center;
     background: #e5e5e59c;
 }
@@ -34,16 +35,16 @@ body{
     font-size: 20px;
     text-transform: uppercase;
     color: #193566;
+    display: inline;
     position: relative;
 }
 .wordFromYoungMinds h2::before, .answer h2::before, .testimonials h2::before{
     content: "";
     position: absolute;
-    left: 8%;
     bottom: 0%;
     height: 40%;
     transform: skewX(20deg);
-    width: 20%;
+    width: 100%;
     border-radius: 10px;
     background: #97A7C3;
     opacity: 0.4;
@@ -51,9 +52,6 @@ body{
 }
  .wordFromYoungMinds h4{
     font-size: 12px;
-}
-.midHeading p{
-    opacity: 0;
 }
 .qualityEducation{
     width: 100vw;
@@ -63,59 +61,85 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.qualityEducation .psuedoBg{
+ position: relative;
+ max-width: 200px;
+ padding: 10px;
+}
+.qualityEducation .psuedoBg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("D:\youngminds\public\img\aboutWallpaper.png") no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+}
 .qualityEducation .educationListDOM{
     width: auto;
-    padding: 20px;
-    border-radius: 20px;
+    padding-bottom: 0;
+    border-radius: 12px;
     height: auto;
-    min-height: 300px;
+    /* transition: 1s ease; */
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.listHeading h4{
+    font-size: 12px
+}
+.listHeading h3{
+    font-size: 13px;
 }
 .educationListDOM .listUpperNav{
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    transition: 2s ease;
+    /* transition: 1s ease; */
     height: 80%;
 }
 .educationListDOM .rotation{
     height: auto;
-    flex-direction: row;
-    transition: 2s ease;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+    /* transition: 1s ease; */
 }
 .listUpperNav img{
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .educationListDOM .listHeading{
     color: #193566;
     transform: rotate(-90deg);
-    transition: 2s ease;
+    transition: 1s ease;
 }
 .educationListDOM .rotateHead {
     transform: rotate(0deg);
 }
 .educationListDOM .toggleList{
     display: none;
-    transition: 2s ease;
+    /* transition: 1s ease; */
     color: #193566;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .educationListDOM .toggleList li{
     list-style: none;
-    line-height: 28px;
+    font-size: 10px;
+    font-family: Montserrat, sans-serif;
+    line-height: 16px;
 }
 .educationListDOM .changeDisplay{
     display: block;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 .wordFromYoungMinds{
     color:#193566 ;
     background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%);
-    margin-left: 20px ;
+  padding-left: 20px;
     padding-top: 20px;
     margin-top: 10px;
     /* margin-bottom: 60px;         */
@@ -186,7 +210,6 @@ body{
     box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .presidentDetails h3{
-    font-style: italic;
     font-size: 12px;
     margin-right: 20px;
     line-height: 28px;
@@ -220,20 +243,31 @@ body{
     /* background: linear-gradient(180deg, rgba(151, 167, 195, 0.3012) 0%, rgba(96, 113, 143, 0) 95.69%); */
     margin-left: 20px;
 }
+.answer .answerContainer{
+    display: flex;
+   margin-right: 20px;
+    justify-content: space-between;
+}
+.answer .answerContainer img{
+    width: 60px;
+}
 .answer .ourStatement{
     display: grid;
     place-items: center;
 }
 .ourStatement .statement{
     width: 80%;
+    display: grid;
+    place-items: center;
     margin: 30px 0;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 4px -4px 4px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .statement p{
-    width: 80%;
-    line-height: 28px;
+    width: 90%;
+    font-size: 12px;
+    line-height: 22px;
     color: #193566;
 }
 .whyYoungMind .answer h2, .testimonials h2{
@@ -372,6 +406,10 @@ body{
 }
 .newReview p{
     font-size: 12px;
+}
+.testimonials {
+width: 100vw;
+max-width: 1200px;
 }
 .testimonials .icons{
     position: absolute;

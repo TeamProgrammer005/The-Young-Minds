@@ -8,7 +8,7 @@
 .featured_nav .nav_heading h4, .store_categories h4, .featured_story h4{ 
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 20px;
     line-height: 93.9%;
     color: #193566;
@@ -20,8 +20,22 @@
     font-size: 50px;
     line-height: 110%;
     margin-left: 20px;
+    display: inline;
+    position: relative;
     text-transform: uppercase;
     color: #193566;
+}
+.featured_nav .nav_heading h2::before, .store_categories h2::before, .featured_story h2::before{
+    content: "";
+    position: absolute;
+    bottom: 2%;
+    height: 50%;
+    transform: skewX(20deg);
+    width: 100%;
+    border-radius: 10px;
+    background: #97A7C3;
+    opacity: 0.3;
+    z-index: -1;
 }
 .side_icons{
     font-size: 20px;
@@ -96,12 +110,15 @@
     margin: 0 10px;
 }
 .categories_DOM{
-    height: auto;
-    min-height: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: space-evenly;
 }
 .categories_DOM .categories_box{
     min-width: 250px;
     margin: 20px;
+    margin-bottom: 100px;
     display: grid;
     place-items: center;
     height: 300px;
@@ -134,27 +151,25 @@
 }
 .categories_box img{
     width: 80%;
-    height: 80%;
+    height: 60%;
     border-radius: 12px;
 }
 .categories_box .navButton{
     background: #ECF0F3;
-    position: absolute;
-    bottom: 5%;
+    transform: translateY(200%);
     cursor: pointer;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 20px;
+    background: #193566;
     padding: 10px 30px;
-}
-.categories_box .navButton:hover{
-    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+    margin-bottom: 40px;
 }
 .categories_box .navButton button{
     border: none;
     outline: none;
-    color: #193566;
     font-weight: bold;
-  
+    background: transparent;
+    color: #ECF0F3;
     cursor: pointer;
 }
 .featured_story{

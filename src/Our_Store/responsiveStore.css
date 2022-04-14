@@ -17,6 +17,9 @@
     .featured_nav .nav_heading h2, .store_categories h2, .featured_story h2{
         font-size: 40px;
     }
+    .categories_DOM{
+        justify-content: flex-start;
+    }
     .store_products .store-product_details{
         max-height: 350px;
         max-width: 300px;

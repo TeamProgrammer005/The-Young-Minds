@@ -3,8 +3,14 @@
         font-size: 14px;
         line-height: 20px;
     }
-    
-   
+    .qualityEducation .psuedoBg{
+        max-width: 300px;
+        padding: 10px;
+       }
+       .statement p{
+           font-size: 14px;
+           line-height: 24px;
+       }
      .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
         font-size: 22px;
     }
@@ -14,9 +20,21 @@
     .aboutDOM{
         max-width: 1200px;
     }
+    .presidentDetails h3{
+        font-size: 15px;
+    }
     
 }
 @media screen and (min-width: 600px){
+    .listUpperNav img{
+        width: 50px;
+        margin: 10px;
+        height: 50px;
+    }
+    .statement p{
+        font-size: 14px;
+        line-height: 28px;
+    }
     .testimonials .icons{
         display: none;
     }
@@ -57,20 +75,51 @@
         max-width: 500px;
         position: static;
         margin: auto;
+    } 
+    .presidentDetails h3{
+        font-size: 17px;
+    }
+    .listHeading h4{
+        font-size: 14px
+    }
+    .listHeading h3{
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 750px){
-
+    .listUpperNav img{
+        width: 80px;
+        margin: 10px;
+        height: 80px;
+    }
+    .answer .answerContainer img{
+        width: 100px;
+    }
+    .qualityEducation .psuedoBg{
+        max-width: 400px;
+        padding: 14px;
+       }
+       .statement p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+       .listHeading h4{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .listHeading h3{
+        font-size: 17px;
+    }
+       .educationListDOM .toggleList li{
+        font-size: 12px;
+        line-height: 18px;
+    }
     .something .thoughts p{
         font-size: 18px;
         line-height: 28px;
     }    
-    .midHeading p{
-        opacity: 1;
-        width: 50vw;
-        max-width: 500px;
-    }
+
     .presidentDetails .imgBox{
         width: 180px;
         height: 180px;
@@ -84,6 +133,13 @@
         font-size: 16px;
         padding: 0 50px;
     }
+    .presidentDetails h3{
+        font-size: 20px;
+    }
+    .midHeading p{
+        font-size: 14px;
+        line-height: 24px;
+    }
   
     
 }
@@ -92,14 +148,84 @@
         width: 160px;
         height: 140px;
     }
+    .listUpperNav img{
+        width: 100px;
+        height: 100px;
+    }
+    .educationListDOM .toggleList li{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .qualityEducation .psuedoBg{
+        max-width: 500px;
+        padding: 10px;
+       }
 }
 @media screen and (min-width: 940px){
+    .listUpperNav img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .educationListDOM .toggleList li{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .statement p{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .listHeading h4{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .listHeading h3{
+        font-size: 20px;
+    }
+    .qualityEducation .psuedoBg{
+        max-width: none;
+        padding: 20px;
+       }
     .answer .logo p{
         font-size: 18px;
         padding: 0 70px;
     }
-   
+    .midHeading p{
+        font-size: 16px;
+        line-height: 28px;
+    }
     .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
         letter-spacing: 0.2rem;
     }
+    .listUpperNav img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+ 
+    }
+    .qualityEducation .psuedoBg{
+        max-width: 500px;
+       }
+}
+@media screen and (max-width: 380px){
+    .listHeading h4{
+        font-size: 10px
+    }
+    .listHeading h3{
+        font-size: 10px;
+    }
+    .statement p{
+        font-size: 10px;
+    }
+    .qualityEducation{
+    width: 100vw;
+    max-width: 1200px;
+}
+.qualityEducation .psuedoBg{
+    max-width: 180px;
+    padding: 7px;
+   }
+   .educationListDOM .toggleList li{
+    font-size: 9px;
+    line-height: 13px;
+}
 }

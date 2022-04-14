@@ -14,12 +14,29 @@
     color: #193566;
     margin-top: 30px;
 }
+.stepping h5{
+    display: inline;
+    position: relative;
+}
+.stepping h5::before{
+    content: "";
+    position: absolute;
+    bottom: 2%;
+    height: 50%;
+    transform: skewX(20deg);
+    width: 100%;
+    border-radius: 10px;
+    background: #97A7C3;
+    opacity: 0.3;
+    z-index: -1;
+}
 .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
     font-family: 'Montserrat';
     font-style: normal;
     position: relative;
     font-weight: 600;
     font-size: 50px;
+    display: inline;
     line-height: 110%;
     margin-left: 20px;
     text-transform: uppercase;
@@ -28,31 +45,18 @@
 .startYourJourney .topHeading::before, .headingWorkshop h2::before, .updateFromCommunity h2::before, .upcomingEvents h2::before{
     content: "";
     position: absolute;
-    right: 0%;
     bottom: 2%;
     height: 50%;
     transform: skewX(20deg);
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
     background: #97A7C3;
-    opacity: 0.4;
+    opacity: 0.3;
     z-index: -1;
 }
 .stepForJourney{
     margin-bottom: 20px;
 }
-.updateFromCommunity h2::before{
-    width: 20%;
-    left: 10%;
-}
-.headingWorkshop h2::before{
-    width: 50%;
-    left: 30%;
-}
-.upcomingEvents h2::before{
-    width: 30%;
-    left: 20%;
-} 
 /* .startYourJourney span{
     font-style: normal;
     font-weight: 400;
@@ -87,11 +91,14 @@
     cursor: pointer;
     background: #ECF0F3;
     margin-left: 20px;
+    color: #193566;
 }
-
+.categoryDOM .colorChange{
+    background: #193566;
+    color: #ECF0F3;
+}
 .categoryIcon i{
     width: 100%;
-    color: #193566;
     font-size: 30px;
     height: 100%;
     display: grid;
@@ -158,6 +165,10 @@
     color :  #193566;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 12px;
+}
+.backgroundChange{
+    background: #193566;
+    color: #ECF0F3;
 }
 .basic_journey:hover{
     background: #193566;

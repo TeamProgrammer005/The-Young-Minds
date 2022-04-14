@@ -24,6 +24,7 @@
 }
 .serviceIdeaSection{
     display: flex;
+    margin: 20px 0;
     align-items: center;
 }
 .serviceIdeaSection .khali{
@@ -117,6 +118,14 @@ align-items: center;
 .ideas h4{
     font-size: 25px;
 }
+.ideas{
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+}
+.ideas:hover{
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
 .ideas p{
     font-family: 'Montserrat';
     font-size: 18px;
@@ -124,26 +133,58 @@ align-items: center;
     padding-right: 10px;
     color: #193566;
 }
+.ideas button{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin: 20px auto;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #ECF0F3;
+    background: #193566;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    border-radius: 30px;
+}
+.product_carting span{
+    font-size: 15px;
+    font-weight: bold;
+}
 .additionalService, .field_expertise, .our_clients{
     width: 100%;
     height: auto;
     margin-top: 40px;
     color: #193566;
 }
-.additionalService h3, .field_expertise h3{
+.additionalService h4, .field_expertise h4{
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 600;
     margin: 18px 20px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 11px;  
 }
 .additionalService h2, .field_expertise h2, .our_clients h2{  
     font-family: 'Montserrat';
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 50px;
     line-height: 11px;
+    position: relative;
+    display: inline;
     margin: 5px 20px;
+}
+.additionalService h2::before, .field_expertise h2::before, .our_clients h2::before{
+    content: "";
+    position: absolute;
+    bottom: 2%;
+    height: 50%;
+    transform: skewX(20deg);
+    width: 100%;
+    border-radius: 10px;
+    background: #97A7C3;
+    opacity: 0.3;
+    z-index: -1;
 }
 .additionalService p, .field_expertise p, .our_clients p{
     font-family: 'Montserrat';
@@ -156,8 +197,9 @@ align-items: center;
 } 
 .additional_feature{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    /* width: 100%; */
 }
 .additional_feature_section{
     margin: 40px 20px;
@@ -168,9 +210,11 @@ align-items: center;
     display: grid;
     place-items: center;
     width: 250px;
+    min-width: 220px;
     background: #ECF0F3;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 12px;
+    margin-bottom: 100px;
 }
 .additional_feature_section_slide{
     opacity: 0;
@@ -191,7 +235,6 @@ align-items: center;
     font-family: 'Montserrat';
     font-size: 12px;
     line-height: 15px;
-    text-align: center;
     padding: 0 20px;
 }
 .additional_feature_section h4, .additional_feature_section_slide h4{
@@ -209,23 +252,20 @@ align-items: center;
     text-decoration: none;
     position: absolute;
     padding: 10px 30px;
-    top: 50%;
+    bottom:  -30%;
     z-index: 2;
     cursor: pointer;
-
+    background: #193566;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 30px;
 }
 .additional_feature_section .btn_service button,  .additional_feature_section_slide .btn_service button{
+    color: #ECF0F3;
     outline: none;
     border: none;
     cursor: pointer;
     background: transparent;
-    color: #193566;
     font-weight: bold;
-}
-.additional_feature_section .btn_service:hover, .additional_feature_section_slide .btn_service:hover{
-    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .additional_feature_section::before, .additional_feature_section_slide::before{
     content: "";
@@ -252,9 +292,13 @@ align-items: center;
     display: flex;
     justify-content: space-evenly;
 }
+.field_expertise .fieldsBox .fields{
+    display: grid;
+    place-items: center;
+}
 .field_expertise .fieldsBox .empty{
     width: 100px;
-    margin: 30px 0 20px 10px;
+    margin: 30px 0 0px 10px;
     height: 100px;
     border-radius: 50%; 
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
@@ -289,7 +333,6 @@ align-items: center;
 .our_clients .clients_para{
     font-size: 18px;
     margin: 30px;
-    text-align: center;
 }
 .subscribe{
     display: flex;

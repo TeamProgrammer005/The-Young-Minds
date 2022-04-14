@@ -1,30 +1,24 @@
 [
     {
         "number": 1,
-        "title":"Designing",
-        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
+        "title":"AUTOMATION",
+        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali firstOuterGradiant",
         "innerClass":"innerKhali firstInnerGradiant"
     },
     {
         "number": 2,
-        "title":"modelling",
-        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
+        "title":"ROBOTICS",
+        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali secondOuterGradiant",
         "innerClass":"innerKhali secondInnerGradiant"
     },
     {
         "number": 3,
-        "title":"prototyping",
-        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
+        "title":"FIX YOUR PRINTER",
+        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali thirdOuterGradiant",
         "innerClass":"innerKhali thirdInnerGradiant"
-    },
-    {
-        "number": 4,
-        "title":"addictive manufacturing",
-        "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
-        "outerClass":"khali fourthOuterGradiant",
-        "innerClass":"innerKhali fourthInnerGradiant"
     }
+
 ]
