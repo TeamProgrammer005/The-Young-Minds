@@ -64,7 +64,6 @@
     color: #193566;
     display: none;
     justify-content: space-between;
-    margin: 0 20px;
     margin-top: 30px;
 }
 .mobileRouting{
@@ -108,8 +107,16 @@
 .mobile_nav ul li i{
     font-size: 20px;
 }
+.mobile_nav ul img{
+    height: 50px;
+    width: 50px;
+}
+.mobile_nav ul li h2{
+    margin-top: 5px;
+}
 .mobile_nav ul li{
     margin-right: 5px;
+    margin-left: 20px;
     font-weight: 700;
     font-size: 18px;
     line-height: 140%;
@@ -142,5 +149,17 @@
     .mobileRouting .mobileNav li a{
 
         font-size: 100%;
+    }
+}
+@media  screen and (max-width: 360px){
+    .mobile_nav ul li{
+        font-size: medium;
+        margin: 0 10px;
+    }
+}
+@media  screen and (max-width: 320px){
+    .mobile_nav ul li{
+        font-size: small;
+        margin: 0 10px;
     }
 }

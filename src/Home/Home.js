@@ -42,7 +42,7 @@ export default function Home() {
     // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none"/>
             <div className="startYourJourney">
             <div className="category_nav">
                         <div className="nav_heading">
@@ -111,7 +111,7 @@ export default function Home() {
                       <div className="headingWorkshop">
                     <div className="category_nav">
                         <div className="nav_heading">
-                            <h4>Heading</h4>
+                            <h4>Join Our</h4>
                             <h2>Workshop</h2>
                             <p>Expert sessions for better learning, handcrafted for you.</p>
                         </div>
@@ -211,7 +211,7 @@ export default function Home() {
                         })}
                     </div>
                 </div>
-        </div>
+    </div>
 
   )
 }

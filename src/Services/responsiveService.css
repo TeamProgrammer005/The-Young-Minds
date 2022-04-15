@@ -39,6 +39,9 @@
         height: 80px;
         width: 80px;
     }
+    .ideas{
+        box-shadow: none;
+    }
 }
 @media screen and (max-width : 800px){
     .serviceIdeaSection .khali{

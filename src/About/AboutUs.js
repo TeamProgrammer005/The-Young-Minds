@@ -99,7 +99,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none"/>
+                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none"/>
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
                             return (
@@ -141,7 +141,7 @@ export default function AboutUs() {
                             <div className="answerContainer">
                                 <div className="headingOf">
                                     <h4>Why</h4>
-                                <h2>Young Minds</h2>
+                                <h2>The Young Minds</h2>
                                 </div>
                                 <img src="img/unnamed 1.png" alt="" />
                             </div>
@@ -158,7 +158,7 @@ export default function AboutUs() {
                         </div>   
                     <div className="wordFromYoungMinds">
                         <h4>Words From</h4>
-                        <h2>Young {currentName}</h2>
+                        <h2>The Young {currentName}</h2>
                         {YMData.map((slide, index) => {
                             return (
                                 <div className={index === currentSlide ? "something current" : "something"} key={slide.id}>

@@ -13,7 +13,7 @@
 .toggle{
     display: none;
 }
-.footer .socialMedia h4, .footer .shortIntro h4, .footer .shortIntro h5{
+.footer .socialMedia h4, .footer .shortIntro h4, .footer .shortIntro h5, .navigate h4{
     text-align: center;
     text-transform: uppercase;
     color: #193566;
@@ -28,7 +28,8 @@
     margin-bottom: 10px;
     color: #97A7C3;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 20px;
     font-weight: 500;
 }
 .footer .shortIntro{
@@ -37,7 +38,21 @@
 }
 .footer .shortIntro img{
     width: 50px;
+    margin: auto;
     height: 50px;
+}
+.blankLine{
+    display: none;
+    width: 1px;
+    height: 80px;
+    background: #97A7C3;
+}
+.footer .shortIntro p{
+    color: #193566;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    max-width: 400px;
 }
 .footer .socialMediaIcons{
     display: flex ;
@@ -65,6 +80,28 @@
      color: #193566;
     font-size: 12px;
 }
+@media screen and (max-width: 700px){
+    .footer{
+        display: grid;
+        grid-template-columns: 3fr 0.5fr 1fr;
+    }
+    .footer .shortIntro{
+        display: none;
+    }
+    .blankLine{
+        display: block;
+    }
+    .footer .navigate{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer .navigate h4{
+        grid-column: 1/-1;
+    }
+    .footer .navigate li a{
+    font-size: 11px;
+    }
+}
 @media screen and (max-width: 490px) {     
     .footer .shortIntro h5{
         font-size: 8px;
@@ -76,7 +113,7 @@
         margin-right: 5px;
     }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 415px){
     .footer .socialMediaIcons li{
         width: 15px;
         height: 15px;
@@ -98,20 +135,23 @@
         padding: 0 5px;
         padding-top: 20px;
     }
+    .toggle{
+        grid-column-start: 3;
+    }
 }
 @media screen and (max-width: 310px){
-    .footer{
+    /* .footer{
         flex-direction: column;
         justify-content: center;
-    }
-    .navigate{
+    } */
+    /* .navigate{
         display: flex;
         width: 65px;
         margin: auto;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 20px;
-    }
+    } */
     .footer .shortIntro{
         margin-bottom: 20px;
     }

@@ -7,6 +7,7 @@ export default function (props) {
     const [left, setLeft] = useState(4)
     const toggleDisplay= props.toggleDisplay;
     const display = props.display;
+    const headingDisplay = props.headingDisplay;
     const buttonDisplay =props.buttonDisplay;
     const toggleLeft = ()=>{
         setLeft(74);
@@ -22,6 +23,8 @@ export default function (props) {
                         <div className='square'></div>
                         <h4>{props.midHeading}</h4>
                         <h2 className="heading">{props.companyName}</h2>
+                        <h2 style={{display: headingDisplay}} className="heading">{props.LibraryDetail}</h2>
+                        <h2 style={{display: headingDisplay}}className="heading">{props.LibraryDetails}</h2>
                         <h2 className='heading shadow'>{props.purpose}</h2>
                         <h4>{props.community}</h4>
                         <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>

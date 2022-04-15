@@ -9,7 +9,7 @@ export default function Store() {
   return (
     <div>
       <div className="storeDOM">
-      <Mainpage title = "." midHeading ="START LEARNING NOW ___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/about.png" toggleDisplay="none" buttonDisplay= "none"/>
+      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/about.png" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none"/>
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">

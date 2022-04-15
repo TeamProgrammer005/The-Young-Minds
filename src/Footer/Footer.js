@@ -8,20 +8,22 @@ export default function
     <div>
           <div className="footer">
                     <ul className="navigate">
+                        <h4>Navigate To</h4>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/privacy_policy">Privacy Policy</Link></li>
+                        <li><Link to="/privacy_policy" className='toggleGrid'>Privacy Policy</Link></li>
                         <li className='try'><Link to="/conditions">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/conditions">T & C</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        {/* <li><Link to="/contact">Contact Us</Link></li> */}
                     </ul>
                     <div className="shortIntro">
-                        <h4>Contact Us</h4>
-                        <h5>Email: connect.youngminds@gmail.com</h5>
-                        <h5>Whatsapp: +916291869796</h5>
+                        <img src="img/young minds watermark 1.png" alt="" />
+                        <h4>THE YOUNG MINDS</h4>
+            <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place .</p>
                         {/* <img src="img/young minds watermark 1.png" alt="logo" /> */}
                     </div>
+                    <div className='blankLine'></div>
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
                     <ul className='socialMediaIcons'>

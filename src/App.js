@@ -12,6 +12,7 @@ import Services from "./Services/Services";
 import Store from "./Our_Store/Store";
 import PrivacyPolicy from "./Legal/PrivacyPolicy"
 import Condition from "./Legal/Condition";
+import Community from "./Community/Community";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path="/our_store" element={<Store/>}/>
       <Route path="/privacy_policy" element={<PrivacyPolicy/>}/>
       <Route path="/conditions" element={<Condition/>}/>
+      <Route path="/community" element={<Community/>}/>
       </Routes>
     <Footer/>
     </Router>
