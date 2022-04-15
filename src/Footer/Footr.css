@@ -101,6 +101,9 @@
     .footer .navigate li a{
     font-size: 11px;
     }
+    .navigate{
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width: 490px) {     
     .footer .shortIntro h5{
