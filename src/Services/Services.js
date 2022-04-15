@@ -37,7 +37,7 @@ export default function Services() {
     return (
         <div>
             <div className="serviceDOM">
-            <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none"/>
+            <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More"/>
                 <div className="services_idea">
                     <h4>Turn your</h4>
                     <h2>ideas into life</h2>

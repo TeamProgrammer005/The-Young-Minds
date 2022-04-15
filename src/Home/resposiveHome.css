@@ -1,9 +1,6 @@
 @media screen and (max-width: 855px) {
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 40px;
-    }
-    .updateFromCommunity h2::before, .headingWorkshop h2::before{    
-        left: 18%;
     }
     .basic_journey p{
         font-size: 12px;
@@ -63,10 +60,10 @@
     }
 }
 @media screen and (max-width: 600px) {
-    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 16px;
     }
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2, .discoverSteam h2, .steamCommunity h2{
         font-size: 28px;
     }
     .upcomingEvents h2::before, .headingWorkshop h2::before{    
@@ -175,13 +172,13 @@
     }
 }
 @media screen and (max-width: 500px){
-    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 10px;
     }
 .upcomingEvents h4, .headingWorkshop h4{
     margin-top: 0;
     }
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 20px;
     }
     .journeyCategories p{

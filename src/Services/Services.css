@@ -119,7 +119,7 @@ align-items: center;
     font-size: 25px;
 }
 .ideas{
-    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    /* box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF; */
     padding: 20px;
     border-radius: 20px;
 }

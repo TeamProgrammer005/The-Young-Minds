@@ -42,7 +42,7 @@ export default function Home() {
     // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More"/>
             <div className="startYourJourney">
             <div className="category_nav">
                         <div className="nav_heading">
