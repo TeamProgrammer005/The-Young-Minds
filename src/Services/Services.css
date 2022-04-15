@@ -118,6 +118,12 @@ align-items: center;
 .ideas h4{
     font-size: 25px;
 }
+.ideas .hideNshowP{
+    display: none;
+}
+.ideas .showNhide{
+    display: block;
+}
 .ideas{
     /* box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF; */
     padding: 20px;

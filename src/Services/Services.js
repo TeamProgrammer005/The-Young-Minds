@@ -58,7 +58,8 @@ export default function Services() {
                                 </div>
                                 <div className="ideas">
                                     <h4>{data.title}</h4>
-                                    <p>{data.desc}</p>
+                                    <p className='showNhide'>{data.desc}</p>
+                                    <p className='hideNshowP'>{data.mobileDesc}</p>
                                     <Link to="/services"><button>START</button></Link>
                                 </div>
                             </div>
