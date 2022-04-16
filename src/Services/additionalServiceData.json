@@ -4,21 +4,24 @@
         "title":"AUTOMATION",
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali firstOuterGradiant",
-        "innerClass":"innerKhali firstInnerGradiant"
+        "innerClass":"innerKhali firstInnerGradiant",
+        "link":""
     },
     {
         "number": 2,
         "title":"ROBOTICS",
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali secondOuterGradiant",
-        "innerClass":"innerKhali secondInnerGradiant"
+        "innerClass":"innerKhali secondInnerGradiant",
+        "link":""
     },
     {
         "number": 3,
         "title":"FIX YOUR PRINTER",
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali thirdOuterGradiant",
-        "innerClass":"innerKhali thirdInnerGradiant"
+        "innerClass":"innerKhali thirdInnerGradiant",
+        "link":""
     }
 
 ]

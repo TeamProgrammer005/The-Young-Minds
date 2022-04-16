@@ -1,19 +1,15 @@
 import React from 'react'
 import "./Mainpage.css"
-// import { useState } from 'react';
 
 
 export default function (props) {
-    // const [left, setLeft] = useState(4)
     const toggleDisplay= props.toggleDisplay;
     const display = props.display;
     const headingDisplay = props.headingDisplay;
     const buttonDisplay =props.buttonDisplay;
-    // const toggleLeft = ()=>{
-    //     setLeft(74);
-    // }
     return (
         <div>
+            {/* Landing page content taken from props form each pages to change accordingly*/}
             <div className="sectionAbout">
                 <img src={props.img} alt="" />
                 <div className="squareDOM"><div className="innerSquare"><div className="boxSquare"></div></div></div>
@@ -28,22 +24,16 @@ export default function (props) {
                         <h2 className='heading shadow'>{props.purpose}</h2>
                         <h4>{props.community}</h4>
                         <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>
-                        {/* <div className="inputDOM" style={{display: display}}>
-                        <input type="text"  placeholder=' Search in store...' onClick={toggleLeft}/>
-                        <i className="fas fa-search" style={{left : `${left}%`}}></i>
-                        </div> */}
                         <div className="inputDOM" style={{display: display}}>
                         <select name="dropdownCat" id="dropdownCat">
                             <option value="select_cateogry">Select Category</option>
-                            <option value="science">Science</option>
-                            <option value="technology">Technology</option>
-                            <option value="engineering">Engineering</option>
-                            <option value="arts">Arts</option>
-                            <option value="mathematics">Mathematics</option>
+                            <option value="science">3D Printer for Education</option>
+                            <option value="technology">3D Printer for Industrial Use</option>
+                            <option value="engineering">3D Printer for Jewelry Design</option>
                         </select>
                     
                     </div>
-                        <button style={{display:buttonDisplay }}>{props.btnText}</button>
+                        <a href= {props.btnLink} target="_blank" ><button style={{display:buttonDisplay }}>{props.btnText}</button></a>
                         
                     </div>
                 </div>

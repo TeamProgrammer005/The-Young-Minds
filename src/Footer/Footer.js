@@ -2,11 +2,11 @@ import React from 'react'
 import "./Footr.css"
 import {Link} from "react-router-dom"
 
-export default function 
-() {
+export default function () {
   return (
     <div>
           <div className="footer">
+              {/* footer navigation */}
                     <ul className="navigate">
                         <h4>Navigate To</h4>
                         <li><Link to="/">Home</Link></li>
@@ -15,15 +15,15 @@ export default function
                         <li><Link to="/privacy_policy" className='toggleGrid'>Privacy Policy</Link></li>
                         <li className='try'><Link to="/conditions">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/conditions">T & C</Link></li>
-                        {/* <li><Link to="/contact">Contact Us</Link></li> */}
                     </ul>
+                    {/* Footer intro */}
                     <div className="shortIntro">
                         <img src="img/young minds watermark 1.png" alt="" />
                         <h4>THE YOUNG MINDS</h4>
-            <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place .</p>
-                        {/* <img src="img/young minds watermark 1.png" alt="logo" /> */}
+                        <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place .</p>
                     </div>
                     <div className='blankLine'></div>
+                    {/* Social Media Links */}
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
                     <ul className='socialMediaIcons'>

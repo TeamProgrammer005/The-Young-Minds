@@ -6,7 +6,9 @@ export default function Community() {
   return (
     <div>
         <div className="communityDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Join Us"/>
+            {/* Adding main landing page */}
+        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Join Us" btnLink="/community"/>
+        {/* section 1 for discover steam */}
         <div className="discoverSteam">
             <h4>DISCOVER</h4>
             <h2>STEAM</h2>
@@ -29,6 +31,7 @@ export default function Community() {
                 <img src="img/unnamed 1.png" alt="" />
             </div>
         </div>
+        {/* section 2 for steam community */}
         <div className="steamCommunity">
         <h4>connect with your</h4>
             <h2>STEAM community</h2>

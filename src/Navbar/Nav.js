@@ -6,11 +6,13 @@ function Nav() {
     return (
         <>
             <div className="mobile_nav">
+                {/* Mobile view top nav */}
                 <ul>
-                    <li>    <li><img src="img/young minds watermark 1.png" alt="logo" /></li></li>
+                    <li><img src="img/young minds watermark 1.png" alt="logo" /></li>
                     <li><h2>The Young Minds</h2></li>
                 </ul>
             </div>
+            {/* Mobile view bottom nav for navigatiom */}
             <div className="mobileRouting">
                 <ul className="mobileNav">
                 <li><NavLink to="/" activelassname='active'><i className="fas fa-home "></i></NavLink></li>
@@ -20,6 +22,7 @@ function Nav() {
                     <li><NavLink to="/about" activeclassname='active'><i className="fas fa-id-badge"></i></NavLink></li>
                 </ul>
             </div>
+            {/* Desktop view for navigation */}
             <div className="navigation">
                 <ul className="topNav">
                     <li><img src="img/young minds watermark 1.png" alt="logo" /></li>

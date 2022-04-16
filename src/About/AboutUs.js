@@ -108,8 +108,8 @@ export default function AboutUs() {
                                         <div className={currentList === index ? "listUpperNav rotation" : "listUpperNav"}> 
                                             <img src={data.img} alt="" />
                                             <div className={currentList === index ? "listHeading rotateHead" : "listHeading"}>
-                                                <h4>Quality</h4>
-                                                <h3>Education</h3>
+                                                <h4>{data.heading1}</h4>
+                                                <h3>{data.heading2}</h3>
                                             </div>
                                         </div>
                                         <ul className={index === currentList ? "toggleList changeDisplay" : "toggleList"}>
@@ -193,29 +193,6 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-          
-                    {/* <div className="answer">
-                        <h2>Why Young Minds</h2>
-                        <div className="logo">
-                            <img src="img/young minds watermark 1.png" alt="" />
-                            <p>We as an organization are driven towards making education equal and accessible for all, our mission is derived from the Sustainable Development Goals set by The United Nations for 2030. Our core activities involve providing quality education, innovation in industry and infrastructure and partnering with the people to achieve our goal.
-                                It is time for disruption in the education sector our visons run together with government launched Atal Innovation Mission, which aims at making S.T.E.A.M Education the core of Indian Education system in the coming years. Therefore, we as team work towards making a platform where free knowledge can be shared with the world, and bring the next generation of learning to the schools and colleges of India</p>
-                        </div>
-                    </div>
-                    <div className="studentCount">
-                        <div className="empty new"></div>
-                        <div className="empty new"></div>
-                    </div>
-                    <div className="studentCount">
-                        <div className="student">
-                            <h2>36000+</h2>
-                            <h3>Happy Students</h3>
-                        </div>
-                        <div className="student">
-                            <h2>36000+</h2>
-                            <h3>Hours of fun classes</h3>
-                        </div>
-                    </div> */}
                     <div className="testimonials">
                         <h2>Testimonials</h2>
                         <div className="newReviewsBox">

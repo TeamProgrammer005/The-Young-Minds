@@ -147,7 +147,7 @@ body{
 .something{
     display: flex;
     max-width: 1000px;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
     transition: all 1s ease;
     opacity: 0;
@@ -401,8 +401,10 @@ body{
     font-size: 10px;
     margin-top: 10px;
     line-height: 138.31%;
-    text-align: center;
     color: #193566;
+}
+.testimonials .reviews p{
+    text-align: left;
 }
 .newReview p{
     font-size: 12px;

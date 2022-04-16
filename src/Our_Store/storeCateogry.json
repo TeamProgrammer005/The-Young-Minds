@@ -2,14 +2,17 @@
 [
     {
     "title": "3D PRINTER FOR",
-    "title2": "EDUCATION"
+    "title2": "EDUCATION",
+    "link": "/"
 },
     {
     "title": "3D PRINTER FOR",
-    "title2": "INDUSTRIAL USE"
+    "title2": "INDUSTRIAL USE",
+    "link": "/"
 },
     {
     "title": "3D PRINTER FOR",
-    "title2": "JWELLARY DESIGN"
+    "title2": "JWELLARY DESIGN",
+    "link": "/"
 }
 ]

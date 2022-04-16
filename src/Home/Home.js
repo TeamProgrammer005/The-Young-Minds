@@ -37,12 +37,13 @@ export default function Home() {
         setsecondColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setcurrentClass(index)
         setcurrentCategory(6)
-        // settoggleClass(index === id ? "basic_journey backgroundChange" : "basic_journey")
+  
     }
-    // const category = ["science","technology","engineering","arts","mathematics","physics","chemistry","biology"]
+
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community"/>
+        {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">
                         <div className="nav_heading">
@@ -56,6 +57,7 @@ export default function Home() {
                         </div>
                     </div>
                             <p>The Young Minds Education is dedicated to enhance <strong>Science, Technology, Engineering, Arts and Mathematics</strong> capacity of our future builders. Our engaging programs are focused around the three pillars - <strong> Ideate, Build and Innovate..</strong></p>
+                            {/* step 1 who you are */}
                             <div className="stepForJourney">
                                 <div className="cricleBlank" style={{background: firstColor}}>
                                     <div className="innerBlank"></div>
@@ -79,6 +81,7 @@ export default function Home() {
                             )
                         })}
                     </div>  
+                    {/* step 2 select category */}
                     <div className="stepForJourney">
                                 <div className="cricleBlank" style={{background: secondColor}}>
                                     <div className="innerBlank"></div>
@@ -100,6 +103,7 @@ export default function Home() {
                                      )
                                  })}
                              </div>
+                            
                              <div className="stepForJourney">
                                 <div className="cricleBlank" style={{background: thirdColor}}>
                                     <div className="innerBlank"></div>
@@ -107,7 +111,7 @@ export default function Home() {
                                 <Link to= {buttonLink} ><button style={{background: color}}>START LEARNING</button></Link>
                              </div>
                       </div> 
-             
+             {/* section 2 join workshop */}
                       <div className="headingWorkshop">
                     <div className="category_nav">
                         <div className="nav_heading">
@@ -138,6 +142,7 @@ export default function Home() {
                         })}
                     </div>
                 </div>
+                {/* section 3 events*/}
                 <div className="upcomingEvents">
                   <div className="category_nav">
                         <div className="nav_heading">
@@ -178,9 +183,9 @@ export default function Home() {
                         })}
                     </div>
                 </div>
-            
+                        {/* section4 updates from community */}
                 <div className="updateFromCommunity">
-                    <button>JOIN COMUNNITY</button>
+                    <a href="https://forms.zohopublic.in/ymeducation/form/JoinOurCommunity/formperma/-8EQq-ilSYIkO8C4JDvV9OWnqOhtPJP6wVPcBXp5b80" target="_blank"><button>JOIN COMUNNITY</button></a>
                     <h4>Update From </h4>
                     <h2>Community</h2>
                     <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>

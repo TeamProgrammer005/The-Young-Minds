@@ -153,8 +153,14 @@ align-items: center;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 30px;
 }
+.product_carting a{
+    text-decoration: none;
+  color: #193566;
+}
 .product_carting span{
     font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
 }
 .additionalService, .field_expertise, .our_clients{

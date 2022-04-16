@@ -5,7 +5,8 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali firstOuterGradiant",
-        "innerClass":"innerKhali firstInnerGradiant"
+        "innerClass":"innerKhali firstInnerGradiant",
+        "link": "/"
     },
     {
         "number": 2,
@@ -13,7 +14,8 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali secondOuterGradiant",
-        "innerClass":"innerKhali secondInnerGradiant"
+        "innerClass":"innerKhali secondInnerGradiant",
+        "link": "/"
     },
     {
         "number": 3,
@@ -21,7 +23,8 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali thirdOuterGradiant",
-        "innerClass":"innerKhali thirdInnerGradiant"
+        "innerClass":"innerKhali thirdInnerGradiant",
+        "link": "/"
     },
     {
         "number": 4,
@@ -29,7 +32,8 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali fourthOuterGradiant",
-        "innerClass":"innerKhali fourthInnerGradiant"
+        "innerClass":"innerKhali fourthInnerGradiant",
+        "link": "/"
     },
     {  
         "number": 5,
@@ -37,6 +41,7 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali fifthOuterGradiant",
-        "innerClass":"innerKhali fifthInnerGradiant"
+        "innerClass":"innerKhali fifthInnerGradiant",
+        "link": "/"
     }
 ]

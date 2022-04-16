@@ -42,7 +42,7 @@
         display: none;
     }
     .something{
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .reviewsBox{
         display: none;

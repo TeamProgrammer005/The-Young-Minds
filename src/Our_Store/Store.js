@@ -4,12 +4,15 @@ import Mainpage from '../Mainpage/Mainpage'
 import "./Store.css"
 import storeCategory from "./storeCateogry.json"
 import "./responsiveStore.css"
+import storeProduct from "./storeProduct.json"
 
 export default function Store() {
   return (
     <div>
       <div className="storeDOM">
-      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search"/>
+        {/* Adding main page */}
+      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" btnLink="/community"/>
+      {/* section 1 feautured product */}
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">
@@ -24,25 +27,22 @@ export default function Store() {
                         </div>
           </div>
           <div className="store_products">
-            {Array.from({ length: 8 }).map((data, index) => {
+            {storeProduct.map((data, index) => {
               return (
                 <div className="store-product_details" key={index}>
-                  <img src="img/product.png" alt="our_product" />
+                  <img src={data.img} alt="our_product" />
                   <div className="product_desc">
-                    <h4>Product Title</h4>
-                    <h4>$20.00</h4>
+                    <h4>{data.title}</h4>
+                
                   </div>
-                  <h6>Product Name</h6>
-                  <div className="product_carting">
-                    <i className="far fa-heart"></i>
-                    <i className="fas fa-share"></i>
-                    <i className="fas fa-cart-plus"></i>
-                  </div>
+                  <h6>{data.name}</h6>
+                
                 </div>
               )
             })}
           </div>
         </div>
+        {/* section 2 categories for store */}
         <div className="store_categories">
           <h4>TOP</h4>
           <h2>Categories</h2>
@@ -61,6 +61,7 @@ export default function Store() {
             })}
           </div>
         </div>
+        {/* section 3 featured story */}
         <div className="featured_story">
           <h4>FEATURED</h4>
           <h2>STORY</h2>
@@ -79,7 +80,7 @@ export default function Store() {
             </div>
           </div>
         </div>
-
+{/* section4 current trend section */}
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">
@@ -94,15 +95,15 @@ export default function Store() {
                         </div>
           </div>
           <div className="store_products">
-            {Array.from({ length: 8 }).map((data, index) => {
+            {storeProduct.map((data, index) => {
               return (
                 <div className="store-product_details" key={index}>
-                  <img src="img/product.png" alt="our_product" />
+                  <img src={data.img} alt="our_product" />
                   <div className="product_desc">
-                    <h4>Product Title</h4>
-                    <h4>$20.00</h4>
+                    <h4>{data.title}</h4>
+                    <h4>${data.price}.00</h4>
                   </div>
-                  <h6>Product Name</h6>
+                  <h6>{data.name}</h6>
                   <div className="product_carting">
                     <i className="far fa-heart"></i>
                     <i className="fas fa-share"></i>

@@ -143,18 +143,6 @@
     }
 }
 @media screen and (max-width: 310px){
-    /* .footer{
-        flex-direction: column;
-        justify-content: center;
-    } */
-    /* .navigate{
-        display: flex;
-        width: 65px;
-        margin: auto;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 20px;
-    } */
     .footer .shortIntro{
         margin-bottom: 20px;
     }

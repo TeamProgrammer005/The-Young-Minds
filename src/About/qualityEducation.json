@@ -1,6 +1,8 @@
 [
     {
         "img": "img/QE3.png",
+        "heading1":"Quality",
+        "heading2":" Education",
         "list1": "1. Free Primary & Secondary Education",
         "list2":"2. Equal Access to Quality Pre-Primary Education",
         "list3":"3. Equal Access to Secondary, Technical and Vocational Education",
@@ -15,6 +17,8 @@
     },
     {
         "img": "img/QE2.png",
+        "heading1":"Industry, Innovation",
+        "heading2":"and Infrastructure",
         "list1": "1. Universal Access to Information & Communication Technology",
         "list2":"2. Support Technology Development & Industrial Diversification",
         "list3":"3. Promote Inclusive & Sustainable Industrialisation",
@@ -29,6 +33,8 @@
     },
     {
         "img": "img/QE1.png",
+        "heading1":"Patnerships",
+        "heading2":"For The Goal",
         "list1": "1. Mobilise Resources to Improve Domestic Revenue Collection",
         "list2":"2. Invest in Least Developed Countries",
         "list3":"3. Knowledge sharing and cooperation for Science, Technology & Innovation.",
