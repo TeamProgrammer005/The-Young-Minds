@@ -28,9 +28,10 @@
     content: "";
     position: absolute;
     bottom: 2%;
+    right: 0;
     height: 50%;
     transform: skewX(20deg);
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     background: #97A7C3;
     opacity: 0.3;

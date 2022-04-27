@@ -63,7 +63,7 @@ body{
 }
 .qualityEducation .psuedoBg{
  position: relative;
- max-width: 200px;
+ max-width: 180px;
  padding: 10px;
 }
 /* .qualityEducation .psuedoBg::before{
@@ -86,16 +86,17 @@ body{
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .listHeading h4{
-    font-size: 12px
+    font-size: 11px
 }
 .listHeading h3{
-    font-size: 13px;
+    font-size: 12px;
 }
 .educationListDOM .listUpperNav{
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     /* transition: 1s ease; */
     height: 80%;
 }

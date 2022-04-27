@@ -12,11 +12,11 @@ export default function Home() {
     const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0},{title: "Teacher", img:"/img/teacher.png", id: 1},{title: "Parent",img:"img/parent 1.png", id: 2},{title: "Institute", img:"img/parent 1.png", id: 3}]
     const categoryNameData=[{title: "Science", class: "fab fa-react"},{title: "Technology",class: "fas fa-code"},{title: "Engineering",class:"fas fa-cog"},{title: "Arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
-    const [firstColor, setfirstColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
-    const [secondColor, setsecondColor] = useState("#97A7C3");
+    const [firstColor, setfirstColor] = useState("#97A7C3")
+    const [secondColor, setsecondColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)");
     const [thirdColor, setthirdColor] = useState("#97A7C3");
     // const [toggleClass, settoggleClass] = useState("basic_journey");
-    const [currentClass, setcurrentClass] = useState(5);
+    const [currentClass, setcurrentClass] = useState(0);
     const [currentCategory, setcurrentCategory] = useState(6);
 
     const [buttonLink, setbuttonLink] = useState("/")
@@ -136,7 +136,7 @@ export default function Home() {
                                     </div>
                                     <h5>{data.Title}</h5>
                                     <p>{data.desc}</p>
-                                    <Link to='/home/workshop'><button>Know More</button></Link>
+                                    <a href={data.link} target="_blank"><button>Know More</button></a>
                                 </div>
                             )
                         })}
@@ -160,7 +160,8 @@ export default function Home() {
                     <div className="eventDOM">
                         {homeEvent.map((data, index)=>{
                             return(
-                                <div className="eventDetails" key={index}>
+                                <>
+                                <a className="eventDetails" key={index} href={data.link} target="_blank">
                                     <img src={data.img} alt="Event" />
                                     <div className='eventTiming'>
                                        <span> {data.date} <br /> {data.month}</span>
@@ -178,7 +179,8 @@ export default function Home() {
                                     <span><i className="fas fa-map-marker-alt"></i> Online</span>
                                     </div>
                                     <p className='lowerPara'>Indian Standard Time (IST)</p>
-                                </div>
+                                </a>
+                                </>
                             )
                         })}
                     </div>

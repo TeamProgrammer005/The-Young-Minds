@@ -189,10 +189,11 @@ align-items: center;
 .additionalService h2::before, .field_expertise h2::before, .our_clients h2::before{
     content: "";
     position: absolute;
+    right: 0;
     bottom: 2%;
-    height: 50%;
+    height: 40%;
     transform: skewX(20deg);
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     background: #97A7C3;
     opacity: 0.3;
