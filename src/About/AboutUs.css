@@ -18,7 +18,7 @@ body{
 .aboutDOM{
     width: 100vw;
     max-width: 600px;
-    display: grid;
+    /* display: grid; */
     place-items: center;
 }
 .introductionAbout{
@@ -31,25 +31,31 @@ body{
     margin: 0 50px;
 }
 
- .wordFromYoungMinds h2, .answer h2, .testimonials h2{
+ .wordFromYoungMinds h2, .answer h2, .testimonials h2, .knowUs h2{
     font-size: 20px;
     text-transform: uppercase;
+
     color: #193566;
     display: inline;
     position: relative;
 }
-.wordFromYoungMinds h2::before, .answer h2::before, .testimonials h2::before{
+.knowUs h2{
+    margin-left: 20px;
+}
+.wordFromYoungMinds h2::before, .answer h2::before, .testimonials h2::before, .knowUs h2::before{
     content: "";
     position: absolute;
     bottom: 0%;
     height: 40%;
+    right: 0;
     transform: skewX(20deg);
-    width: 100%;
+    width: 40%;
     border-radius: 10px;
     background: #97A7C3;
     opacity: 0.4;
     z-index: -1;
 }
+
  .wordFromYoungMinds h4{
     font-size: 12px;
 }
@@ -115,6 +121,7 @@ body{
 }
 .educationListDOM .listHeading{
     color: #193566;
+    padding-bottom: 10px;
     transform: rotate(-90deg);
     transition: 1s ease;
 }
@@ -424,7 +431,7 @@ max-width: 1200px;
     justify-content: space-between;
 }
 .testimonials .icons i{
-    margin: 0 5%;
+    margin: 0 2%;
     display: grid;
     color: #193566;
     place-items: center;
@@ -438,7 +445,51 @@ max-width: 1200px;
 .testimonials .icons i:hover{
     box-shadow: inset -2px -2px 6px #FFFFFF, inset 2px 2px 3px rgba(151, 167, 195, 0.5); 
 }
+.knowUs{
+    margin-top: 30px;
+}
+.knowUs p{
+    font-family: 'Montserrat';
+    margin-left: 20px;
+    font-size: 12px;
+    color: #193566;
+}
+.join_us_setion{
+    display: grid;
+    margin: 40px 20px;
+    place-items: center;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.join_us_setion .getToKnowUs{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+}
+.join_our_community{
+    display: grid;
+    place-items: center;
+}
+.join_our_community button{
+    background: #193566;
+    color: #ECF0F3;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
 @media screen and (max-width: 380px){
+    .join_us_setion .getToKnowUs{
+        width: 40px;
+        height: 40px;
+    }
     .something .thoughts p{
         margin: 15px 4px 10px 0;
         font-size: 11px;

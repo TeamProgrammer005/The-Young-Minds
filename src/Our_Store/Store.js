@@ -104,11 +104,11 @@ export default function Store() {
                     <h4>${data.price}.00</h4>
                   </div>
                   <h6>{data.name}</h6>
-                  <div className="product_carting">
+                  {/* <div className="product_carting">
                     <i className="far fa-heart"></i>
                     <i className="fas fa-share"></i>
                     <i className="fas fa-cart-plus"></i>
-                  </div>
+                  </div> */}
                 </div>
               )
             })}

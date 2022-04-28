@@ -68,7 +68,8 @@
 }
 .mobileRouting{
     height: 7vh;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     display: none;
     z-index: 10;
     place-items: center;

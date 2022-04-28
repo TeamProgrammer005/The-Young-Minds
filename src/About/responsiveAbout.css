@@ -3,6 +3,11 @@
         font-size: 14px;
         line-height: 20px;
     }
+    .join_us_setion .getToKnowUs{
+        width: 80px;
+        height: 80px;
+        grid-gap: 30px;
+    }
     .qualityEducation .psuedoBg{
         max-width: 300px;
         padding: 10px;
@@ -11,7 +16,7 @@
            font-size: 14px;
            line-height: 24px;
        }
-     .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+     .wordFromYoungMinds h2, .answer h2, .testimonials h2, .knowUs h2 {
         font-size: 22px;
     }
     .wordFromYoungMinds h4, .answer h4{
@@ -26,10 +31,23 @@
     
 }
 @media screen and (min-width: 600px){
+    .join_our_community button{
+     font-size: 14px;
+    }
+    .knowUs p{
+        font-size: 13px;
+    }
     .listUpperNav img{
         width: 50px;
         margin: 10px;
         height: 50px;
+    }
+    .qualityEducation{
+        display: flex;
+        justify-content: center;
+    }
+    .qualityEducation .educationListDOM{
+        margin-right: 20px;
     }
     .statement p{
         font-size: 14px;
@@ -58,7 +76,7 @@
         width: 150px;
         height: 150px;
     }
-     .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+     .wordFromYoungMinds h2, .answer h2, .testimonials h2,  .knowUs h2 {
         font-size: 2rem;
     }
      .wordFromYoungMinds h4, .answer h4{
@@ -88,10 +106,21 @@
 }
 
 @media screen and (min-width: 750px){
+    .join_us_setion{
+        margin: 50px auto;
+    }
+    .join_us_setion .getToKnowUs{
+        width: 100px;
+        height: 100px;
+        grid-gap: 40px;
+    }
     .listUpperNav img{
         width: 80px;
         margin: 10px;
         height: 80px;
+    }
+    .knowUs p{
+        font-size: 14px;
     }
     .answer .answerContainer img{
         width: 100px;
@@ -144,6 +173,12 @@
     
 }
 @media screen and (min-width: 850px){
+    .join_our_community button{
+        font-size: 16px;
+       }
+    .knowUs p{
+        font-size: 16px;
+    }
     .answer .logo img{
         width: 160px;
         height: 140px;
@@ -193,7 +228,7 @@
         font-size: 16px;
         line-height: 28px;
     }
-    .wordFromYoungMinds h2, .answer h2, .testimonials h2 {
+    .wordFromYoungMinds h2, .answer h2, .testimonials h2, .knowUs h2 {
         letter-spacing: 0.2rem;
     }
     .listUpperNav img{

@@ -1,3 +1,8 @@
+@media screen and (max-width: 1000px){
+    .startYourJourney::before{
+        left: 5%;
+    }
+}
 @media screen and (max-width: 855px) {
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 40px;
@@ -9,6 +14,14 @@
     }
     .basic_journey{
         height: 270px;
+    }
+    .startYourJourney::after{
+        top: 19%;
+    }
+    .startYourJourney::before{
+        left: 6%;
+       top: 19%;
+       height: 77%;
     }
     .basic_journey img{
         height: 220px;
@@ -60,6 +73,16 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .startYourJourney::after{
+        top: 19%;
+        border: 6px dashed #97A7C3;
+    }
+    .startYourJourney::before{
+        left: 8%;
+       top: 19%;
+    border: 6px dashed #97A7C3;
+       height: 77%;
+    }
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 16px;
     }
@@ -172,6 +195,9 @@
     }
 }
 @media screen and (max-width: 500px){
+    .startYourJourney::before{
+        left: 10%;
+    }
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 10px;
     }
@@ -310,6 +336,9 @@
 
 }
 @media screen and (max-width: 400px){
+    .startYourJourney::before{
+        left: 12%;
+    }
     .basic_journey{
         height: 160px;
         /* margin: auto 5px; */

@@ -14,6 +14,33 @@
     color: #193566;
     margin-top: 30px;
 }
+.startYourJourney{
+    position: relative;
+}
+.startYourJourney::before{
+    content: "";
+    position: absolute;
+    top: 17%;
+    left: 4%;
+    width: 0%;
+    height: 80%;
+    /* background: #97A7C3; */
+    border: 8px dashed #97A7C3;
+    z-index: -1;
+    opacity: 0.3;
+}
+.startYourJourney::after{
+    content: "";
+    position: absolute;
+    top: 17%;
+
+    width: 2%;
+    height: 0%;
+    /* background: #97A7C3; */
+    border: 8px dashed #97A7C3;
+    z-index: -1;
+    opacity: 0.3;
+}
 .stepping h5{
     display: inline;
     position: relative;

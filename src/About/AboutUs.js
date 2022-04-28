@@ -259,6 +259,21 @@ export default function AboutUs() {
                             })}
                         </div>
                     </div>
+                    <div className="knowUs">
+                        <h2>GET TO KNOW US</h2>
+                        <p>a sneak peak of our fun and interactive sessions ...</p>
+                        <div className="join_us_setion">
+                            {Array.from({length: 10}).map((data, index)=>{
+                                return (
+                                    <div className="getToKnowUs" key={index}></div>
+                                )
+                            })}
+                        </div>
+                        <div className="join_our_community">
+
+                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdiaFG0kbduBqkh0UWx_GmTnqjZBfIvUP9YNQ6LbLskQf8ekQ/viewform' target="_blank"><button>Join Our Community</button></a>
+                        </div>
+                    </div>
                 </div>
         </>
         
