@@ -1,8 +1,15 @@
-
 @media screen and (max-width: 855px) {
     .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p {
         font-size: 12px;
         line-height: 18px;
+    }
+    .basic_journey::after{   
+        bottom: -6%;
+        height: 16px;
+    }
+    .basic_journey::before{
+        bottom: -11%;
+        height: 16px;
     }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 40px;
@@ -77,6 +84,14 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .basic_journey::after{   
+        bottom: -7%;
+        height: 15px;
+    }
+    .basic_journey::before{
+        bottom: -12%;
+        height: 15px;
+    }
     .startYourJourney::before{
         left: 0%;
        top: 20%;
@@ -199,6 +214,14 @@
     }
 }
 @media screen and (max-width: 500px){
+    .basic_journey::after{   
+        bottom: -6%;
+        height: 10px;
+    }
+    .basic_journey::before{
+        bottom: -12%;
+        height: 10px;
+    }
     .startYourJourney::before{
        top: 22%;
        height: 70%;
