@@ -51,9 +51,9 @@ export default function Home() {
                         <h2 className='topHeading'>Journey</h2>
                         </div>
                         <div className="viewAll">
-                        <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
-                        <Link to="./home/categories"><span>view all</span></Link>
-                        <i className='fas fa-chevron-right'></i>
+                        {/* <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link> */}
+                        {/* <Link to="./home/categories"><span>view all</span></Link> */}
+                        {/* <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div>
                             <p>The Young Minds Education is dedicated to enhance <strong>Science, Technology, Engineering, Arts and Mathematics</strong> capacity of our future builders. Our engaging programs are focused around the three pillars - <strong> Ideate, Build and Innovate..</strong></p>
@@ -120,9 +120,9 @@ export default function Home() {
                             <p>Expert sessions for better learning, handcrafted for you.</p>
                         </div>
                         <div className="viewAll">
-                            <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
-                            <Link to="./home/categories"><span>view all</span></Link>
-                            <i className='fas fa-chevron-right'></i>
+                            {/* <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link> */}
+                            {/* <Link to="./home/categories"><span></span></Link> */}
+                            {/* <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div>       
                      <div className="workshopDOM">
@@ -151,9 +151,9 @@ export default function Home() {
                         <p>Expert sessions for better learning, handcrafted for you.</p>
                         </div>
                         <div className="viewAll">
-                            <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                            {/* <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
                             <Link to="./home/categories"><span>view all</span></Link>
-                            <i className='fas fa-chevron-right'></i>
+                            <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div> 
                     
@@ -168,7 +168,7 @@ export default function Home() {
                                     </div>
                                     <div className="eventTitle">
                                     <h4>{data.Title}</h4>
-                                        <span>Season 1</span>
+                                        <span></span>
                                     </div>
                                     <p>{data.desc}</p>
                                     <div className="eventDuration">

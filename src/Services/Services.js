@@ -38,7 +38,7 @@ export default function Services() {
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay="block" headingDisplay="none" btnText="Know More" btnLink="/community"/>
+                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/services.png" toggleDisplay="none" buttonDisplay="block" headingDisplay="none" btnText="Know More" btnLink="/community"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
                     <h4>Turn your</h4>
@@ -79,9 +79,9 @@ export default function Services() {
                                 <>
                                     <div className='additional_feature_section' key={index}>
                                         <h4>{data.title}</h4>
-                                        <img src="img/service.png" alt="logo" />
+                                        <img src={data.img} alt="logo" />
                                         <p>{data.desc}</p>
-                                        <Link to="/services/features" className='btn_service'><button >Read More</button></Link>
+                                        <Link to={data.link} className='btn_service'><button >Know More</button></Link>
                                     </div>
                                 </>
                             )

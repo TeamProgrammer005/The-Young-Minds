@@ -3,7 +3,7 @@
         "Title": "Tete-a-tete",
         "date": "01",
         "month": "Mar",
-        "img": "img/event 1.png",
+        "img": "img/tete-a-tete.png",
         "desc":"Career, Lifecycle and Growth",
         "link":"https://zfrmz.in/3JKTpB5cVqW70sbZy0iT"
     },
@@ -11,7 +11,7 @@
         "Title": "Chess",
         "date": "01",
         "month": "Mar",
-        "img": "img/event 2.png",
+        "img": "img/chessCon.png",
         "desc":"Brain Excercise, Pattern Recognition",
         "link":"https://zfrmz.in/qxos6TVruG7TyLUCRJRl"
     },
@@ -24,10 +24,10 @@
         "link":"https://zfrmz.in/XsptwMt6IbrjDlfMm93Y"
     },
     {
-        "Title": "Career Counsultancy",
+        "Title": "Career Consultancy",
         "date": "01",
         "month": "Mar",
-        "img": "img/event 4.png",
+        "img": "img/career.png",
         "desc":"Brain Excercise, Pattern Recognition",
         "link":"https://zfrmz.in/2GUlCECma8e5ulYnSysH"
     }

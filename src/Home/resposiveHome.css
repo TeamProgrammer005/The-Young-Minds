@@ -1,9 +1,9 @@
-@media screen and (max-width: 1000px){
-    .startYourJourney::before{
-        left: 5%;
-    }
-}
+
 @media screen and (max-width: 855px) {
+    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p {
+        font-size: 12px;
+        line-height: 18px;
+    }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 40px;
     }
@@ -19,9 +19,9 @@
         top: 19%;
     }
     .startYourJourney::before{
-        left: 6%;
+        left: 0%;
        top: 19%;
-       height: 77%;
+       height: 75%;
     }
     .basic_journey img{
         height: 220px;
@@ -49,7 +49,7 @@
 
     }
     .categoryDOM .align{
-        margin: 0;
+        margin-left: 0px !important
     }
     .journeyCategories p{
         margin: 0;
@@ -71,17 +71,16 @@
     .updatedDOM .updates{
         padding: 0;
     }
+    .eventDetails .lowerPara {
+        bottom: 3%; 
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 600px) {
-    .startYourJourney::after{
-        top: 19%;
-        border: 6px dashed #97A7C3;
-    }
     .startYourJourney::before{
-        left: 8%;
-       top: 19%;
-    border: 6px dashed #97A7C3;
-       height: 77%;
+        left: 0%;
+       top: 20%;
+       height: 73%;
     }
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 16px;
@@ -110,9 +109,6 @@
         font-size: 20px;
         margin-top: 10px;
     }
-    /* .basic_journeys_collection{
-        overflow-x: scroll;
-    } */
     .category_section .typeOf{
         flex-direction: row;
         justify-content: space-evenly;
@@ -184,8 +180,13 @@
         font-size: 13px;
         margin:  20px 5px;
     }
-    .startYourJourney p{
+    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p {
         font-size: 10px;
+        line-height: 16px;
+        margin-right: 5px;
+    }
+    .upcomingEvents p{
+        font-size: 12px;
     }
     .basic_journeys_collection{
         margin-bottom: 40px;
@@ -193,22 +194,36 @@
     .workshop-details p{
         display: none;
     }
+    .stepForJourney button{
+        margin: 10px;
+    }
 }
 @media screen and (max-width: 500px){
     .startYourJourney::before{
-        left: 10%;
+       top: 22%;
+       height: 70%;
     }
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
+        font-size: 12px;
+    }
+    .eventDetails .lowerPara {
+        bottom: 0%;
         font-size: 10px;
     }
-.upcomingEvents h4, .headingWorkshop h4{
+    .upcomingEvents p{
+        font-size: 12px;
+    }
+.upcomingEvents h4{
     margin-top: 0;
+    }
+    .headingWorkshop h4{
+        margin-top: 20px;
     }
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
         font-size: 20px;
     }
     .journeyCategories p{
-        text-align: justify;
+       margin-top: 10px !important;
     }
     .updateFromCommunity h2,.startYourJourney .topHeading{
         margin-bottom: 5px;
@@ -246,10 +261,7 @@
     }
     .startYourJourney .categoryDOM {
         margin-top: 60px;
-    }
-    .journeyCategories p{
-        font-size: 7px;
-        max-width: 50px;
+        margin-bottom: 30px;
     }
     .category_nav .viewAll, .featured_nav .viewAll{
         font-size: 14px;
@@ -318,9 +330,6 @@
     .eventTitle h4{
         margin-top: 10px;
     }
-    .upcomingEvents p{
-        font-size: 10px;
-    }
     .workshopDOM .workshop-details{
         margin-top: 0;
     }
@@ -337,7 +346,8 @@
 }
 @media screen and (max-width: 400px){
     .startYourJourney::before{
-        left: 12%;
+       top: 24%;
+       height: 70%;
     }
     .basic_journey{
         height: 160px;
@@ -353,7 +363,7 @@
     }
   
     .journeyCategories p{
-        font-size: 7px;
+        font-size: 8px;
     }
     .stepForJourney .stepping{
         font-size: 16px;
@@ -404,10 +414,13 @@
         max-width: 280px; 
     }
     .journeyCategories p{
-        font-size: 6px;
+        font-size: 7px;
     }
     .stepForJourney button, .updateFromCommunity button{
         padding: 4px 8px;
         font-size: 8px;
        }
+       .stepForJourney button{
+        margin: 15px;
+    }
 }

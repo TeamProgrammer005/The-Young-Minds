@@ -178,6 +178,7 @@
        }
     .knowUs p{
         font-size: 16px;
+        margin-left: 40px;
     }
     .answer .logo img{
         width: 160px;
@@ -229,7 +230,10 @@
         line-height: 28px;
     }
     .wordFromYoungMinds h2, .answer h2, .testimonials h2, .knowUs h2 {
-        letter-spacing: 0.2rem;
+        font-size: 50px;
+    }
+    .wordFromYoungMinds h4, .answer h4{
+        font-size: 24px; 
     }
     .listUpperNav img{
         width: 50px;

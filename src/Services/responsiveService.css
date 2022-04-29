@@ -83,8 +83,12 @@
     .ideas p{
         font-size: 16px;
     }
-    .additionalService h2, .field_expertise h2, .our_clients h2{
+    .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
         font-size: 32px;
+    }
+    .additionalService h4, .field_expertise h4, .services_idea h4 {
+        font-size: 16px;
+        margin: 16px 20px;
     }
     .field_expertise .fieldsBox h3{
         font-size: 24px;
@@ -109,8 +113,17 @@
         margin: 0;
         font-size: 14px;
     }
+    .additionalService p, .field_expertise p, .our_clients p{
+        margin-left: 30px;
+    }
 }
 @media screen and (max-width : 670px){
+    .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
+        font-size: 28px;
+    }
+    .additionalService h4, .field_expertise h4, .services_idea h4 {
+        font-size: 14px;
+    }
     .field_expertise .fields h4 {
         font-size: 12px !important;
     }
@@ -181,6 +194,13 @@
 
 }
 @media screen and (max-width : 530px){
+    .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
+        font-size: 20px;
+    }
+    .additionalService h4, .field_expertise h4, .services_idea h4 {
+        font-size: 12px;
+        margin: 8px 20px;
+    }
     .serviceIdeaSection .khali{
         height: 110px;
         width: 600px;
@@ -257,15 +277,9 @@
     }
 }
 @media screen and (max-width : 420px){
-    .services_idea h4{
-        font-size: 20px;
-    }
     .ideas .hideNshowP{
         min-width: 230px;
         line-height: 18px;
-    }
-    .services_idea h2{
-        font-size: 24px;
     }
     .serviceIdeaSection .khali{
         height: 110px;

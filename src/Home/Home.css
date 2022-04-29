@@ -2,13 +2,13 @@
     width: 100vw;
     max-width: 1200px;
     overflow: hidden;
-    font-family: 'Montserrat';
+    font-family: sans-serif;
 }
 .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4{ 
     text-transform: uppercase;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 20px;
     line-height: 93.9%;
     color: #193566;
@@ -21,23 +21,23 @@
     content: "";
     position: absolute;
     top: 17%;
-    left: 4%;
+    left: 0%;
     width: 0%;
-    height: 80%;
+    height: 77%;
     /* background: #97A7C3; */
-    border: 8px dashed #97A7C3;
+    border: 6px dashed #97A7C3;
     z-index: -1;
     opacity: 0.3;
 }
-.startYourJourney::after{
+.stepForJourney .cricleBlank::before{
     content: "";
     position: absolute;
-    top: 17%;
-
-    width: 2%;
+    top: 20%;
+    left: -100%;
+    width: 112%;
     height: 0%;
     /* background: #97A7C3; */
-    border: 8px dashed #97A7C3;
+    border: 6px dashed #97A7C3;
     z-index: -1;
     opacity: 0.3;
 }
@@ -59,7 +59,7 @@
     z-index: -1;
 }
 .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2{
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     position: relative;
     font-weight: 600;
@@ -100,6 +100,8 @@
 }
 .categoryDOM .journeyCategories{
     width: 18%;
+    display: grid;
+    place-items: center;
 }
 .categoryDOM .categoryIcon{
     transform: translateY(-50%);
@@ -112,7 +114,6 @@
     align-items: center;
     cursor: pointer;
     background: #ECF0F3;
-    margin-left: 20px;
     color: #193566;
 }
 .categoryDOM .colorChange{
@@ -128,7 +129,7 @@
 
 }
 .categoryDOM .align{
-    margin-left: 40px;
+    margin-left: 40px !important;
 }
 .stepForJourney button{
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
@@ -141,6 +142,7 @@
     margin: 10px 30px;
 }
 .categoryDOM  p{
+    margin: 0px !important;
     min-width: 80px;
     text-transform: uppercase;
     transform: translateY(-100%);
@@ -150,6 +152,7 @@
     place-items: center;
     width: 50px;
     height: 50px;
+    position: relative;
     border-radius: 50%;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     /* background:  linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%); */
@@ -206,7 +209,7 @@
     margin-right: 8px;
 }
 .basic_journey h3{
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -262,9 +265,9 @@ text-transform: uppercase;
  .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p,.headingWorkshop p, .upcomingEvents p{
     font-size: 14px;
     color: #193566;
-    margin: 0 20px;
-    padding-right: 40px;
-    margin-bottom: 30px;
+    line-height: 20px;
+    margin: 0 40px;
+    margin-bottom: 20px;
 }
 .updateFromCommunity p{
     margin-bottom: 20px;
@@ -383,6 +386,7 @@ text-transform: uppercase;
 }
 .eventDOM .eventDetails{
     text-decoration: none;
+    margin-bottom: 50px;
 }
 .socialMediaIcons li:hover{
     box-shadow: inset 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
@@ -393,6 +397,9 @@ text-transform: uppercase;
 }
 .updateFromCommunity{
     position: relative;
+}
+.updateFromCommunity h4{
+    margin-top: 10px;
 }
 .updateFromCommunity button{
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
@@ -515,7 +522,9 @@ text-transform: uppercase;
 }
 .eventDetails .lowerPara{
     position: absolute;
-    bottom: -1%;
+    bottom: 2%;
+    left: 5%;
+    font-size: 12px;
 }
 .eventDuration p{
     color: #193566;
