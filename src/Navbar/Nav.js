@@ -27,7 +27,7 @@ function Nav() {
                 <ul className="topNav">
                     <li><img src="img/young minds watermark 1.png" alt="logo" /></li>
                     <li><h2>THE YOUNG MINDS</h2></li>
-                    <li><i className="fas fa-solid fa-user"></i></li>
+                    <li></li>
                 </ul>
                 <ul className='mainNav'>
                     <li><NavLink to="/" activelassname='active'>Home</NavLink></li>

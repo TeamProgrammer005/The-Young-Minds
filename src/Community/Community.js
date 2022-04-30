@@ -12,9 +12,9 @@ export default function Community() {
         <div className="discoverSteam">
             <h4>DISCOVER</h4>
             <h2>STEAM</h2>
+                    <p>A sneak peak into our fun and interactive sessions.</p>
             <div className="steamDesc">
                 <div>
-                    <p>A sneak peak into our fun and interactive sessions.</p>
                     <div className="dropdownCategory">
                         <select name="dropdownCat" id="dropdownCat">
                             <option value="select_cateogry">Select Category</option>

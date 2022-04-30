@@ -79,7 +79,7 @@
         padding: 0;
     }
     .eventDetails .lowerPara {
-        bottom: 3%; 
+        bottom: 5%; 
         font-size: 10px;
     }
 }
@@ -96,6 +96,10 @@
         left: 0%;
        top: 20%;
        height: 73%;
+    }
+    .eventDetails .lowerPara {
+        bottom: 8%;
+        font-size: 10px;
     }
     .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
         font-size: 16px;
@@ -230,7 +234,7 @@
         font-size: 12px;
     }
     .eventDetails .lowerPara {
-        bottom: 0%;
+        bottom: 3%;
         font-size: 10px;
     }
     .upcomingEvents p{

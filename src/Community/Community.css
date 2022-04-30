@@ -41,15 +41,16 @@
     display: flex;
     justify-content: space-evenly;
 }
+.discoverSteam .steamDesc{
+    align-items: center;
+}
 .steamCategoryDOM .steamCategories12{
     width: 500px;
 }
-.discoverSteam .steamDesc p{
+.discoverSteam p{
     font-size: 16px;
     color: #193566;
-    font-weight: bold;
-    margin: 20px;
-    padding-right: 40px;
+    margin-left: 20px;
 }
 .steamCommunity .steamCategoryDOM p{
     font-size: 15px;
@@ -179,7 +180,7 @@
         font-size: 12px;
         padding: 8px 16px;
     }
-    .discoverSteam .steamDesc p{
+    .discoverSteam p{
         font-size: 12px;
         font-weight: 400;
     }
@@ -211,9 +212,6 @@
     }
     .steamCommunity .steamCategoryDOM p{
         min-width: 90vw;
-    }
-    .discoverSteam .steamDesc p{
-        margin: 10px 0;
     }
 }
 @media screen and (max-width: 400px){

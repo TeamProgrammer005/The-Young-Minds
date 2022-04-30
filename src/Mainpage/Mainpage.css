@@ -132,18 +132,19 @@
     margin: 20px 5%;
     border: 0.5px dashed #97A7C3;
 }
+.contentAbout .midHeading::before{
+    content: "";
+    position: absolute;
+    width: 22vw;
+    height: 22vw;
+    /* border-radius: 50%; */
+    z-index: -1;
+    clip-path: circle(50.0% at 3% 50%);
+    opacity: 0.2;
+    transform: translateX(-20%);
+    background: #97A7C3;
+}
 @media screen and (max-width: 1200px){
-    .contentAbout .midHeading::before{
-        content: "";
-        position: absolute;
-        width: 22vw;
-        height: 22vw;
-        border-radius: 50%;
-        z-index: -1;
-        opacity: 0.2;
-        transform: translateX(-70%);
-        background: #97A7C3;
-    }
     .contentAbout .midHeading::after{
         content: "";
         position: absolute;
