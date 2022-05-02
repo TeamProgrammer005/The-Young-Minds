@@ -66,6 +66,7 @@
     .additional_feature{
         justify-content: flex-start;
     }
+ 
     .khali .outerBox{
         height: 130px;
     }
@@ -84,14 +85,13 @@
     .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
         font-size: 32px;
     }
-    .additionalService h4, .field_expertise h4, .services_idea h4 {
+    .additionalService h4, .field_expertise h4 {
         font-size: 16px;
         margin: 16px 20px;
     }
     .services_idea h4{
-        margin: 10px 0;
         font-size: 20px;
-        margin-top: 0;
+        margin-bottom: 10px;
     }
     .field_expertise .fieldsBox h3{
         font-size: 24px;
@@ -171,6 +171,7 @@
         font-size: 18px;
     }
     .ideas h4{
+        margin: 10px 0 !important;
         font-size: 20px;
     }
     .ideas p{
@@ -207,12 +208,13 @@
     .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
         font-size: 20px;
     }
-    .additionalService h4, .field_expertise h4, .services_idea h4 {
+    .additionalService h4, .field_expertise h4{
         font-size: 12px;
         margin: 8px 20px;
     }
     .services_idea h4{
-        margin: 8px 0;
+        font-size: 12px;
+        margin-bottom: 8px;
     }
     .serviceIdeaSection .khali{
         height: 110px;
@@ -252,6 +254,7 @@
     }
     .ideas h4{
         font-size: 18px;
+        margin: 10px 0 !important;
     }
   
     .ideas p{
@@ -314,6 +317,7 @@
         font-size: 13px;
     }
     .ideas h4{
+        margin: 10px 0 !important;
         font-size: 16px;
         margin-bottom: 7px;
     }

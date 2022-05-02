@@ -41,7 +41,7 @@ export default function Services() {
                 <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/services.png" toggleDisplay="none" buttonDisplay="block" headingDisplay="none" btnText="Search" btnLink="/community" _display="block"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
-                    <h4>Turn your</h4>
+                    <h4 style={{marginLeft: "20px"}}>Turn your</h4>
                     <h2>ideas into life</h2>
                     {servicesIdeaData.map((data, index) => {
                         return (
