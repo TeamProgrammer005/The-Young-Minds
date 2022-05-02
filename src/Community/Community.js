@@ -7,7 +7,7 @@ export default function Community() {
     <div>
         <div className="communityDOM">
             {/* Adding main landing page */}
-        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="/community" _display="none"/>
+        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="/community" _display="none" buttonDisplay_store="none"/>
         {/* section 1 for discover steam */}
         <div className="discoverSteam">
             <h4>DISCOVER</h4>

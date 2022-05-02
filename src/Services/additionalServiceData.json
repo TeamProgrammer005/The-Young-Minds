@@ -6,7 +6,7 @@
         "outerClass":"khali firstOuterGradiant",
         "innerClass":"innerKhali firstInnerGradiant",
         "img":"img/automation.png",
-        "link":"/"
+        "link":"/services"
     },
     {
         "number": 2,
@@ -15,7 +15,7 @@
         "outerClass":"khali secondOuterGradiant",
         "innerClass":"innerKhali secondInnerGradiant",
         "img":"img/robotics.png",
-        "link":"/"
+        "link":"/services"
     },
     {
         "number": 3,
@@ -24,7 +24,7 @@
         "outerClass":"khali thirdOuterGradiant",
         "innerClass":"innerKhali thirdInnerGradiant",
         "img":"img/printer.png",
-        "link":"/"
+        "link":"https://theyoungminds.org/askforrepair"
     }
 
 ]

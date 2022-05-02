@@ -52,6 +52,9 @@
     text-transform: uppercase;
     line-height: 26px;
 }
+.midHeading a{
+    text-decoration: none;
+}
 .contentAbout .midHeading button{
     cursor: pointer;
     outline: none;

@@ -18,7 +18,7 @@ export default function Home() {
     // const [toggleClass, settoggleClass] = useState("basic_journey");
     const [currentClass, setcurrentClass] = useState(0);
     const [currentCategory, setcurrentCategory] = useState(6);
-
+    const [toggledisable, settoggledisable] = useState(true)
     const [buttonLink, setbuttonLink] = useState("/")
     const changeColor = (index)=>{
         setcolor("#193566");
@@ -27,7 +27,7 @@ export default function Home() {
         setbuttonLink("/home/learning")
         setfirstColor("#97A7C3")
         setcurrentCategory(index)
-     
+        settoggledisable(false)
     }
     const backgroundChange = (index)=>{
         setcolor("#97A7C3");
@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community" _display="none"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community" _display="none" buttonDisplay_store="none"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">
@@ -108,7 +108,7 @@ export default function Home() {
                                 <div className="cricleBlank" style={{background: thirdColor}}>
                                     <div className="innerBlank"></div>
                                 </div>
-                                <Link to= {buttonLink} ><button style={{background: color}}>START LEARNING</button></Link>
+                                <Link to= {buttonLink} ><button style={{background: color}} disabled={toggledisable === true }>START LEARNING</button></Link>
                              </div>
                       </div> 
              {/* section 2 join workshop */}

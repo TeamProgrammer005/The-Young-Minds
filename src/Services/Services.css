@@ -144,9 +144,6 @@ align-items: center;
     padding: 20px;
     border-radius: 20px;
 }
-.ideas:hover{
-    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
-}
 .ideas p{
     font-size: 18px;
     line-height: 30px;

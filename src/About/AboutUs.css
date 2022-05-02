@@ -55,7 +55,9 @@ body{
     opacity: 0.4;
     z-index: -1;
 }
-
+.testimonials h2::before{
+    transform: skewX(60deg);
+}
  .wordFromYoungMinds h4{
     font-size: 12px;
 }
@@ -260,16 +262,14 @@ body{
 }
 .answer .ourStatement{
     display: grid;
-    place-items: center;
 }
 .ourStatement .statement{
     width: 80%;
     display: grid;
-    place-items: center;
     margin: 30px 0;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 4px -4px 4px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+    box-shadow: 4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .statement p{
     width: 90%;

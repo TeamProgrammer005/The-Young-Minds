@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Mainpage.css"
+import { useState} from 'react'
 
 
 export default function (props) {
@@ -8,6 +9,13 @@ export default function (props) {
     const _display= props._display;
     const headingDisplay = props.headingDisplay;
     const buttonDisplay =props.buttonDisplay;
+    const buttonDisplay_store= props.buttonDisplay_store
+    const [linking, setlinking] = useState("")
+    const [disabled, setdisabled] = useState(true)
+    const toggleLink = (event) => {
+        setdisabled(false)
+       setlinking(`https://theyoungminds.org/${event.target.value}`)
+    }
     return (
         <div>
             {/* Landing page content taken from props form each pages to change accordingly*/}
@@ -26,24 +34,25 @@ export default function (props) {
                         <h4>{props.community}</h4>
                         <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>
                         <div className="inputDOM" style={{display: display}}>
-                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat'>
+                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat' >
                             <option value="select_cateogry">Select Category</option>
-                            <option value="science">3D Printer for Education</option>
+                            <option value="science" >3D Printer for Education</option>
                             <option value="technology">3D Printer for Industrial Use</option>
                             <option value="engineering">3D Printer for Jewelry Design</option>
                         </select>
                     
                     </div>
                         <div className="service-inputDOM inputDOM" style={{display: _display}}>
-                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat'>
-                            <option value="select_cateogry">Select Category</option>
-                            <option value="science">Addictive Manufacturing</option>
-                            <option value="science">3D Modelling</option>
-                            <option value="science">Fix Your Printer</option>
+                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat' onChange= {toggleLink}>
+                            <option value="services">Select Category</option>
+                            <option value="order3d">Addictive Manufacturing</option>
+                            <option value="3d_design">3D Modelling</option>
+                            <option value="askforrepair">Fix Your Printer</option>
                         </select>
                     
                     </div>
                         <a href= {props.btnLink} target="_blank" ><button style={{display:buttonDisplay }}>{props.btnText}</button></a>
+                        <a href= {linking} target="_blank"  ><button style={{display:buttonDisplay_store }} disabled={disabled === true } >{props.btnText}</button></a>
                         
                     </div>
                 </div>
