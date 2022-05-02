@@ -38,7 +38,7 @@ export default function Services() {
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/services.png" toggleDisplay="none" buttonDisplay="block" headingDisplay="none" btnText="Know More" btnLink="/community"/>
+                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/services.png" toggleDisplay="none" buttonDisplay="block" headingDisplay="none" btnText="Search" btnLink="/community" _display="block"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
                     <h4>Turn your</h4>
@@ -72,7 +72,7 @@ export default function Services() {
                 <div className="additionalService">
                     <h4>Additional</h4>
                     <h2>Features</h2>
-                    <p>a sneak peak of our fun and interactive sessions ...</p>
+                    <p>A sneak peak of our fun and interactive sessions ...</p>
                     <div className="additional_feature">
                         {additionalServiceData.map((data, index) => {
                             return (
@@ -95,9 +95,9 @@ export default function Services() {
                             <h2>OUR PRODUCT</h2>
                         </div>
                         <div className="viewAll">
-                            <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
+                            {/* <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
                             <Link to="./home/categories"><span>view all</span></Link>
-                            <i className='fas fa-chevron-right'></i>
+                            <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div>
                     <div className="store_products">
@@ -107,7 +107,7 @@ export default function Services() {
                                     <img src={data.img} alt="our_product" />
                                     <div className="product_desc">
                                         <h4>{data.title}</h4>
-                                        <h4>${data.price}.00</h4>
+                                        {/* <h4>${data.price}.00</h4> */}
                                     </div>
                                     <h6>{data.name}</h6>
                                 
@@ -120,13 +120,13 @@ export default function Services() {
                 <div className="field_expertise">
                     <h4>field</h4>
                     <h2>Expertise</h2>
-                    <p>a sneak peak of our fun and interactive sessions ...</p>
+                    <p>A sneak peak of our fun and interactive sessions ...</p>
                     <div className="fieldsBox">
                         {Array.from({ length: 4 }).map((fields, index) => {
                             return (
                                 <div className="fields" key={index}>
                                     <div className="empty"></div>
-                                    <h3>36000+</h3>
+                                    {/* <h3>36000+</h3> */}
                                     <h4>Happy Students</h4>
                                 </div>
                             )
@@ -136,7 +136,7 @@ export default function Services() {
                 {/* section 5 clients */}
                 <div className="our_clients">
                     <h2>Our clients</h2>
-                    <p>a sneak peak of our fun and interactive sessions ...</p>
+                    <p>A sneak peak of our fun and interactive sessions ...</p>
                     <div className="clientImg_container">
                         {client.map((image, index) => {
                             return (

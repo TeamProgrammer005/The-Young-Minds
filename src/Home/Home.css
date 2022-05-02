@@ -263,14 +263,10 @@ text-transform: uppercase;
     justify-content: space-between;
 }
  .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p,.headingWorkshop p, .upcomingEvents p{
-    font-size: 14px;
+    font-size: 20px;
     color: #193566;
-    line-height: 20px;
-    margin: 0 40px;
-    margin-bottom: 20px;
-}
-.upcomingEvents p{
-    margin: 0 25px;
+    line-height: 30px;
+    margin: 10px 20px;
     margin-bottom: 20px;
 }
 .updateFromCommunity p{
@@ -440,7 +436,6 @@ text-transform: uppercase;
 }
 .update_intro .intro{
     margin: 20px 0;
-    margin-top: 30px;
     color: #193566;
     display: flex;
     justify-content: center;
@@ -448,11 +443,11 @@ text-transform: uppercase;
     flex-direction: column;
 }
 .update_intro .intro h6{
-    font-size: 15px;
+    font-size: 20px;
 }
 .update_intro .intro span{
     color: #97A7C3;
-    font-size: 12px
+    font-size: 16px;
 }
 .update_intro .intro .time{
     margin-top: 10px;
@@ -501,7 +496,7 @@ text-transform: uppercase;
     background: #ECF0F3;
     padding: 10px;
     padding-bottom: 20px;
-    max-height: 400px;
+    max-height: 420px;
     /* height: auto; */
 }
 .eventDOM .eventDetails img{
@@ -511,7 +506,7 @@ text-transform: uppercase;
 }
 .eventDetails .eventTitle, .eventDetails .eventDuration{
     display: flex;
-    margin: 0 5px;
+    margin: 0px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -524,14 +519,13 @@ text-transform: uppercase;
     color: #6e81a3;
 }
 .eventDetails .lowerPara{
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
-    font-size: 12px;
+    font-size: 14px;
+    transform: translateY(-20px);
 }
 .eventDuration p{
     color: #193566;
     font-weight: bold;
+    margin: 0px 20px;
 }
 .eventDetails .eventTiming{
     display: flex;
@@ -612,14 +606,14 @@ text-transform: uppercase;
 .workshop-details h5{
     padding: 0 20px;
     color: white;
-    margin-top: 50px;
-    font-size: 16px;
+    margin-top: 30px;
+    font-size: 20px;
 
 }
 .workshop-details p{
     padding: 0 20px;
     color: white;
-    line-height: 20px;
+    line-height: 24px;
     margin: 10px 0;
     font-size: 14px;
 }
@@ -629,7 +623,7 @@ text-transform: uppercase;
     min-width: 70px;
     color: #193566;
     position: absolute;
-    bottom: 6%;
+    bottom: 4%;
     cursor: pointer;
     font-weight: bold;
     background: #ECF0F3;

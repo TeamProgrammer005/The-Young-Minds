@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community" _display="none"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">
@@ -56,7 +56,7 @@ export default function Home() {
                         {/* <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div>
-                            <p>The Young Minds Education is dedicated to enhance <strong>Science, Technology, Engineering, Arts and Mathematics</strong> capacity of our future builders. Our engaging programs are focused around the three pillars - <strong> Ideate, Build and Innovate..</strong></p>
+                            <p>The Young Minds Education is dedicated to enhance <strong>Science, Technology, Engineering, Arts and Mathematics</strong> capacity of our future builders. Our engaging programs are focused around the three pillars - <strong>Ideate, Build and Innovate..</strong></p>
                             {/* step 1 who you are */}
                             <div className="stepForJourney">
                                 <div className="cricleBlank" style={{background: firstColor}}>
@@ -130,7 +130,7 @@ export default function Home() {
                             return(
                                 <div className="workshop-details" key={index}>
                                     <img src={data.img} alt="" />
-                                    <span className="fas fa-bookmark utility"></span>
+                                    {/* <span className="fas fa-bookmark utility"></span> */}
                                     <div className="workshop-time">
                                         <span>{data.Date} <br /> {data.month}</span>
                                     </div>
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
                         {/* section4 updates from community */}
                 <div className="updateFromCommunity">
-                    <a href="https://forms.zohopublic.in/ymeducation/form/JoinOurCommunity/formperma/-8EQq-ilSYIkO8C4JDvV9OWnqOhtPJP6wVPcBXp5b80" target="_blank"><button>JOIN COMUNNITY</button></a>
+                    <a href="https://forms.zohopublic.in/ymeducation/form/JoinOurCommunity/formperma/-8EQq-ilSYIkO8C4JDvV9OWnqOhtPJP6wVPcBXp5b80" target="_blank"><button>JOIN COMMUNITY</button></a>
                     <h4>Update From </h4>
                     <h2>Community</h2>
                     <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
@@ -206,7 +206,7 @@ export default function Home() {
                                                     <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
                                                     <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
                                                     <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
-                                                    <li>  <i className="fas fa-share-alt utility"></i></li>
+                                                    {/* <li>  <i className="fas fa-share-alt utility"></i></li> */}
                                                 </ul>
                                         </div>
                                     </div>

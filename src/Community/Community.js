@@ -7,14 +7,14 @@ export default function Community() {
     <div>
         <div className="communityDOM">
             {/* Adding main landing page */}
-        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Join Us" btnLink="/community"/>
+        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="/community" _display="none"/>
         {/* section 1 for discover steam */}
         <div className="discoverSteam">
             <h4>DISCOVER</h4>
             <h2>STEAM</h2>
                     <p>A sneak peak into our fun and interactive sessions.</p>
             <div className="steamDesc">
-                <div>
+                <div className='steamDesc-align'>
                     <div className="dropdownCategory">
                         <select name="dropdownCat" id="dropdownCat">
                             <option value="select_cateogry">Select Category</option>
@@ -39,13 +39,13 @@ export default function Community() {
                 <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events..</p>
                 <div className='steamCategories12'>
                     <ul>
-                        <Link to="/community"><li>Topic 1</li></Link>
-                        <Link to="/community"><li>Topic 2</li></Link>
-                        <Link to="/community"><li>Topic 3</li></Link>
-                        <Link to="/community"><li>Topic 4</li></Link>
-                        <Link to="/community"><li>Topic 5</li></Link>
-                        <Link to="/community"><li>Topic 6</li></Link>
-                        <Link to="/community"><li>Topic 7</li></Link>
+                        <Link to="/community"><li>3D Printing</li></Link>
+                        <Link to="/community"><li>Artificial Intelligence</li></Link>
+                        <Link to="/community"><li>Blockchain</li></Link>
+                        <Link to="/community"><li>Biotechnology</li></Link>
+                        <Link to="/community"><li>Geometry</li></Link>
+                        <Link to="/community"><li>History</li></Link>
+                        <Link to="/community"><li>Much More</li></Link>
                     </ul>
                 </div>
             </div>

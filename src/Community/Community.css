@@ -13,7 +13,6 @@
     margin-top: 30px;
 }
 .discoverSteam h2, .steamCommunity h2{
-    font-family: 'Montserrat';
     font-style: normal;
     position: relative;
     font-weight: 600;
@@ -39,27 +38,28 @@
 }
 .discoverSteam .steamDesc, .steamCommunity .steamCategoryDOM{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .discoverSteam .steamDesc{
     align-items: center;
 }
+
 .steamCategoryDOM .steamCategories12{
     width: 500px;
 }
 .discoverSteam p{
-    font-size: 16px;
+    font-size: 20px;
     color: #193566;
+    margin-top: 10px;
     margin-left: 20px;
 }
 .steamCommunity .steamCategoryDOM p{
-    font-size: 15px;
+    font-size: 20px;
     color: #193566;
-    width: 40vw;
+    line-height: 30px;
+    width: 50vw;
     margin: 20px;
-    line-height: 28px;
-    margin-top: 40px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
 }
 .steamDesc img{
     width: 200px;
@@ -87,7 +87,7 @@
     border-radius: 20px;
 }
 .dropdownCategory{
-    margin: 20px 0;
+    margin: 20px;
     display: flex;
 }
  #dropdownCat{
@@ -128,7 +128,9 @@
     }
     .steamCommunity .steamCategoryDOM p {
         margin-top: 20px;
-        min-width: 300px;
+        min-width: 500px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .steamCategories12 ul li{
         margin: 10px;
@@ -137,6 +139,10 @@
 @media screen and (max-width: 800px){
     .steamCommunity .steamCategoryDOM p{
         margin-right: 0px;
+        min-width: 400px;
+    }
+    .discoverSteam p{
+        font-size: 16px;
     }
     .steamDesc img{
      margin-left: 5px;
@@ -145,10 +151,15 @@
         flex-direction: column;
     }
     .dropdownCategory button{
-        margin: 10px 20px;
+        margin: 10px 0;
     }
 }
 @media screen and (max-width: 700px){
+    .steamCommunity .steamCategoryDOM p {
+        min-width: 300px;
+        font-size: 14px;
+        line-height: 21px;
+    }
     .discoverSteam h2, .steamCommunity h2{
         font-size: 28px;
     }
@@ -160,13 +171,24 @@
         padding: 8px 16px;
     }
     .steamDesc .blankedLine{
-        display: none;
+       height: 150px;
+    }
+    .dropdownCategory{
+        margin: 10px;
     }
     .discoverSteam .steamDesc{
         margin: 0 10px;
     }
 }
 @media screen and (max-width: 600px){
+    .steamCommunity .steamCategoryDOM p {
+        min-width: none;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .steamDesc .blankedLine {
+        height: 100px;
+    }
     .steamDesc img{
         width: 100px;
         height: 100px;

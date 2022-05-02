@@ -190,6 +190,7 @@
     .contentAbout .midHeading button{
         font-size: 12px;
         margin: 20px;
+        margin-left: 0;
     }
     .midHeading p{
         font-size: 10px;
@@ -273,7 +274,7 @@
     }
     
     .para p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 30px;
     }
 

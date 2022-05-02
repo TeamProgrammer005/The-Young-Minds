@@ -136,8 +136,7 @@ body{
 .educationListDOM .toggleList li{
     list-style: none;
     font-size: 10px;
-    font-family: Montserrat, sans-serif;
-    line-height: 16px;
+     line-height: 16px;
 }
 .educationListDOM .changeDisplay{
     display: block;
@@ -294,7 +293,7 @@ body{
     margin-top: 40px;
 }
 .answer .logo p{
-    font-family: 'Montserrat';
+    
     font-size: 12px;
     text-align: center;
     margin: 20px;
@@ -312,6 +311,10 @@ body{
     margin-right: 15px;
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
+.newReview .empty{
+    width: 80px;
+    height: 80px;
+}
 .studentCount .student h2{
     font-size: 18px;
     text-align: center;
@@ -319,7 +322,6 @@ body{
     margin-top: 10px;
 }
 .studentCount .student h3{
-    font-family: 'Montserrat';
     font-size: 13px;
     text-align: center;
     color: #193566;
@@ -329,7 +331,6 @@ body{
     position: relative;
 }
 .testimonials span{
-    font-family: 'Montserrat';
     font-size: 12px;
     color: #97A7C3;
     margin-left: 20px;
@@ -353,7 +354,10 @@ body{
     color: #193566;
     font-size: 12px;
 }
-
+.newReview .detail h4{
+    font-size: 14px;
+    margin-top: 20px;
+}
 .rating{
     display: flex;
 }
@@ -383,8 +387,7 @@ body{
     opacity: 0;
 }
 .newReviewsBox .newReview{
-    width: 300px;
-    min-width: 280px;
+    min-width: 400px;
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -415,7 +418,8 @@ body{
     text-align: left;
 }
 .newReview p{
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 22px;
 }
 .testimonials {
 width: 100vw;
@@ -449,9 +453,9 @@ max-width: 1200px;
     margin-top: 30px;
 }
 .knowUs p{
-    font-family: 'Montserrat';
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 12px;
+    margin-top: 10px;
     color: #193566;
 }
 .join_us_setion{

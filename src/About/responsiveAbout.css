@@ -1,5 +1,5 @@
 @media screen and (min-width: 500px) {
-    .something .thoughts p{
+    .something .thoughts p, .statement p{
         font-size: 14px;
         line-height: 20px;
     }
@@ -11,10 +11,6 @@
     .qualityEducation .psuedoBg{
         max-width: 300px;
         padding: 10px;
-       }
-       .statement p{
-           font-size: 14px;
-           line-height: 24px;
        }
      .wordFromYoungMinds h2, .answer h2, .testimonials h2, .knowUs h2 {
         font-size: 22px;
@@ -35,12 +31,15 @@
      font-size: 14px;
     }
     .knowUs p{
-        font-size: 13px;
+        font-size: 15px;
     }
     .listUpperNav img{
         width: 50px;
         margin: 10px;
         height: 50px;
+    }
+    .testimonials span{
+        font-size: 14px;
     }
     .qualityEducation{
         display: flex;
@@ -48,10 +47,6 @@
     }
     .qualityEducation .educationListDOM{
         margin-right: 20px;
-    }
-    .statement p{
-        font-size: 14px;
-        line-height: 28px;
     }
     .testimonials .icons{
         display: none;
@@ -68,9 +63,9 @@
     .newReviewsBox{
         display: flex;
     }
-    .something .thoughts p{
+    .something .thoughts p, .statement p{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 24px;
     }
     .presidentDetails .imgBox{
         width: 150px;
@@ -95,7 +90,7 @@
         margin: auto;
     } 
     .presidentDetails h3{
-        font-size: 17px;
+        font-size: 16px;
     }
     .listHeading h4{
         font-size: 14px
@@ -120,19 +115,19 @@
         height: 80px;
     }
     .knowUs p{
-        font-size: 14px;
+        font-size: 16px;
     }
     .answer .answerContainer img{
         width: 100px;
+    }
+    .newReview p{
+        font-size: 16px;
+        line-height: 24px;
     }
     .qualityEducation .psuedoBg{
         max-width: 400px;
         padding: 14px;
        }
-       .statement p{
-        font-size: 15px;
-        line-height: 30px;
-    }
        .listHeading h4{
         font-size: 18px;
         margin-top: 20px;
@@ -145,11 +140,17 @@
         line-height: 18px;
     }
     .something .thoughts p{
-        font-size: 20px;
+        font-size: 18px;
         max-width: 600px;
-        line-height: 35px;
+        line-height: 30px;
+    }
+    .statement p{
+        font-size: 18px;
+        line-height: 30px;
     }    
-
+    .presidentDetails span{
+        font-size: 14px;
+    }
     .presidentDetails .imgBox{
         width: 180px;
         height: 180px;
@@ -178,10 +179,13 @@
         font-size: 16px;
        }
     .knowUs p{
-        font-size: 16px;
-        margin-left: 40px;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
     .something .thoughts p{
+        font-size: 20px;
+        line-height: 35px;
         max-width: 700px;
     }    
     .presidentDetails .imgBox{
@@ -212,6 +216,30 @@
         font-size: 22px;
         line-height: 38px;
     }    
+    .newReview p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .presidentDetails span{
+        font-size: 18px;
+    }
+    .newReview .detail h4{
+        font-size: 20px;
+    }
+    .newReview .profile i{
+        font-size: 40px;
+    }
+    .newReview .empty {
+        width: 100px;
+        height: 100px;
+    }
+    .testimonials span {
+        font-size: 20px;
+    }
+    .statement p{
+        font-size: 20px;
+        line-height: 35px;
+    }
     .presidentDetails .imgBox{
         width: 220px;
         height: 220px;
@@ -228,10 +256,7 @@
         font-size: 15px;
         line-height: 24px;
     }
-    .statement p{
-        font-size: 17px;
-        line-height: 35px;
-    }
+
     .listHeading h4{
         font-size: 22px;
         margin-top: 20px;

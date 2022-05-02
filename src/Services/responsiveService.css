@@ -33,8 +33,9 @@
         margin-left: 50px;
     }
     .field_expertise .fields h4 {
-        margin: 0;
         font-size: 14px;
+        margin: 0;
+        margin-top: 10px;
     }
     .field_expertise h3{
         margin: 10px 0;
@@ -80,15 +81,17 @@
     .ideas h4, .services_idea h4{
         font-size: 24px;
     }
-    .ideas p{
-        font-size: 16px;
-    }
     .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
         font-size: 32px;
     }
     .additionalService h4, .field_expertise h4, .services_idea h4 {
         font-size: 16px;
         margin: 16px 20px;
+    }
+    .services_idea h4{
+        margin: 10px 0;
+        font-size: 20px;
+        margin-top: 0;
     }
     .field_expertise .fieldsBox h3{
         font-size: 24px;
@@ -103,6 +106,7 @@
     
     .our_clients .clients_para{
         line-height: 25px;
+        font-size: 16px;
     }
     .subscribe input{
         width: 50vw;
@@ -110,14 +114,19 @@
         margin-bottom: 10px;
     }
     .field_expertise .fields h4 {
-        margin: 0;
         font-size: 14px;
     }
     .additionalService p, .field_expertise p, .our_clients p{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 }
 @media screen and (max-width : 670px){
+
+
+.additional_feature_section{
+    width: 280px;
+    min-width: 280px;
+}
     .additionalService h2, .field_expertise h2, .our_clients h2, .services_idea h2{
         font-size: 28px;
     }
@@ -167,7 +176,7 @@
     .ideas p{
         font-size: 13px;
         padding-right: 5px;
-        line-height: 17px;
+        line-height: 20px;
     }
     .field_expertise .fieldsBox .empty{
         height: 70px;
@@ -184,6 +193,7 @@
         width: 100px;
     }
     .our_clients .clients_para{
+        font-size: 14px;
         line-height: 20px;
     }
 }
@@ -200,6 +210,9 @@
     .additionalService h4, .field_expertise h4, .services_idea h4 {
         font-size: 12px;
         margin: 8px 20px;
+    }
+    .services_idea h4{
+        margin: 8px 0;
     }
     .serviceIdeaSection .khali{
         height: 110px;

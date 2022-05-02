@@ -6,14 +6,16 @@
 }
 .services_idea h4{
     margin-left: 20px;
-    font-family: 'Montserrat';
     font-size: 24px;
     line-height: 93.9%;
     text-transform: uppercase;
     color: #193566;
 }
+.ideas h4{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
 .services_idea h2{
-    font-family: 'Montserrat';
     margin-left: 20px;
     font-size: 50px;
     position: relative;
@@ -118,14 +120,12 @@ align-items: center;
     background: #f3f3f3f5;
 }
 .innerBox span{
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 20px;
     line-height: 93.9%;
     color: #193566;
 }
 .innerBox b{
-    font-family: 'Montserrat';
     font-size: 30px;
     line-height: 110%;
     color: #193566;
@@ -148,9 +148,8 @@ align-items: center;
     box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(151, 167, 195, 0.5);
 }
 .ideas p{
-    font-family: 'Montserrat';
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     padding-right: 10px;
     color: #193566;
 }
@@ -185,7 +184,6 @@ align-items: center;
     color: #193566;
 }
 .additionalService h4, .field_expertise h4{
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 600;
     margin: 24px 20px;
@@ -193,7 +191,6 @@ align-items: center;
     line-height: 11px;  
 }
 .additionalService h2, .field_expertise h2, .our_clients h2{  
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-size: 50px;
     line-height: 11px;
@@ -215,10 +212,10 @@ align-items: center;
     z-index: -1;
 }
 .additionalService p, .field_expertise p, .our_clients p{
-    font-family: 'Montserrat';
-    margin-left: 40px;
-    font-size: 16px;
-    line-height: 37px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
 }
 .additional_feature_slide{
     display: none;
@@ -229,20 +226,21 @@ align-items: center;
     overflow-x: scroll;
     /* width: 100%; */
 }
-.additional_feature_section{
-    margin: 40px 20px;
-    height: 320px;
-}
 .additional_feature_section, .additional_feature_section_slide{
     position: relative;
     display: grid;
     place-items: center;
-    width: 250px;
-    min-width: 220px;
+    width: 300px;
+    min-width: 300px;
     background: #ECF0F3;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px -4px 8px #FFFFFF;
     border-radius: 12px;
     margin-bottom: 100px;
+}
+.additional_feature_section{
+    margin: 40px 20px;
+    margin-bottom: 120px;
+
 }
 .additional_feature_section_slide{
     opacity: 0;
@@ -260,14 +258,12 @@ align-items: center;
 }
 .additional_feature_section p, .additional_feature_section_slide p{
     margin: 15px;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 15px !important;
+    line-height: 24px !important;
     padding: 0 20px;
 }
 .additional_feature_section h4, .additional_feature_section_slide h4{
     margin: 10px 0;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 15px;
     line-height: 211.9%;
@@ -333,12 +329,10 @@ align-items: center;
 }
 .field_expertise .fieldsBox h3{
     text-align: center;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 30px;
 }
 .field_expertise .fieldsBox h4{
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px;
@@ -359,8 +353,9 @@ align-items: center;
     margin: 0 auto;
 }
 .our_clients .clients_para{
-    font-size: 18px;
-    margin: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px;
 }
 .subscribe{
     display: flex;

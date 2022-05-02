@@ -11,7 +11,7 @@ export default function Store() {
     <div>
       <div className="storeDOM">
         {/* Adding main page */}
-      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/store.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" btnLink="/community"/>
+      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/store.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" btnLink="https://store.theyoungminds.org" _display="none"/>
       {/* section 1 feautured product */}
         <div className="store_featured">
           <div className="featured_nav">
@@ -20,10 +20,10 @@ export default function Store() {
               <h2>PRODUCT</h2>
             </div>
             <div className="viewAll">
-            <i className="fas fa-thumbtack utility"></i>
+            {/* <i className="fas fa-thumbtack utility"></i>
                         <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
                         <Link to="./home/categories"><span>view all</span></Link>
-                        <i className='fas fa-chevron-right'></i>
+                        <i className='fas fa-chevron-right'></i> */}
                         </div>
           </div>
           <div className="store_products">
@@ -54,7 +54,7 @@ export default function Store() {
                     <h4>{data.title}</h4>
                     <h4>{data.title2}</h4>
                     <img src="img/categories.png" alt="" />
-                    <Link to="/our_store/more" className='navButton'><button>More</button></Link>
+                    <a href={data.link} className='navButton' target='_blank'><button>More</button></a>
                   </div>
                 </>
               )
@@ -62,7 +62,7 @@ export default function Store() {
           </div>
         </div>
         {/* section 3 featured story */}
-        <div className="featured_story">
+        {/* <div className="featured_story">
           <h4>FEATURED</h4>
           <h2>STORY</h2>
           <div className="stories-intro">
@@ -79,7 +79,7 @@ export default function Store() {
               <div className="story2 stroy"><img src="img/image 4.png" alt="" /></div>
             </div>
           </div>
-        </div>
+        </div> */}
 {/* section4 current trend section */}
         <div className="store_featured">
           <div className="featured_nav">
@@ -88,10 +88,10 @@ export default function Store() {
               <h2>TREND</h2>
             </div>
             <div className="viewAll">
-            <i className="fas fa-thumbtack utility"></i>
+            {/* <i className="fas fa-thumbtack utility"></i>
                         <Link to="./home/categories"><i className="fas fa-info-circle utility"></i></Link>
                         <Link to="./home/categories"><span>view all</span></Link>
-                        <i className='fas fa-chevron-right'></i>
+                        <i className='fas fa-chevron-right'></i> */}
                         </div>
           </div>
           <div className="store_products">

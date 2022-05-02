@@ -95,7 +95,8 @@
     color: #FFFFFF;
     font-size: 13px;
     text-transform: uppercase;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 .product_carting{
     display: flex;

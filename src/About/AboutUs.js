@@ -99,7 +99,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none"/>
+                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" />
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
                             return (
@@ -261,7 +261,7 @@ export default function AboutUs() {
                     </div>
                     <div className="knowUs">
                         <h2>GET TO KNOW US</h2>
-                        <p>a sneak peak of our fun and interactive sessions ...</p>
+                        <p>A sneak peak of our fun and interactive sessions ...</p>
                         <div className="join_us_setion">
                             {Array.from({length: 10}).map((data, index)=>{
                                 return (
@@ -271,7 +271,7 @@ export default function AboutUs() {
                         </div>
                         <div className="join_our_community">
 
-                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdiaFG0kbduBqkh0UWx_GmTnqjZBfIvUP9YNQ6LbLskQf8ekQ/viewform' target="_blank"><button>Join Our Community</button></a>
+                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdiaFG0kbduBqkh0UWx_GmTnqjZBfIvUP9YNQ6LbLskQf8ekQ/viewform' target="_blank"><button>Careers</button></a>
                         </div>
                     </div>
                 </div>
