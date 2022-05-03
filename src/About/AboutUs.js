@@ -271,7 +271,7 @@ export default function AboutUs() {
                         </div>
                         <div className="join_our_community">
 
-                        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdiaFG0kbduBqkh0UWx_GmTnqjZBfIvUP9YNQ6LbLskQf8ekQ/viewform' target="_blank"><button>Careers</button></a>
+                        <a href='https://zfrmz.in/eC8EukQ6cIrnRDxlkqzw' target="_blank"><button>Careers</button></a>
                         </div>
                     </div>
                 </div>

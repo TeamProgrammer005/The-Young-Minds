@@ -29,15 +29,15 @@ export default function Store() {
           <div className="store_products">
             {storeProduct.map((data, index) => {
               return (
-                <div className="store-product_details" key={index}>
+                <>          
+                <a className="store-product_details" key={index} href={data.link} target="_blank">
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
-                    <h4>{data.title}</h4>
-                
+                    <h4>{data.title}</h4>        
                   </div>
-                  <h6>{data.name}</h6>
-                
-                </div>
+                  <h6>{data.name}</h6> 
+                </a>
+                </>
               )
             })}
           </div>
@@ -100,10 +100,10 @@ export default function Store() {
                 <div className="store-product_details" key={index}>
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
-                    <h4>{data.title}</h4>
-                    <h4>${data.price}.00</h4>
+                    <h4>{data.name}</h4>
+                    {/* <h4>Rs {data.price}.00/-</h4> */}
                   </div>
-                  <h6>{data.name}</h6>
+                  <h6>{data.title}</h6>
                   {/* <div className="product_carting">
                     <i className="far fa-heart"></i>
                     <i className="fas fa-share"></i>

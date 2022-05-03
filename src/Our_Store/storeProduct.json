@@ -1,58 +1,58 @@
 [
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "CREALITY-ENDER 3",
+        "price": 12250,
+        "img": "products/feature_product 1.webp",
+        "link":"https://store.theyoungminds.org/collections/3d-printer-education-category/products/creality-ender-3"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "WOL3D-ITouch",
+        "price": 1500,
+        "img": "products/feature_product 2.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-itouch"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "PLA EXOTIC FILAMENT",
+        "price": 2400,
+        "img": "products/feature_product 3.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-pla-exotic"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "CREALITY-CR10S PRO V2",
+        "price": 54000,
+        "img": "products/feature_product 4.webp",
+        "link":"https://store.theyoungminds.org/products/creality-cr10s-pro-v2"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "CREALITY-ENDER 6",
+        "price": 47000,
+        "img": "products/feature_product 5.webp",
+        "link":"https://store.theyoungminds.org/products/creality-ender-6"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "iPLA FILAMENT",
+        "price": 1000,
+        "img": "products/feature_product 6.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-ipla"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "CREALITY-ENCLOSURE",
+        "price": 5000,
+        "img": "products/feature_product 7.webp",
+        "link":"https://store.theyoungminds.org/products/creality-enclosurecreality-enclosure"
     },
     {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
+        "title": "The Young Minds Store",
+        "name": "CREALITY-WIRELESS CAM",
+        "price": 6000,
+        "img": "products/feature_product 8.webp",
+        "link":"https://store.theyoungminds.org/products/creality-wireless-cam"
     }
 ]
