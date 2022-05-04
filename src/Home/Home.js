@@ -9,8 +9,8 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0},{title: "Teacher", img:"/img/teacher.png", id: 1},{title: "Parent",img:"img/parent 1.png", id: 2},{title: "Institute", img:"img/parent 1.png", id: 3}]
-    const categoryNameData=[{title: "Science", class: "fab fa-react"},{title: "Technology",class: "fas fa-code"},{title: "Engineering",class:"fas fa-cog"},{title: "Arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", class:"fas fa-calculator"}]
+    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/parent 1.png", id: 3, link: "institute"}]
+    const categoryNameData=[{title: "Science", link: "science", class: "fab fa-react"},{title: "Technology", link: "technology", class: "fas fa-code"},{title: "Engineering",link: "engineering", class:"fas fa-cog"},{title: "Arts", link: "arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", link: "mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("#97A7C3")
     const [secondColor, setsecondColor] = useState("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)");
@@ -20,7 +20,10 @@ export default function Home() {
     const [currentCategory, setcurrentCategory] = useState(6);
     const [toggledisable, settoggledisable] = useState(true)
     const [buttonLink, setbuttonLink] = useState("/")
-    const changeColor = (index)=>{
+    // const [step1Link, setstep1Link] = useState("learner")
+    const [step2Link, setstep2Link] = useState("")
+
+    const changeColor = (index, title)=>{
         setcolor("#193566");
         setthirdColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setsecondColor("#97A7C3")
@@ -28,6 +31,8 @@ export default function Home() {
         setfirstColor("#97A7C3")
         setcurrentCategory(index)
         settoggledisable(false)
+        setstep2Link(title)
+        console.log(title)
     }
     const backgroundChange = (index)=>{
         setcolor("#97A7C3");
@@ -37,7 +42,8 @@ export default function Home() {
         setsecondColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setcurrentClass(index)
         setcurrentCategory(6)
-  
+        // setstep1Link(title)
+        // console.log(title)
     }
 
   return (
@@ -71,7 +77,7 @@ export default function Home() {
                            {categoryData.map((data, index) => {
                             return (
                                 <>
-                                   <div className={currentClass === index ? "basic_journey backgroundChange" : "basic_journey"}  key={index} onClick= {() => backgroundChange(index)}  >
+                                   <div className={currentClass === index ? "basic_journey backgroundChange" : "basic_journey"}  key={index} value="something" onClick= {() => backgroundChange(index)}  >
                                        <h3 style={{display : "none"}}>Looking to boost your</h3>
                                        <h2>{data.title}</h2>
                                        {/* <p>Start my journey as learner</p> */}
@@ -95,7 +101,7 @@ export default function Home() {
                                  {categoryNameData.map((data, index)=>{
                                      return (
                                          <div className="journeyCategories" key={index}>
-                                             <div className={currentCategory === index ? "categoryIcon colorChange" : "categoryIcon"} onClick={() => changeColor(index)}>
+                                             <div className={currentCategory === index ? "categoryIcon colorChange" : "categoryIcon"} onClick={() => changeColor(index, data.link)}>
                                              <i className={data.class}></i>
                                              </div>
                                              <p className={data.className}>{data.title}</p>
@@ -108,7 +114,7 @@ export default function Home() {
                                 <div className="cricleBlank" style={{background: thirdColor}}>
                                     <div className="innerBlank"></div>
                                 </div>
-                                <Link to= {buttonLink} ><button style={{background: color}} disabled={toggledisable === true }>START LEARNING</button></Link>
+                                <a href= {`http://library.theyoungminds.org/${step2Link}`} target="_blank" ><button style={{background: color}} disabled={toggledisable === true }>START LEARNING</button></a>
                              </div>
                       </div> 
              {/* section 2 join workshop */}

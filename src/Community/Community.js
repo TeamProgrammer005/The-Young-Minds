@@ -2,12 +2,19 @@ import React from 'react'
 import Mainpage from '../Mainpage/Mainpage'
 import "./Community.css"
 import { Link } from "react-router-dom"
+import { useState} from 'react'
 export default function Community() {
+    const [libraryLink, setlibraryLink] = useState("")
+    const [libraryBtn, setlibraryBtn] = useState(true)
+    const toggleLibraryLinks = (event)=>{
+        setlibraryBtn(event.target.value === "select_cateogry" ? true : false);
+        setlibraryLink(`http://library.theyoungminds.org/${event.target.value}`)
+    }
   return (
     <div>
         <div className="communityDOM">
             {/* Adding main landing page */}
-        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="/community" _display="none" buttonDisplay_store="none"/>
+        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="http://library.theyoungminds.org/blogs/" _display="none" buttonDisplay_store="none"/>
         {/* section 1 for discover steam */}
         <div className="discoverSteam">
             <h4>DISCOVER</h4>
@@ -16,7 +23,7 @@ export default function Community() {
             <div className="steamDesc">
                 <div className='steamDesc-align'>
                     <div className="dropdownCategory">
-                        <select name="dropdownCat" id="dropdownCat">
+                        <select name="dropdownCat" id="dropdownCat" onChange={toggleLibraryLinks}>
                             <option value="select_cateogry">Select Category</option>
                             <option value="science">Science</option>
                             <option value="technology">Technology</option>
@@ -24,7 +31,7 @@ export default function Community() {
                             <option value="arts">Arts</option>
                             <option value="mathematics">Mathematics</option>
                         </select>
-                        <Link to= "/community"><button>Search</button></Link>
+                        <a href= {libraryLink} target= "_blank"><button disabled={libraryBtn === true}>Search</button></a>
                     </div>
                 </div>
                 <div className="blankedLine"></div>

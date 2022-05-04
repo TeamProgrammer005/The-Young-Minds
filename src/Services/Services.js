@@ -2,7 +2,7 @@ import React from 'react'
 import servicesIdeaData from "./servicesIdeaData.json"
 import { useState, useEffect } from 'react'
 import additionalServiceData from "./additionalServiceData.json"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import "./Services.css"
 import "./responsiveService.css"
 import Mainpage from '../Mainpage/Mainpage'
@@ -62,7 +62,7 @@ export default function Services() {
                                     <h4>{data.title}</h4>
                                     <p className='showNhide'>{data.desc}</p>
                                     <p className='hideNshowP'>{data.mobileDesc}</p>
-                                    <Link to={data.link}><button>START</button></Link>
+                                    <a href={data.link} target= "_blank"><button>START</button></a>
                                 </div>
                             </div>
                         )
@@ -81,7 +81,7 @@ export default function Services() {
                                         <h4>{data.title}</h4>
                                         <img src={data.img} alt="logo" />
                                         <p>{data.desc}</p>
-                                        <Link to={data.link} className='btn_service'><button >Know More</button></Link>
+                                        <a href={data.link} target="_blank" className='btn_service'><button >Know More</button></a>
                                     </div>
                                 </>
                             )

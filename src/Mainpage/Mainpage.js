@@ -12,9 +12,13 @@ export default function (props) {
     const buttonDisplay_store= props.buttonDisplay_store
     const [linking, setlinking] = useState("")
     const [disabled, setdisabled] = useState(true)
+    const [disabled2, setdisabled2] = useState(false)
     const toggleLink = (event) => {
-        setdisabled(false)
+        setdisabled(event.target.value === "services" ? true : false)
        setlinking(`https://theyoungminds.org/${event.target.value}`)
+    }
+    const toggleSelection = (event) =>{
+        setdisabled2(event.target.value === "select_cateogry" ? true : false)
     }
     return (
         <div>
@@ -34,7 +38,7 @@ export default function (props) {
                         <h4>{props.community}</h4>
                         <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>
                         <div className="inputDOM" style={{display: display}}>
-                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat' >
+                        <select name="dropdownCat" id="dropdownCat" className='dropdownCat' onChange= {toggleSelection} >
                             <option value="select_cateogry">Select Category</option>
                             <option value="science" >3D Printer for Education</option>
                             <option value="technology">3D Printer for Industrial Use</option>
@@ -51,7 +55,7 @@ export default function (props) {
                         </select>
                     
                     </div>
-                        <a href= {props.btnLink} target="_blank" ><button style={{display:buttonDisplay }}>{props.btnText}</button></a>
+                        <a href= {props.btnLink} target="_blank" ><button style={{display:buttonDisplay }} disabled={disabled2 === true}>{props.btnText}</button></a>
                         <a href= {linking} target="_blank"  ><button style={{display:buttonDisplay_store }} disabled={disabled === true } >{props.btnText}</button></a>
                         
                     </div>
