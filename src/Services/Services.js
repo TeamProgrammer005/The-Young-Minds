@@ -10,7 +10,7 @@ import storeProduct from "../Our_Store/storeProduct.json"
 
 
 export default function Services() {
-
+    const fieldExpertise = [{name: "", img: ""},{name: "", img: ""},{name: "", img: ""},{name: "", img: ""}]
     const [currentService, setCurrentService] = useState(0)
 
     const serviceDataLength = additionalServiceData.length;
@@ -122,7 +122,7 @@ export default function Services() {
                     <h2>Expertise</h2>
                     <p>A sneak peak of our fun and interactive sessions ...</p>
                     <div className="fieldsBox">
-                        {Array.from({ length: 4 }).map((fields, index) => {
+                        {fieldExpertise.map((fields, index) => {
                             return (
                                 <div className="fields" key={index}>
                                     <div className="empty"></div>

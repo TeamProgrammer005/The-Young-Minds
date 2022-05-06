@@ -53,8 +53,8 @@ export default function Store() {
                   <div className='categories_box' key={index}>
                     <h4>{data.title}</h4>
                     <h4>{data.title2}</h4>
-                    <img src="img/categories.png" alt="" />
-                    <a href={data.link} className='navButton' target='_blank'><button>More</button></a>
+                    <img src={data.img} alt="" />
+                    <a href={data.link} className='navButton' target='_blank'><button>Go To</button></a>
                   </div>
                 </>
               )

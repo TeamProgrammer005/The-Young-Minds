@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/community" _display="none" buttonDisplay_store="none"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/" _display="none" buttonDisplay_store="none"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">

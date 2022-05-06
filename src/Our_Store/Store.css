@@ -123,8 +123,10 @@
 }
 .categories_DOM .categories_box{
     min-width: 250px;
+    width: 250px;
     margin: 20px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 110px;
     display: grid;
     place-items: center;
     height: 300px;
@@ -157,7 +159,7 @@
 }
 .categories_box img{
     width: 80%;
-    height: 60%;
+    height: 60% !important;
     border-radius: 12px;
 }
 .categories_box .navButton{

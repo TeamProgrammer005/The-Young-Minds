@@ -182,13 +182,13 @@
         max-height: 310px;
     }
     .eventDOM .eventDetails{
-        max-height: 350px;
+        max-height: 370px;
     }
     .eventTitle span{
         font-size: 15px;
     }
     .eventDOM .eventDetails img{
-        height: 55%;
+        height: 65%;
     }
     .courses .courseDetail{
         min-width: 370px;
@@ -353,7 +353,7 @@
     .eventDOM .eventDetails{
         margin-bottom: 10px;
         margin-top: 0;
-        max-height: 300px;
+        max-height: 330px;
     }
     .eventTitle h4{
         margin-top: 10px;
