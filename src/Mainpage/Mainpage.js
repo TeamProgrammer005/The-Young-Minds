@@ -24,7 +24,9 @@ export default function (props) {
         <div>
             {/* Landing page content taken from props form each pages to change accordingly*/}
             <div className="sectionAbout">
-                <img src={props.img} alt="" />
+                <div className="imgContainer">
+                <img src={props.img} alt="loading" />
+                </div>
                 <div className="squareDOM"><div className="innerSquare"><div className="boxSquare"></div></div></div>
                 <div className="contentAbout">
                     <h3 className='title'>{props.title}</h3>

@@ -1,12 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 .navigation{
     max-width: 1200px;
     width: 100vw;
     margin-top: 10px;
-    /* max-height: 100vw; */
 }
 .navigation .topNav{
     color: #193566;
@@ -20,13 +15,6 @@
     width: 120px;
     height: 100px;
 }
- .navigation .topNav li i{
-    font-size: 20px;
-    border: 1px solid #193566;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
- }
  .navigation .topNav li h2{
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -72,7 +60,6 @@
     display: none;
     z-index: 10;
     place-items: center;
-    /* top: 93vh; */
     left: 0;
     bottom: 0;
     background: #ECF0F3;
@@ -94,11 +81,6 @@
     text-decoration: none;
     width: 40px;
     font-size: 150%;
-}
-.fa-bars{
-   margin-top: 5px;
-   margin-right: 4px;
-   cursor: pointer;
 }
 .mobile_nav ul{
     display: flex;
@@ -124,16 +106,6 @@
     text-transform: capitalize;
     align-items: center;
 }
-.mobile_nav .log_in{
-    width: 30px;
-    height: 30px;
-    border: 1px solid #193566;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    
-}
-
 @media  screen and (max-width: 700px) {
     .navigation{
         display: none;
@@ -147,7 +119,6 @@
 }
 @media  screen and (max-width: 700px){
     .mobileRouting .mobileNav li a{
-
         font-size: 100%;
     }
 }

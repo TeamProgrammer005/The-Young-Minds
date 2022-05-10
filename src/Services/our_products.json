@@ -1,58 +1,38 @@
 [
     {
         "title": "Product Title",
-        "name": "Product Name",
+        "name": "lamp shade",
         "price": 20,
-        "img": "img/product.png",
+        "img": "products/lamp_shade.png",
         "link":"/"
     },
     {
         "title": "Product Title",
-        "name": "Product Name",
+        "name": "eiffel tower",
         "price": 20,
-        "img": "img/product.png",
+        "img": "products/eiffel_tower.png",
         "link":"/"
     },
     {
         "title": "Product Title",
-        "name": "Product Name",
+        "name": "mandalorian",
         "price": 20,
-        "img": "img/product.png",
+        "img": "products/mandalorian.png",
         "link":"/"
     },
     {
         "title": "Product Title",
-        "name": "Product Name",
+        "name": "marvel wall hanging",
         "price": 20,
-        "img": "img/product.png",
+        "img": "products/marvel_wall_hanging.png",
         "link":"/"
     },
     {
         "title": "Product Title",
-        "name": "Product Name",
+        "name": "flower vase",
         "price": 20,
-        "img": "img/product.png",
-        "link":"/"
-    },
-    {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
-    },
-    {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
-        "link":"/"
-    },
-    {
-        "title": "Product Title",
-        "name": "Product Name",
-        "price": 20,
-        "img": "img/product.png",
+        "img": "products/vase.png",
         "link":"/"
     }
+   
 ]

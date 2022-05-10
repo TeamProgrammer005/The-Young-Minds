@@ -5,7 +5,13 @@
     height: 250px;
     z-index: 1 !important;
 }
-.sectionAbout img {
+.sectionAbout .imgContainer{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    min-height: 270px;
+}
+.sectionAbout .imgContainer img {
     width: 100%;
     height: auto;
     max-height: 600px;
@@ -72,13 +78,11 @@
     font-size: 12px;
     color: #97A7C3;
 }
-
 .inputDOM {
     margin-top: 10px;
     align-items: center;
     position: relative;
 }
-
 .inputDOM input {
     background: #FFFFFF;
     width: 120px;
@@ -89,13 +93,11 @@
     outline: none;
     color: rgba(20, 24, 31, 0.48);
 }
-
 .inputDOM input::placeholder {
     padding-left: 10px;
     font-size: 10px;
     color: rgba(20, 24, 31, 0.48);
 }
-
 .inputDOM i {
     font-size: 10px;
     color: rgba(20, 24, 31, 0.48);
@@ -103,24 +105,20 @@
     position: absolute;
     transition: 1s ease;
 }
-
 .para {
     display: flex;
     margin-top: 15px;
     justify-content: center;
 }
-
 .para i {
     font-size: 16px;
 }
-
 .para i::before {
     color: white;
     border-radius: 5px;
     margin: 0 10px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .para p {
     text-align: center;
     color: #193566;
@@ -129,7 +127,6 @@
     font-size: 12px;
     max-width: 800px;
 }
-
 .blank {
     width: 90%;
     margin: 20px 5%;
@@ -162,11 +159,9 @@
     }
 }
 @media screen and ( min-width: 500px) {
-
     .para p {
         font-size: 14px;
     }
-
     .contentAbout .midHeading {
         margin-left: 30px;
         line-height: 30px;
@@ -199,15 +194,14 @@
         font-size: 10px;
         line-height: 18px;
     }
-
-
 }
-
 @media screen and (min-width: 600px) {
     .contentAbout {
         top: 160px;
     }
-
+    .sectionAbout .imgContainer{
+        min-height: 300px;
+    }
     .inputDOM {
         margin-top: 10px;
     }
@@ -217,7 +211,7 @@
         border-radius: 14px;
     }
     .inputDOM i , .inputDOM input::placeholder{
-        font-size: 12pxx;
+        font-size: 12px;
     }
     .inputDOM input::placeholder{
         padding-left: 25px;
@@ -239,26 +233,23 @@
         font-size: 0.9rem;
         margin-bottom: 8px;
     }
-
-
 }
-
 @media screen and (max-width: 700px) {
     .contentAbout {
         top: 100px;
     }
-  
 }
-
 @media screen and (max-width: 600px) {
     .contentAbout {
         top: 85px;
     }
 }
-
 @media screen and (min-width: 750px) {
     .para {
         margin-top: 50px;
+    }
+    .sectionAbout .imgContainer{
+        min-height: 400px;
     }
     .inputDOM input{
         width: 220px;
@@ -274,23 +265,19 @@
     }
     .inputDOM input::placeholder{
         padding-left: 30px;
-    }
-    
+    }  
     .para p {
         font-size: 20px;
         line-height: 30px;
     }
-
     .contentAbout .title {
         font-size: 2.5rem;
         opacity: 0;
     }
-
     .contentAbout .midHeading {
         margin-left: 50px;
         margin-top: 60px;
     }
-
     .contentAbout .midHeading h4 {
         font-size: 1rem;
         margin-bottom: 10px;
@@ -307,12 +294,13 @@
         font-size: 2rem;
         line-height: 40px;
     }
+    .sectionAbout .imgContainer{
+        min-height: 500px;
+    }
     .contentAbout .midHeading button{
         font-size: 16px;
         padding: 10px 30px;
     }
- 
-
     .contentAbout {
         top: 170px;
     }
@@ -330,9 +318,10 @@
         margin-left: 60px;
         margin-top: 70px;
     }
-
+    .sectionAbout .imgContainer{
+        min-height: 400px;
+    }
 }
-
 @media screen and (min-width: 940px) {
     .contentAbout .midHeading {
         margin-left: 70px;
@@ -341,23 +330,25 @@
     .inputDOM input{
         width: 300px;
     }
-
     .contentAbout .midHeading h4 {
         font-size: 1.2rem;
         margin-bottom: 10px;
     }
-    
     .contentAbout .midHeading .heading {
         font-size: 2.3rem;
         line-height: 50px;
         letter-spacing: 0.1rem;
     }
-
+    .sectionAbout .imgContainer{
+        min-height: 600px;
+    }
 }
-
 @media screen and (max-width: 380px) {
     .contentAbout {
         top: 75px;
+    }
+    .sectionAbout .imgContainer{
+        min-height: 190px;
     }
     .midHeading p{
         font-size: 8px;

@@ -6,7 +6,8 @@ import additionalServiceData from "./additionalServiceData.json"
 import "./Services.css"
 import "./responsiveService.css"
 import Mainpage from '../Mainpage/Mainpage'
-import storeProduct from "../Our_Store/storeProduct.json"
+import our_products from './our_products.json'
+// import storeProduct from "../Our_Store/storeProduct.json"
 
 
 export default function Services() {
@@ -101,7 +102,7 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="store_products">
-                        {storeProduct.map((data, index) => {
+                        {our_products.map((data, index) => {
                             return (
                                 <div className="store-product_details" key={index}>
                                     <img src={data.img} alt="our_product" />

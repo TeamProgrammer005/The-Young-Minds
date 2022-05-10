@@ -142,11 +142,11 @@
         grid-column-start: 3;
     }
 }
-@media screen and (max-width: 310px){
+/* @media screen and (max-width: 310px){
     .footer .shortIntro{
         margin-bottom: 20px;
     }
     .footer .socialMediaIcons{
          justify-content: center;
     }
-}
+} */
