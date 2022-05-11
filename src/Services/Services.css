@@ -318,11 +318,18 @@ align-items: center;
     place-items: center;
 }
 .field_expertise .fieldsBox .empty{
-    width: 100px;
+    width: 150px;
     margin: 30px 0 0px 10px;
-    height: 100px;
+    height: 150px;
+    display: grid;
+    place-items: center;
     border-radius: 50%; 
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(151, 167, 195, 0.5);
+}
+.field_expertise .fieldsBox .fieldsImgbox img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
 }
 .field_expertise .fieldsBox h3{
     text-align: center;

@@ -384,6 +384,9 @@ text-transform: uppercase;
     border-radius: 14px;
     box-shadow: 4px 4px 8px rgba(151, 167, 195, 0.5), -4px 0px 8px #FFFFFF;
 }
+.workshopDOM .workshop-details{
+    text-decoration: none;
+}
 .eventDOM .eventDetails{
     text-decoration: none;
     margin-bottom: 50px;

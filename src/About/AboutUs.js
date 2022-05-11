@@ -19,7 +19,7 @@ export default function AboutUs() {
             name: "Pradyuma Agarwal",
             para: "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
             post: "leader",
-            image: "img/young minds watermark 1.png",
+            image: "img/pradyuma.png",
             id: 2
         }
     ]

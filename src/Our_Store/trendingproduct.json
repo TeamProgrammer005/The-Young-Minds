@@ -1,0 +1,31 @@
+[
+    {
+        "title": "The Young Minds Store",
+        "name": "TPU FILAMENT ",
+        "price": 2500,
+        "img": "products/trendProduct 1.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-tpu"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "PLA EXOTIC FILAMENT",
+        "price": 9000,
+        "img": "products/trendProduct 2.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-pla-exotic"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "RESIN-CASTABLE",
+        "price": 2400,
+        "img": "products/trendProduct 3.webp",
+        "link":"https://store.theyoungminds.org/products/resin-castable?variant=42412564250866"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "CREALITY-WIRELESS CAM",
+        "price": 6000,
+        "img": "products/trendProduct 4.webp",
+        "link":"https://store.theyoungminds.org/products/creality-wireless-cam"
+    }
+
+]

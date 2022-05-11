@@ -5,6 +5,7 @@ import "./Store.css"
 import storeCategory from "./storeCateogry.json"
 import "./responsiveStore.css"
 import storeProduct from "./storeProduct.json"
+import trendingproduct from './trendingproduct.json'
 
 export default function Store() {
   return (
@@ -95,9 +96,9 @@ export default function Store() {
                         </div>
           </div>
           <div className="store_products">
-            {storeProduct.map((data, index) => {
+            {trendingproduct.map((data, index) => {
               return (
-                <div className="store-product_details" key={index}>
+                <a href={data.link} target="_blank" className="store-product_details" key={index}>
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
                     <h4>{data.title}</h4>
@@ -109,7 +110,7 @@ export default function Store() {
                     <i className="fas fa-share"></i>
                     <i className="fas fa-cart-plus"></i>
                   </div> */}
-                </div>
+                </a>
               )
             })}
           </div>

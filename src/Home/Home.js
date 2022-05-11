@@ -134,7 +134,7 @@ export default function Home() {
                      <div className="workshopDOM">
                         {homeData.map((data, index)=>{
                             return(
-                                <div className="workshop-details" key={index}>
+                                <a href={data.link} target="_blank" className="workshop-details" key={index}>
                                     <img src={data.img} alt="" />
                                     {/* <span className="fas fa-bookmark utility"></span> */}
                                     <div className="workshop-time">
@@ -143,7 +143,7 @@ export default function Home() {
                                     <h5>{data.Title}</h5>
                                     <p>{data.desc}</p>
                                     <a href={data.link} target="_blank"><button>Know More</button></a>
-                                </div>
+                                </a>
                             )
                         })}
                     </div>

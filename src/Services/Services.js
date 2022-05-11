@@ -11,7 +11,7 @@ import our_products from './our_products.json'
 
 
 export default function Services() {
-    const fieldExpertise = [{name: "", img: ""},{name: "", img: ""},{name: "", img: ""},{name: "", img: ""}]
+    const fieldExpertise = [{name: "Udit Sharma", img: "img/uditSharma.jpg"},{name: "Pradyuma Agarwal", img: "img/pradyuma.png"},{name: "Aanchal Gupta", img: "img/aanchal.jpg"},{name: "Vignesh Shukla", img: "img/young minds watermark 1.png"}]
     const [currentService, setCurrentService] = useState(0)
 
     const serviceDataLength = additionalServiceData.length;
@@ -126,9 +126,11 @@ export default function Services() {
                         {fieldExpertise.map((fields, index) => {
                             return (
                                 <div className="fields" key={index}>
-                                    <div className="empty"></div>
+                                    <div className="empty fieldsImgbox">
+                                        <img src={fields.img} alt="" />
+                                    </div>
                                     {/* <h3>36000+</h3> */}
-                                    <h4>Happy Students</h4>
+                                    <h4>{fields.name}</h4>
                                 </div>
                             )
                         })}
