@@ -9,6 +9,13 @@
         width: 70%;
         min-height: 200px;
     }
+    .store_productDis{
+        display: none !important;
+    }
+    .store_products .productFixChanges{
+        display: block !important;
+        opacity: 1 !important;
+    }
 }
 @media screen and (max-width: 855px){
     .featured_nav .nav_heading h4, .store_categories h4, .featured_story h4{

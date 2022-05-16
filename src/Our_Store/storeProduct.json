@@ -3,6 +3,7 @@
         "title": "The Young Minds Store",
         "name": "CREALITY-ENDER 3",
         "price": 12250,
+        "slider": 1,
         "img": "products/feature_product 1.webp",
         "link":"https://store.theyoungminds.org/collections/3d-printer-education-category/products/creality-ender-3"
     },
@@ -10,6 +11,7 @@
         "title": "The Young Minds Store",
         "name": "WOL3D-ITouch",
         "price": 1500,
+        "slider": 1,
         "img": "products/feature_product 2.webp",
         "link":"https://store.theyoungminds.org/products/wol3d-itouch"
     },
@@ -17,6 +19,7 @@
         "title": "The Young Minds Store",
         "name": "PLA EXOTIC FILAMENT",
         "price": 2400,
+        "slider": 1,
         "img": "products/feature_product 3.webp",
         "link":"https://store.theyoungminds.org/products/wol3d-pla-exotic"
     },
@@ -24,6 +27,7 @@
         "title": "The Young Minds Store",
         "name": "CREALITY-CR10S PRO V2",
         "price": 54000,
+        "slider": 2,
         "img": "products/feature_product 4.webp",
         "link":"https://store.theyoungminds.org/products/creality-cr10s-pro-v2"
     },
@@ -31,6 +35,7 @@
         "title": "The Young Minds Store",
         "name": "CREALITY-ENDER 6",
         "price": 47000,
+        "slider": 2,
         "img": "products/feature_product 5.jpg",
         "link":"https://store.theyoungminds.org/products/creality-ender-6"
     },
@@ -38,6 +43,7 @@
         "title": "The Young Minds Store",
         "name": "iPLA FILAMENT",
         "price": 1000,
+        "slider": 2,
         "img": "products/feature_product 6.jpg",
         "link":"https://store.theyoungminds.org/products/wol3d-ipla"
     },
@@ -45,6 +51,7 @@
         "title": "The Young Minds Store",
         "name": "CREALITY-ENCLOSURE",
         "price": 5000,
+        "slider": 3,
         "img": "products/feature_product 7.jpg",
         "link":"https://store.theyoungminds.org/products/creality-enclosurecreality-enclosure"
     },
@@ -52,6 +59,7 @@
         "title": "The Young Minds Store",
         "name": "CREALITY-WIRELESS CAM",
         "price": 6000,
+        "slider": 3,
         "img": "products/feature_product 8.webp",
         "link":"https://store.theyoungminds.org/products/creality-wireless-cam"
     }

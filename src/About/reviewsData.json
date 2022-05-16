@@ -1,6 +1,7 @@
 [
     {
         "key": 1,
+        "slider": 1,
         "name": "Dilshad Khan",
         "designation": "Developer",
         "star": 5,
@@ -8,6 +9,7 @@
     },
     {
         "key": 2,
+        "slider": 1,
         "name": "Aanchal",
         "designation": "Designer",
         "star": 5,
@@ -15,6 +17,7 @@
     },
     {
         "key": 3,
+        "slider": 2,
         "name": "Gulafsan",
         "designation": "Designer",
         "star": 5,
@@ -22,6 +25,7 @@
     },
     {
         "key": 4,
+        "slider": 2,
         "name": "Inish",
         "designation": "Developer",
         "star": 5,
@@ -29,7 +33,16 @@
     },
     {
         "key": 5,
+        "slider": 3,
         "name": "Harsh Singh",
+        "designation": "Developer",
+        "star": 5,
+        "review": "A good platfrom to learn about 3D modeling & design and also much more ..."
+    },
+    {
+        "key": 5,
+        "slider": 3,
+        "name": "Sayan",
         "designation": "Developer",
         "star": 5,
         "review": "A good platfrom to learn about 3D modeling & design and also much more ..."

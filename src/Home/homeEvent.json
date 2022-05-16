@@ -4,6 +4,7 @@
         "date": "01",
         "month": "Mar",
         "img": "img/tete-a-tete.png",
+        "slide":1,
         "desc":"Career, Lifecycle and Growth",
         "link":"https://zfrmz.in/3JKTpB5cVqW70sbZy0iT"
     },
@@ -11,6 +12,8 @@
         "Title": "Chess",
         "date": "01",
         "month": "Mar",
+        "slide":1,
+        "temp":2,
         "img": "img/chessCon.png",
         "desc":"Brain Excercise, Pattern Recognition",
         "link":"https://zfrmz.in/qxos6TVruG7TyLUCRJRl"
@@ -19,6 +22,8 @@
         "Title": "Book Reading",
         "date": "01",
         "month": "Mar",
+        "temp":1,
+        "slide":2,
         "img": "img/event 3.png",
         "desc":"Brain Excercise, Pattern Recognition",
         "link":"https://zfrmz.in/XsptwMt6IbrjDlfMm93Y"
@@ -26,6 +31,7 @@
     {
         "Title": "Career Consultancy",
         "date": "01",
+        "slide":2,
         "month": "Mar",
         "img": "img/career.png",
         "desc":"Brain Excercise, Pattern Recognition",

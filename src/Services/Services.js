@@ -13,11 +13,21 @@ import our_products from './our_products.json'
 export default function Services() {
     const fieldExpertise = [{name: "Udit Sharma", img: "img/uditSharma.jpg"},{name: "Pradyuma Agarwal", img: "img/pradyuma.png"},{name: "Aanchal Gupta", img: "img/aanchal.jpg"},{name: "Vignesh Shukla", img: "img/young minds watermark 1.png"}]
     const [currentService, setCurrentService] = useState(0)
+    const [currentSlide, setCurrentSlide] = useState(1)
 
     const serviceDataLength = additionalServiceData.length;
     const autoScroll = true;
     let slideInterval;
     // functions for slider
+    const nextProductSlide = ()=>{
+        setCurrentSlide(currentSlide === 2  ?  1 : currentSlide + 1)
+      }
+      const prevProductSlide = ()=>{
+        setCurrentSlide(currentSlide === 1  ?  2 : currentSlide - 1)
+      }
+      const changeProductSlide = (index)=>{
+        setCurrentSlide(index+1)
+      }
     const nextSlide = () => {
         setCurrentService(currentService === serviceDataLength - 1 ? 0 : currentService + 1)
     }
@@ -35,11 +45,11 @@ export default function Services() {
         }
         return () => clearInterval(slideInterval)
     }, [currentService])
-    const client = [{ name: "Something", img: "img/male_01.png" }, { name: "Something", img: "img/male_02.png" }, { name: "Something", img: "img/male_03.png" }, { name: "Something", img: "img/male_04.png" }, { name: "Something", img: "img/male_05.png" }]
+    const client = [{ name: "Something", img: "img/client 1.jpg" }, { name: "Something", img: "img/client 2.jpg" }, { name: "Something", img: "img/client 3.jpg" }, { name: "Something", img: "img/client 4.jpg" }, { name: "Something", img: "img/client 5.jpg" }]
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/testservice.png" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block" homeDisplayBtn="none"/>
+                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/testservice.jpg" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block" homeDisplayBtn="none"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
                     <h4 style={{marginLeft: "20px"}}>Turn your</h4>
@@ -101,21 +111,51 @@ export default function Services() {
                             <i className='fas fa-chevron-right'></i> */}
                         </div>
                     </div>
-                    <div className="store_products">
-                        {our_products.map((data, index) => {
-                            return (
-                                <div className="store-product_details" key={index}>
-                                    <img src={data.img} alt="our_product" />
-                                    <div className="product_desc">
-                                        <h4>{data.title}</h4>
-                                        {/* <h4>${data.price}.00</h4> */}
-                                    </div>
-                                    <h6>{data.name}</h6>
-                                
-                                </div>
-                            )
-                        })}
-                    </div>
+                    <div className="store_products store_productDis">
+            {our_products.map((data, index) => {
+              return (
+                <>          
+                <a className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank">
+                  {currentSlide === data.slider && (
+                    <>
+                  <img src={data.img} alt="our_product" />
+                  <div className="product_desc">
+                    <h4>{data.title}</h4>        
+                  </div>
+                  <h6>{data.name}</h6> 
+                    </>
+                  )}
+                </a>
+                </>
+              )
+            })}
+          </div>
+          <div className="Deskicons utility">
+                            <i className="fas fa-chevron-left" onClick={prevProductSlide} ></i>
+                            <i className="fas fa-chevron-right" onClick={nextProductSlide}></i>
+                        </div>
+                        <div className="testBtnDOM">
+                            {Array.from({ length: 2 }).map((item, index) => {
+                                return (
+                                    <div className={currentSlide === index + 1 ? "btn active" : "btn"} key={index} onClick={() => changeProductSlide(index)} ></div>
+                                )
+                            })}
+                        </div>
+          <div className="store_products">
+            {our_products.map((data, index) => {
+              return (
+                <>          
+                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank">
+                  <img src={data.img} alt="our_product" />
+                  <div className="product_desc">
+                    <h4>{data.title}</h4>        
+                  </div>
+                  <h6>{data.name}</h6> 
+                </a>
+                </>
+              )
+            })}
+          </div>
                 </div>
                 {/* section 4 expertise */}
                 <div className="field_expertise">
@@ -143,7 +183,9 @@ export default function Services() {
                     <div className="clientImg_container">
                         {client.map((image, index) => {
                             return (
-                                <img src={image.img} alt="clients" key={index} />
+                                <div className="clientImgBox" key={index}>
+                                    <img src={image.img} alt="clients"/>
+                                </div>
                             )
                         })}
                     </div>

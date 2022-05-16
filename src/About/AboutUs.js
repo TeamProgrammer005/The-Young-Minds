@@ -24,6 +24,7 @@ export default function AboutUs() {
         }
     ]
     const [currentSlide, setCurrentSlide] = useState(0)
+    const [testReview, settestReview] = useState(1)
     const [currentList, setCurrentList] = useState(0)
     const [currentName, setCurrentName] = useState("Minds")
     const [currentReview, setCurrentReview] = useState(0)
@@ -42,11 +43,17 @@ export default function AboutUs() {
     const nextReview = () => {
         setCurrentReview(currentReview === reviewLength - 1 ? 0 : currentReview + 1)
     }
+    const nextTestReview = () => {
+        settestReview(testReview === 3  ?  1 : testReview + 1)
+    }
     const nextList = () => {
         setCurrentList(currentList === currentListLength - 1 ? 0 : currentList + 1)
     }
     const prevReview = () => {
         setCurrentReview(currentReview === 0 ? reviewLength - 1 : currentReview - 1)
+    }
+    const prevTestReview = () => {
+        settestReview(testReview === 1  ?  3 : testReview - 1)
     }
     useEffect(() => {
         setCurrentReview(0)
@@ -73,6 +80,9 @@ export default function AboutUs() {
 
     const change = (index) => {
         setCurrentReview(index);
+    }
+    const changeTestReview = (index) => {
+        settestReview(index + 1);
     }
 
     useEffect(() => {
@@ -195,10 +205,49 @@ export default function AboutUs() {
                 </div>
                     <div className="testimonials">
                         <h2>Testimonials</h2>
-                        <div className="newReviewsBox">
+                        <div className="newReviewsBox test_review">
                             {reviewsData.map((review, index) => {
                                 return (
-                                    <div className="newReview">
+                                    <div className={testReview === review.slider ? "newReview newReviewTest" : "newReview"}>
+                                        {testReview === review.slider && (
+                                            <>
+                                                <div className="empty profile" key={review.key}>
+                                                <i className="fas fa-solid fa-user utility"></i>
+                                                </div>
+                                                <div className="detail">
+                                                    <h4>{review.name}</h4>
+                                                    <span>{review.designation}</span>
+                                                    <div className="rating">
+                                                        {Array.from({ length: review.star }).map((item,index) => {
+                                                            return (
+                                                                <i className="fas fa-star utility" key={index}></i>
+                                                            )
+                                                        })}
+
+                                                    </div>
+                                                </div>
+                                                <p>{review.review}</p>
+                                            </>
+                                        )}
+                                    </div>
+                                )                     
+                            })}
+                        </div>
+                        <div className="Deskicons utility">
+                            <i className="fas fa-chevron-left" onClick={prevTestReview} ></i>
+                            <i className="fas fa-chevron-right" onClick={nextTestReview}></i>
+                        </div>
+                        <div className="testBtnDOM">
+                            {Array.from({ length: 3 }).map((item, index) => {
+                                return (
+                                    <div className={testReview === index + 1 ? "btn active" : "btn"} key={index} onClick={() => changeTestReview(index)} ></div>
+                                )
+                            })}
+                        </div>
+                        <div className="newReviewsBox ">
+                            {reviewsData.map((review, index) => {
+                                return (
+                                    <div className="newReview fixChanges">
                                                 <div className="empty profile" key={index}>
                                                 <i className="fas fa-solid fa-user utility"></i>
                                                 </div>

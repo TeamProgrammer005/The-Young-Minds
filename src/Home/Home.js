@@ -10,7 +10,7 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/educator300.png", id: 3, link: "institute"}]
+    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/institute.png", id: 3, link: "institute"}]
     const categoryNameData=[{title: "Science", link: "science", class: "fab fa-react"},{title: "Technology", link: "technology", class: "fas fa-code"},{title: "Engineering",link: "engineering", class:"fas fa-cog"},{title: "Arts", link: "arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", link: "mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("#97A7C3")
@@ -18,12 +18,31 @@ export default function Home() {
     const [thirdColor, setthirdColor] = useState("#97A7C3");
     // const [toggleClass, settoggleClass] = useState("basic_journey");
     const [currentClass, setcurrentClass] = useState(0);
+    const [currentEvent, setcurrentEvent] = useState(1);
+    const [currentUpdates, setcurrentUpdates] = useState(1);
     const [currentCategory, setcurrentCategory] = useState(6);
     const [toggledisable, settoggledisable] = useState(true)
     const [buttonLink, setbuttonLink] = useState("/")
     // const [step1Link, setstep1Link] = useState("learner")
     const [step2Link, setstep2Link] = useState("")
-
+    const nextEventSlide = ()=>{
+        setcurrentEvent(currentEvent === 2  ?  1 : currentEvent + 1)
+      }
+      const prevEventSlide = ()=>{
+        setcurrentEvent(currentEvent === 1  ?  2 : currentEvent - 1)
+      }
+      const changeEventSlide = (index)=>{
+        setcurrentEvent(index+1)
+      }
+    const nextUpdateSlide = ()=>{
+        setcurrentUpdates(currentUpdates === 2  ?  1 : currentUpdates + 1)
+      }
+      const prevUpdateSlide = ()=>{
+        setcurrentUpdates(currentUpdates === 1  ?  2 : currentUpdates - 1)
+      }
+      const changeUpdateSlide = (index)=>{
+        setcurrentUpdates(index+1)
+      }
     const changeColor = (index, title)=>{
         setcolor("#193566");
         setthirdColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
@@ -49,7 +68,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="block"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.jpg" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="block"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">
@@ -164,11 +183,53 @@ export default function Home() {
                         </div>
                     </div> 
                     
+                    <div className="eventDOM eventDOMDis">
+                        {homeEvent.map((data, index)=>{
+                            return(
+                                <>
+                                <a className={currentEvent === data.slide ? "eventDetails eventSlide":"eventDetails"} key={index} href={data.link} target="_blank">
+                                    {currentEvent === data.slide && (
+                                        <>
+                                    <img src={data.img} alt="Event" />
+                                    <div className='eventTiming'>
+                                       <span> {data.date} <br /> {data.month}</span>
+                                    </div>
+                                    <div className="eventTitle">
+                                    <h4>{data.Title}</h4>
+                                        <span></span>
+                                    </div>
+                                    <p>{data.desc}</p>
+                                    <div className="eventDuration">
+                                        <p>
+                                        <i className="far fa-clock utility" style={{cursor: "pointer", marginRight: "4px", fontWeight: "bold"}}></i>
+                                            12:00 PM - Until Done
+                                        </p>
+                                    <span><i className="fas fa-map-marker-alt"></i> Online</span>
+                                    </div>
+                                    <p className='lowerPara'>Indian Standard Time (IST)</p>
+                                        </>
+                                    )}
+                                </a>
+                                </>
+                            )
+                        })}
+                    </div>
+                    <div className="Deskicons utility">
+                            <i className="fas fa-chevron-left" onClick={prevEventSlide} ></i>
+                            <i className="fas fa-chevron-right" onClick={nextEventSlide}></i>
+                        </div>
+                        <div className="testBtnDOM">
+                            {Array.from({ length: 2 }).map((item, index) => {
+                                return (
+                                    <div className={currentEvent === index + 1 ? "btn active" : "btn"} key={index} onClick={() => changeEventSlide(index)} ></div>
+                                )
+                            })}
+                        </div>
                     <div className="eventDOM">
                         {homeEvent.map((data, index)=>{
                             return(
                                 <>
-                                <a className="eventDetails" key={index} href={data.link} target="_blank">
+                                <a className="eventDetails eventChanges" key={index} href={data.link} target="_blank">
                                     <img src={data.img} alt="Event" />
                                     <div className='eventTiming'>
                                        <span> {data.date} <br /> {data.month}</span>
@@ -194,14 +255,55 @@ export default function Home() {
                 </div>
                         {/* section4 updates from community */}
                 <div className="updateFromCommunity">
-                    <a href="https://forms.zohopublic.in/ymeducation/form/JoinOurCommunity/formperma/-8EQq-ilSYIkO8C4JDvV9OWnqOhtPJP6wVPcBXp5b80" target="_blank"><button>JOIN COMMUNITY</button></a>
+                    <a href="https://zfrmz.in/kmN4skluBTfkhgCo70Wj" target="_blank"><button>JOIN COMMUNITY</button></a>
                     <h4>Update From </h4>
                     <h2>Community</h2>
                     <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
+                    <div className="updatedDOM updatedDOMDis">
+                        {Update.map((data, index)=>{
+                            return(
+                                <div className={currentUpdates === data.slide ?"updates changeUpdate":"updates"} key={index}>
+                                    {currentUpdates === data.slide && (
+                                        <>
+                                    <div className="update_intro">
+                                        <div className="blank">
+                                            <img src={data.img} alt="" />
+                                        </div>
+                                        <div className="intro">
+                                            <h6>Udit Sharma</h6>
+                                            <span>{data.designation}</span>
+                                            <ul className='socialMediaIcons'>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                                                    {/* <li>  <i className="fas fa-share-alt utility"></i></li> */}
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    <div className="updates_desc">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti placeat, deleniti tempore officia, voluptates hic soluta nobis porro sunt consequatur at provident pariatur, modi atque ipsa? Minima, nam ducimus.</p>
+                                    </div>
+                                        </>
+                                    )}
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className="Deskicons utility">
+                            <i className="fas fa-chevron-left" onClick={prevUpdateSlide} ></i>
+                            <i className="fas fa-chevron-right" onClick={nextUpdateSlide}></i>
+                        </div>
+                        <div className="testBtnDOM">
+                            {Array.from({ length: 2 }).map((item, index) => {
+                                return (
+                                    <div className={currentUpdates === index + 1 ? "btn active" : "btn"} key={index} onClick={() => changeUpdateSlide(index)} ></div>
+                                )
+                            })}
+                        </div>
                     <div className="updatedDOM">
                         {Update.map((data, index)=>{
                             return(
-                                <div className="updates" key={index}>
+                                <div className="updates fixUpdateUi" key={index}>
                                     <div className="update_intro">
                                         <div className="blank">
                                             <img src={data.img} alt="" />

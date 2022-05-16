@@ -6,7 +6,7 @@ import "./homeblog.css"
 export default function Homeblog() {
   return (
     <div className='homeBlogDOM'>
-              <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
+              <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/homeblog.png" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
               <div className="BlogDOM">
               {homeblog.map((data, index)=>{
                 return (
@@ -44,6 +44,7 @@ export default function Homeblog() {
                           </div>
                         </div>
                     </div> 
+                    
                     <a href= {data.link}target="_blank"><button>Register Now</button></a>
                   </>
                 )

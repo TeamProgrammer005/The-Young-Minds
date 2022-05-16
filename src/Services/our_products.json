@@ -3,6 +3,7 @@
         "title": "Product Title",
         "name": "lamp shade",
         "price": 20,
+        "slider": 1,
         "img": "products/lamp_shade.png",
         "link":"/"
     },
@@ -10,6 +11,7 @@
         "title": "Product Title",
         "name": "eiffel tower",
         "price": 20,
+        "slider": 1,
         "img": "products/eiffel_tower.png",
         "link":"/"
     },
@@ -17,6 +19,7 @@
         "title": "Product Title",
         "name": "mandalorian",
         "price": 20,
+        "slider": 1,
         "img": "products/mandalorian.png",
         "link":"/"
     },
@@ -24,13 +27,16 @@
         "title": "Product Title",
         "name": "marvel wall hanging",
         "price": 20,
+        "slider": 2,
         "img": "products/marvel_wall_hanging.png",
         "link":"/"
+
     },
     {
         "title": "Product Title",
         "name": "flower vase",
         "price": 20,
+        "slider": 2,
         "img": "products/vase.png",
         "link":"/"
     }
