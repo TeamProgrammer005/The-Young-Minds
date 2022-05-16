@@ -13,6 +13,7 @@ import Store from "./Our_Store/Store";
 import PrivacyPolicy from "./Legal/PrivacyPolicy"
 import Condition from "./Legal/Condition";
 import Community from "./Community/Community";
+import Homeblog from "./Home/Homeblog";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
      <Nav/>
       <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/homeblog" element={<Homeblog/>}/>
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/our_store" element={<Store/>}/>

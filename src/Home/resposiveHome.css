@@ -1,5 +1,5 @@
 @media screen and (max-width: 855px) {
-    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p {
+    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p, .blogsContainer p {
         font-size: 14px;
         line-height: 20px;
     }
@@ -11,7 +11,7 @@
         bottom: -11%;
         height: 16px;
     }
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2, .blogsContainer h2{
         font-size: 40px;
     }
     .basic_journey p{
@@ -100,10 +100,10 @@
         bottom: 8%;
         font-size: 10px;
     }
-    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4,.blogsContainer h4{
         font-size: 16px;
     }
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2, .discoverSteam h2, .steamCommunity h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2, .discoverSteam h2, .steamCommunity h2, .blogsContainer h2{
         font-size: 28px;
     }
     .upcomingEvents h2::before, .headingWorkshop h2::before{    
@@ -198,7 +198,7 @@
         font-size: 13px;
         margin:  20px 5px;
     }
-    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p {
+    .startYourJourney p, .home_featured .featured_nav p, .updateFromCommunity p, .headingWorkshop p, .upcomingEvents p, .blogsContainer p {
         font-size: 12px;
         line-height: 18px;
         margin-right: 5px;
@@ -229,7 +229,7 @@
        top: 22%;
        height: 70%;
     }
-    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4{
+    .startYourJourney h4, .updateFromCommunity h4, .upcomingEvents h4, .headingWorkshop h4,.discoverSteam h4, .steamCommunity h4,.blogsContainer h4{
         font-size: 12px;
     }
     .eventDetails .lowerPara {
@@ -245,7 +245,7 @@
     .headingWorkshop h4{
         margin-top: 20px;
     }
-    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2{
+    .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2,.discoverSteam h2, .steamCommunity h2,.blogsContainer h2{
         font-size: 20px;
     }
     .journeyCategories p{

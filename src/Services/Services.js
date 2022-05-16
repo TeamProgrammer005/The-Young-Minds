@@ -39,7 +39,7 @@ export default function Services() {
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/services.png" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block"/>
+                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/testservice.png" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block" homeDisplayBtn="none"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
                     <h4 style={{marginLeft: "20px"}}>Turn your</h4>

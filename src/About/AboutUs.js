@@ -99,7 +99,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" buttonDisplay_store="none"/>
+                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
                             return (

@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Mainpage.css"
 import { useState} from 'react'
-
+import { Link } from 'react-router-dom'
 
 export default function (props) {
     const toggleDisplay= props.toggleDisplay;
     const display = props.display;
     const _display= props._display;
+    const homeDisplayBtn= props.homeDisplayBtn;
     const headingDisplay = props.headingDisplay;
     const buttonDisplay =props.buttonDisplay;
     const buttonDisplay_store= props.buttonDisplay_store
@@ -58,6 +59,9 @@ export default function (props) {
                     
                     </div>
                         <a href= {props.btnLink} target="_blank" ><button style={{display:buttonDisplay }} disabled={disabled2 === true}>{props.btnText}</button></a>
+
+                        <Link to= "/homeblog"><button style={{display: homeDisplayBtn }}>Know More</button></Link>
+                      
                         <a href= {linking} target="_blank"  ><button style={{display:buttonDisplay_store }} disabled={disabled === true } >{props.btnText}</button></a>
                         
                     </div>

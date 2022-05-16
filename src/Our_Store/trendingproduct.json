@@ -26,6 +26,34 @@
         "price": 6000,
         "img": "products/trendProduct 4.webp",
         "link":"https://store.theyoungminds.org/products/creality-wireless-cam"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "WOL3D-Ganesha",
+        "price": 1400,
+        "img": "products/trendProduct 5.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-ganesha"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "Brass Nozzle -3.0mm",
+        "price": 1299,
+        "img": "products/trendProduct 6.webp",
+        "link":"https://store.theyoungminds.org/products/wol3d-3-0mm"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "CREALITY-LASER KIT",
+        "price": 5900,
+        "img": "products/trendProduct 7.webp",
+        "link":"https://store.theyoungminds.org/products/creality-laser-kit"
+    },
+    {
+        "title": "The Young Minds Store",
+        "name": "CREALITY-DRY BOX",
+        "price": 4200,
+        "img": "products/trendProduct 8.webp",
+        "link":"https://store.theyoungminds.org/products/creality-dry-box"
     }
 
 ]

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState} from 'react'
 import { Link } from 'react-router-dom'
 import "./Home.css"
+import "./homeblog.css"
 import "./resposiveHome.css"
 import homeData from "./homeData.json"
 import homeEvent from "./homeEvent.json"
@@ -9,7 +10,7 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/parent 1.png", id: 3, link: "institute"}]
+    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/educator300.png", id: 3, link: "institute"}]
     const categoryNameData=[{title: "Science", link: "science", class: "fab fa-react"},{title: "Technology", link: "technology", class: "fas fa-code"},{title: "Engineering",link: "engineering", class:"fas fa-cog"},{title: "Arts", link: "arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", link: "mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("#97A7C3")
@@ -48,7 +49,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Know More" btnLink="/" _display="none" buttonDisplay_store="none"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.png" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="block"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">

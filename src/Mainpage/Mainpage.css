@@ -137,7 +137,8 @@
     position: absolute;
     width: 22vw;
     height: 22vw;
-    /* border-radius: 50%; */
+    max-width: 300px;
+    max-height: 300px;
     z-index: -1;
     clip-path: circle(50.0% at 3% 50%);
     opacity: 0.2;

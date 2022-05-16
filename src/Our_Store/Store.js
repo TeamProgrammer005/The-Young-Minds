@@ -12,7 +12,7 @@ export default function Store() {
     <div>
       <div className="storeDOM">
         {/* Adding main page */}
-      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/store.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" _display="none" btnLink="https://store.theyoungminds.org"  buttonDisplay_store="none"/>
+      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/store.png" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" _display="none" btnLink="https://store.theyoungminds.org"  buttonDisplay_store="none" homeDisplayBtn="none"/>
       {/* section 1 feautured product */}
         <div className="store_featured">
           <div className="featured_nav">
