@@ -33,7 +33,6 @@ max-width: 1200px;
     max-width: 100%;
     height: 80%;
     margin: auto;
-    transform: translateY(10%);
 }
 .blogBody .comingSoon{
     margin-top: 30px;
@@ -114,7 +113,6 @@ max-width: 1200px;
         height: 350px;
     }
     .blogBody .blogImg img{
-        transform: translateY(5%);
     }
     .blogDesc h4{
         font-size: 18px;
@@ -142,7 +140,6 @@ max-width: 1200px;
         padding: 10px 20px;
     }
     .blogBody .blogImg img{
-        transform: translateY(0%);
         width: 60%;
         margin: 0 20%;
     }
