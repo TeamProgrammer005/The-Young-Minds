@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState} from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import "./Home.css"
 import "./homeblog.css"
 import "./resposiveHome.css"
@@ -22,7 +22,7 @@ export default function Home() {
     const [currentUpdates, setcurrentUpdates] = useState(1);
     const [currentCategory, setcurrentCategory] = useState(6);
     const [toggledisable, settoggledisable] = useState(true)
-    const [buttonLink, setbuttonLink] = useState("/")
+    // const [buttonLink, setbuttonLink] = useState("/")
     // const [step1Link, setstep1Link] = useState("learner")
     const [step2Link, setstep2Link] = useState("")
     const nextEventSlide = ()=>{
@@ -47,23 +47,22 @@ export default function Home() {
         setcolor("#193566");
         setthirdColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setsecondColor("#97A7C3")
-        setbuttonLink("/home/learning")
+        // setbuttonLink("/home/learning")
         setfirstColor("#97A7C3")
         setcurrentCategory(index)
         settoggledisable(false)
         setstep2Link(title)
-        console.log(title)
+        // console.log(title)
     }
     const backgroundChange = (index)=>{
         setcolor("#97A7C3");
         setthirdColor("#97A7C3")
-        setbuttonLink("/")
+        // setbuttonLink("/")
         setfirstColor("#97A7C3")
         setsecondColor("linear-gradient(228.72deg, #FFE601 26.63%, #FF4D00 108.3%)")
         setcurrentClass(index)
         setcurrentCategory(6)
         // setstep1Link(title)
-        // console.log(title)
     }
 
   return (
@@ -96,14 +95,14 @@ export default function Home() {
                         <div className="basic_journeys_collection">
                            {categoryData.map((data, index) => {
                             return (
-                                <>
+                            
                                    <div className={currentClass === index ? "basic_journey backgroundChange" : "basic_journey"}  key={index} value="something" onClick= {() => backgroundChange(index)}  >
                                        <h3 style={{display : "none"}}>Looking to boost your</h3>
                                        <h2>{data.title}</h2>
                                        {/* <p>Start my journey as learner</p> */}
                                        <img src={data.img} alt="" />
                                    </div>
-                                </>
+                             
                             )
                         })}
                     </div>  
@@ -134,7 +133,7 @@ export default function Home() {
                                 <div className="cricleBlank" style={{background: thirdColor}}>
                                     <div className="innerBlank"></div>
                                 </div>
-                                <a href= {`http://library.theyoungminds.org/${step2Link}`} target="_blank" ><button style={{background: color}} disabled={toggledisable === true }>START LEARNING</button></a>
+                                <a href= {`http://library.theyoungminds.org/${step2Link}`} target="_blank" rel="noopener noreferrer" ><button style={{background: color}} disabled={toggledisable === true }>START LEARNING</button></a>
                              </div>
                       </div> 
              {/* section 2 join workshop */}
@@ -154,7 +153,7 @@ export default function Home() {
                      <div className="workshopDOM">
                         {homeData.map((data, index)=>{
                             return(
-                                <a href={data.link} target="_blank" className="workshop-details" key={index}>
+                                <a href={data.link} target="_blank" rel="noopener noreferrer" className="workshop-details" key={index}>
                                     <img src={data.img} alt="" />
                                     {/* <span className="fas fa-bookmark utility"></span> */}
                                     <div className="workshop-time">
@@ -162,7 +161,7 @@ export default function Home() {
                                     </div>
                                     <h5>{data.Title}</h5>
                                     <p>{data.desc}</p>
-                                    <a href={data.link} target="_blank"><button>Know More</button></a>
+                                   <button>Know More</button>
                                 </a>
                             )
                         })}
@@ -186,8 +185,8 @@ export default function Home() {
                     <div className="eventDOM eventDOMDis">
                         {homeEvent.map((data, index)=>{
                             return(
-                                <>
-                                <a className={currentEvent === data.slide ? "eventDetails eventSlide":"eventDetails"} key={index} href={data.link} target="_blank">
+                             
+                                <a className={currentEvent === data.slide ? "eventDetails eventSlide":"eventDetails"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                                     {currentEvent === data.slide && (
                                         <>
                                     <img src={data.img} alt="Event" />
@@ -210,7 +209,7 @@ export default function Home() {
                                         </>
                                     )}
                                 </a>
-                                </>
+                             
                             )
                         })}
                     </div>
@@ -227,9 +226,8 @@ export default function Home() {
                         </div>
                     <div className="eventDOM">
                         {homeEvent.map((data, index)=>{
-                            return(
-                                <>
-                                <a className="eventDetails eventChanges" key={index} href={data.link} target="_blank">
+                            return(                      
+                                <a className="eventDetails eventChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                                     <img src={data.img} alt="Event" />
                                     <div className='eventTiming'>
                                        <span> {data.date} <br /> {data.month}</span>
@@ -247,15 +245,14 @@ export default function Home() {
                                     <span><i className="fas fa-map-marker-alt"></i> Online</span>
                                     </div>
                                     <p className='lowerPara'>Indian Standard Time (IST)</p>
-                                </a>
-                                </>
+                                </a>  
                             )
                         })}
                     </div>
                 </div>
                         {/* section4 updates from community */}
                 <div className="updateFromCommunity">
-                    <a href="https://zfrmz.in/kmN4skluBTfkhgCo70Wj" target="_blank"><button>JOIN COMMUNITY</button></a>
+                    <a href="https://zfrmz.in/kmN4skluBTfkhgCo70Wj" target="_blank" rel="noopener noreferrer"><button>JOIN COMMUNITY</button></a>
                     <h4>Update From </h4>
                     <h2>Community</h2>
                     <p>Our believe is, <strong>“A Leader can create a company, but a community creates a movement.”</strong> So, to lead our global goal of sustainable development, we are building communities for the greater cause. Let’s look at few words from our Young Leaders.</p>
@@ -270,18 +267,18 @@ export default function Home() {
                                             <img src={data.img} alt="" />
                                         </div>
                                         <div className="intro">
-                                            <h6>Udit Sharma</h6>
+                                            <h6>{data.name}</h6>
                                             <span>{data.designation}</span>
                                             <ul className='socialMediaIcons'>
-                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
-                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter utility"></i></a></li>
                                                     {/* <li>  <i className="fas fa-share-alt utility"></i></li> */}
                                                 </ul>
                                         </div>
                                     </div>
                                     <div className="updates_desc">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti placeat, deleniti tempore officia, voluptates hic soluta nobis porro sunt consequatur at provident pariatur, modi atque ipsa? Minima, nam ducimus.</p>
+                                        <p>{data.desc}</p>
                                     </div>
                                         </>
                                     )}
@@ -312,15 +309,15 @@ export default function Home() {
                                             <h6>Udit Sharma</h6>
                                             <span>{data.designation}</span>
                                             <ul className='socialMediaIcons'>
-                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
-                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter utility"></i></a></li>
                                                     {/* <li>  <i className="fas fa-share-alt utility"></i></li> */}
                                                 </ul>
                                         </div>
                                     </div>
                                     <div className="updates_desc">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti placeat, deleniti tempore officia, voluptates hic soluta nobis porro sunt consequatur at provident pariatur, modi atque ipsa? Minima, nam ducimus.</p>
+                                        <p>{data.desc}</p>
                                     </div>
                                 </div>
                             )

@@ -10,8 +10,8 @@ export default function Homeblog() {
               <div className="BlogDOM">
               {homeblog.map((data, index)=>{
                 return (
-                  <>
-                    <div className="blogsContainer" key={index}>
+                  <div key={index}>
+                    <div className="blogsContainer" >
                         <h4>THE YOUNG MINDS FOR</h4>
                         <h2>{data.mainTitle}</h2>
                         <p>{data.mainDesc}</p>
@@ -45,8 +45,8 @@ export default function Homeblog() {
                         </div>
                     </div> 
                     
-                    <a href= {data.link}target="_blank"><button>Register Now</button></a>
-                  </>
+                    <a href= {data.link}target="_blank" rel="noopener noreferrer"><button>Register Now</button></a>
+                  </div>
                 )
               })}
               </div>

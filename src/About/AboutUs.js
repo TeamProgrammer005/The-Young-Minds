@@ -23,6 +23,8 @@ export default function AboutUs() {
             id: 2
         }
     ]
+    const Careers = [{img: "img/uditSharma.jpg"},{img: "img/pradyuma.png"},{img: "img/dilshad.jpg"},{img: "img/aanchal.jpg"},{img: "img/sayan.jpg"},{img: "img/gulafsan.jpg"},{img: "img/inish.jpg"},{img: "img/harsh.jpg"},{img: "img/young minds watermark 1.png"},{img: "img/young minds watermark 1.png"}]
+
     const [currentSlide, setCurrentSlide] = useState(0)
     const [testReview, settestReview] = useState(1)
     const [currentList, setCurrentList] = useState(0)
@@ -112,8 +114,7 @@ export default function AboutUs() {
                     <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
-                            return (
-                                <>
+                            return (                      
                                     <div className={currentList === index ? "educationListDOM psuedoBg" : "educationListDOM"} key={index}>
                                         <div className={currentList === index ? "listUpperNav rotation" : "listUpperNav"}> 
                                             <img src={data.img} alt="" />
@@ -136,7 +137,6 @@ export default function AboutUs() {
                                             <li>{data.list11}</li>
                                         </ul>
                                     </div>
-                                </>
                             )
                         })}
                     </div>
@@ -177,9 +177,9 @@ export default function AboutUs() {
                                             <div className="thoughts">
                                                 <p>{slide.para}</p>
                                                 <ul className='socialMediaIcons'>
-                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
-                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
-                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f utility"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/youngminds.education/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram utility"></i></a></li>
+                                                    <li><a href="https://twitter.com/theyoungminds_" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter utility"></i></a></li>
                                                 </ul>
                                             </div>
                                             <div className="presidentDetails">
@@ -208,7 +208,7 @@ export default function AboutUs() {
                         <div className="newReviewsBox test_review">
                             {reviewsData.map((review, index) => {
                                 return (
-                                    <div className={testReview === review.slider ? "newReview newReviewTest" : "newReview"}>
+                                    <div className={testReview === review.slider ? "newReview newReviewTest" : "newReview"} key={index}>
                                         {testReview === review.slider && (
                                             <>
                                                 <div className="empty profile" key={review.key}>
@@ -247,8 +247,8 @@ export default function AboutUs() {
                         <div className="newReviewsBox ">
                             {reviewsData.map((review, index) => {
                                 return (
-                                    <div className="newReview fixChanges">
-                                                <div className="empty profile" key={index}>
+                                    <div className="newReview fixChanges" key={index}>
+                                                <div className="empty profile" >
                                                 <i className="fas fa-solid fa-user utility"></i>
                                                 </div>
                                                 <div className="detail">
@@ -312,15 +312,17 @@ export default function AboutUs() {
                         <h2>GET TO KNOW US</h2>
                         <p>A sneak peak of our fun and interactive sessions ...</p>
                         <div className="join_us_setion">
-                            {Array.from({length: 10}).map((data, index)=>{
+                            {Careers.map((data, index)=>{
                                 return (
-                                    <div className="getToKnowUs" key={index}></div>
+                                    <div className="getToKnowUs" key={index}>
+                                        <img src={data.img} alt="" />
+                                    </div>
                                 )
                             })}
                         </div>
                         <div className="join_our_community">
 
-                        <a href='https://theyoungminds.zohorecruit.in/jobs/Careers/' target="_blank"><button>Careers</button></a>
+                        <a href='https://theyoungminds.zohorecruit.in/jobs/Careers/' target="_blank" rel="noopener noreferrer"><button>Careers</button></a>
                         </div>
                     </div>
                 </div>

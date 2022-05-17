@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footr.css"
 import {Link} from "react-router-dom"
 
-export default function () {
+export default function Footer() {
   return (
     <div>
           <div className="footer">
@@ -27,9 +27,9 @@ export default function () {
                     <div className="socialMedia">
                         <h4>Follow Us</h4>
                     <ul className='socialMediaIcons'>
-                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank"><i className="fab fa-facebook-f utility"></i></a></li>
-                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank"><i className="fab fa-instagram utility"></i></a></li>
-                        <li><a href="https://twitter.com/theyoungminds_" target="_blank"><i className="fab fa-twitter utility"></i></a></li>
+                        <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f utility"></i></a></li>
+                        <li><a href="https://www.instagram.com/youngminds.education/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram utility"></i></a></li>
+                        <li><a href="https://twitter.com/theyoungminds_" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter utility"></i></a></li>
                     </ul>
                     </div>
                 <span className='copyright'>&copy; 2022 Theyoungminds all rights reserved.</span>

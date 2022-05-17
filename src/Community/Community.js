@@ -31,7 +31,7 @@ export default function Community() {
                             <option value="arts">Arts</option>
                             <option value="mathematics">Mathematics</option>
                         </select>
-                        <a href= {libraryLink} target= "_blank"><button disabled={libraryBtn === true}>Search</button></a>
+                        <a href= {libraryLink} target= "_blank" rel="noopener noreferrer"><button disabled={libraryBtn === true}>Search</button></a>
                     </div>
                 </div>
                 <div className="blankedLine"></div>
@@ -46,13 +46,13 @@ export default function Community() {
                 <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events..</p>
                 <div className='steamCategories12'>
                     <ul>
-                        <Link to="/community"><li>3D Printing</li></Link>
-                        <Link to="/community"><li>Artificial Intelligence</li></Link>
-                        <Link to="/community"><li>Blockchain</li></Link>
-                        <Link to="/community"><li>Biotechnology</li></Link>
-                        <Link to="/community"><li>Geometry</li></Link>
-                        <Link to="/community"><li>History</li></Link>
-                        <Link to="/community"><li>Much More</li></Link>
+                        <li>3D Printing</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Blockchain</li>
+                        <li>Biotechnology</li>
+                        <li>Geometry</li>
+                        <li>History</li>
+                        <li>Much More</li>
                     </ul>
                 </div>
             </div>

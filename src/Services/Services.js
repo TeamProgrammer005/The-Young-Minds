@@ -1,23 +1,17 @@
 import React from 'react'
 import servicesIdeaData from "./servicesIdeaData.json"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import additionalServiceData from "./additionalServiceData.json"
-// import { Link } from "react-router-dom"
 import "./Services.css"
 import "./responsiveService.css"
 import Mainpage from '../Mainpage/Mainpage'
 import our_products from './our_products.json'
-// import storeProduct from "../Our_Store/storeProduct.json"
 
 
 export default function Services() {
     const fieldExpertise = [{name: "Udit Sharma", img: "img/uditSharma.jpg"},{name: "Pradyuma Agarwal", img: "img/pradyuma.png"},{name: "Aanchal Gupta", img: "img/aanchal.jpg"},{name: "Vignesh Shukla", img: "img/young minds watermark 1.png"}]
-    const [currentService, setCurrentService] = useState(0)
     const [currentSlide, setCurrentSlide] = useState(1)
 
-    const serviceDataLength = additionalServiceData.length;
-    const autoScroll = true;
-    let slideInterval;
     // functions for slider
     const nextProductSlide = ()=>{
         setCurrentSlide(currentSlide === 2  ?  1 : currentSlide + 1)
@@ -28,23 +22,6 @@ export default function Services() {
       const changeProductSlide = (index)=>{
         setCurrentSlide(index+1)
       }
-    const nextSlide = () => {
-        setCurrentService(currentService === serviceDataLength - 1 ? 0 : currentService + 1)
-    }
-    function auto() {
-        slideInterval = setInterval(nextSlide, 5000);
-    }
-
-    const togglePage = (index) => {
-        setCurrentService(index);
-    }
-
-    useEffect(() => {
-        if (autoScroll) {
-            auto();
-        }
-        return () => clearInterval(slideInterval)
-    }, [currentService])
     const client = [{ name: "Something", img: "img/client 1.jpg" }, { name: "Something", img: "img/client 2.jpg" }, { name: "Something", img: "img/client 3.jpg" }, { name: "Something", img: "img/client 4.jpg" }, { name: "Something", img: "img/client 5.jpg" }]
     return (
         <div>
@@ -73,7 +50,7 @@ export default function Services() {
                                     <h4>{data.title}</h4>
                                     <p className='showNhide'>{data.desc}</p>
                                     <p className='hideNshowP'>{data.mobileDesc}</p>
-                                    <a href={data.link} target= "_blank"><button>START</button></a>
+                                    <a href={data.link} target= "_blank" rel="noopener noreferrer"><button>START</button></a>
                                 </div>
                             </div>
                         )
@@ -86,15 +63,13 @@ export default function Services() {
                     <p>A sneak peak of our fun and interactive sessions ...</p>
                     <div className="additional_feature">
                         {additionalServiceData.map((data, index) => {
-                            return (
-                                <>
+                            return (              
                                     <div className='additional_feature_section' key={index}>
                                         <h4>{data.title}</h4>
                                         <img src={data.img} alt="logo" />
                                         <p>{data.desc}</p>
-                                        <a href={data.link} target="_blank" className='btn_service'><button >Know More</button></a>
-                                    </div>
-                                </>
+                                        <a href={data.link} target="_blank" className='btn_service' rel="noopener noreferrer"><button >Know More</button></a>
+                                    </div>                         
                             )
                         })}
                     </div>
@@ -113,9 +88,8 @@ export default function Services() {
                     </div>
                     <div className="store_products store_productDis">
             {our_products.map((data, index) => {
-              return (
-                <>          
-                <a className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank">
+              return (                       
+                <a className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {currentSlide === data.slider && (
                     <>
                   <img src={data.img} alt="our_product" />
@@ -126,7 +100,6 @@ export default function Services() {
                     </>
                   )}
                 </a>
-                </>
               )
             })}
           </div>
@@ -143,16 +116,14 @@ export default function Services() {
                         </div>
           <div className="store_products">
             {our_products.map((data, index) => {
-              return (
-                <>          
-                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank">
+              return (            
+                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
                   <h6>{data.name}</h6> 
                 </a>
-                </>
               )
             })}
           </div>

@@ -1,39 +1,39 @@
 [
     {
         
-        "name": "Name goes here",
-        "designation":"Designation",
-        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
-        "img": "img/uditSharma.jpg",
+        "name": "Aanchal Gupta",
+        "designation":"Graphic Designer",
+        "desc": "In my view, there is an urgent need to ensure inclusive and equitable quality education and promote lifelong opportunities for all. At Young Minds we believe we can help discover desired lessons and wide-ranging activities and materials. All designed to motivate young people and inspire them to become informed and active citizens.",
+        "img": "img/aanchal.jpg",
         "slide": 1,
         "time": "21 hours ago"
         
     },
     {
 
-        "name": "Name goes here",
-        "designation":"Designation",
-        "img": "img/uditSharma.jpg",
+        "name": "Inish Bhadra",
+        "designation":"Developer",
+        "img": "img/inish.jpg",
         "slide": 1,
-        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet minus quibusdam cumque omnis cum labore ad repellat, culpa quis, blanditiis tenetur fugiat! Voluptas, repudiandae dolores similique assumenda maxime ipsam blanditiis distinctio vel reiciendis minus facere error? Alias, animi velit.",
         "time": "21 hours ago"
     },
     {
   
-        "name": "Name goes here",
-        "designation":"Designation",
-        "img": "img/uditSharma.jpg",
+        "name": "Gulafsan Saheen",
+        "designation":"Graphic Designer",
+        "img": "img/gulafsan.jpg",
         "slide": 2,
-        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "desc": "THE YOUNG MINDS provides an exciting chance in reshaping the dialogue about the 'environment' that brings all socio-political viewpoints to the same table, with common goals for a sustainable future, and accelerate solutions through innovation. Just in love with the community!",
         "time": "21 hours ago"
     },
     {
   
-        "name": "Name goes here",
-        "designation":"Designation",
-        "img": "img/uditSharma.jpg",
+        "name": "Harsh Singh",
+        "designation":"Developer",
+        "img": "img/harsh.jpg",
         "slide": 2,
-        "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quo itaque earum excepturi dicta quod.",
+        "desc": "As we know , A strong community can make good changes, So that 'THE YOUNG MINDS' are aiming to build a Good Community in global sustainable development, where we worked together to make impossible possible and learn equitable quality education.",
         "time": "21 hours ago"
     }
 ]

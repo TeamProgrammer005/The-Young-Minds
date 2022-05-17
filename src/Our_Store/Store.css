@@ -117,6 +117,7 @@
     color: #FFFFFF;
     font-size: 13px;
     text-transform: uppercase;
+    letter-spacing: 0.03rem;
     margin-top: 10px;
     margin-left: 20px;
 }

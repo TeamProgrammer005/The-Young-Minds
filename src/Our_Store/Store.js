@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import Mainpage from '../Mainpage/Mainpage'
 import "./Store.css"
@@ -51,9 +51,8 @@ export default function Store() {
           </div>
           <div className="store_products store_productDis">
             {storeProduct.map((data, index) => {
-              return (
-                <>          
-                <a className={productSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank">
+              return (         
+                <a className={productSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {productSlider === data.slider && (
                     <>
                   <img src={data.img} alt="our_product" />
@@ -64,7 +63,6 @@ export default function Store() {
                     </>
                   )}
                 </a>
-                </>
               )
             })}
           </div>
@@ -81,16 +79,14 @@ export default function Store() {
                         </div>
           <div className="store_products">
             {storeProduct.map((data, index) => {
-              return (
-                <>          
-                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank">
+              return (     
+                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
                   <h6>{data.name}</h6> 
                 </a>
-                </>
               )
             })}
           </div>
@@ -102,38 +98,16 @@ export default function Store() {
           <div className="categories_DOM">
             {storeCategory.map((data, index) => {
               return (
-                <>
                   <div className='categories_box' key={index}>
                     <h4>{data.title}</h4>
                     <h4>{data.title2}</h4>
                     <img src={data.img} alt="" />
-                    <a href={data.link} className='navButton' target='_blank'><button>Go To</button></a>
+                    <a href={data.link} className='navButton' target='_blank' rel="noopener noreferrer"><button>Go To</button></a>
                   </div>
-                </>
               )
             })}
           </div>
         </div>
-        {/* section 3 featured story */}
-        {/* <div className="featured_story">
-          <h4>FEATURED</h4>
-          <h2>STORY</h2>
-          <div className="stories-intro">
-            <div className="story-teller">
-              <h4>Name of the person</h4>
-              <p>“Enabled me to pursue my passion for lettering full-time“</p>
-              <h5>Get inspired by name <i className="fas fa-chevron-right utility"></i></h5>
-            </div>
-            <div className="stories-frame">
-              <div className="story1 stroy"><img src="img/categories.png" alt="" /></div>
-              <div className="story2 stroy"><img src="img/image 4.png" alt="" /></div>
-              <div className="story2 stroy"><img src="img/image 4.png" alt="" /></div>
-              <div className="story2 stroy"><img src="img/image 4.png" alt="" /></div>
-              <div className="story2 stroy"><img src="img/image 4.png" alt="" /></div>
-            </div>
-          </div>
-        </div> */}
-{/* section4 current trend section */}
         <div className="store_featured">
           <div className="featured_nav">
             <div className="nav_heading">
@@ -149,9 +123,8 @@ export default function Store() {
           </div>
           <div className="store_products store_productDis">
             {trendingproduct.map((data, index) => {
-              return (
-                <>          
-                <a className={trendProductSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank">
+              return ( 
+                <a className={trendProductSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {trendProductSlider === data.slider && (
                     <>
                   <img src={data.img} alt="our_product" />
@@ -162,7 +135,6 @@ export default function Store() {
                     </>
                   )}
                 </a>
-                </>
               )
             })}
           </div>
@@ -179,16 +151,14 @@ export default function Store() {
                         </div>
           <div className="store_products">
             {trendingproduct.map((data, index) => {
-              return (
-                <>          
-                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank">
+              return (        
+                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   <img src={data.img} alt="our_product" />
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
                   <h6>{data.name}</h6> 
                 </a>
-                </>
               )
             })}
           </div>
@@ -198,8 +168,3 @@ export default function Store() {
   )
 }
 
-{/* <div className="product_carting">
-  <i className="far fa-heart"></i>
-  <i className="fas fa-share"></i>
-  <i className="fas fa-cart-plus"></i>
-</div> */}
