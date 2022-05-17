@@ -306,7 +306,7 @@ export default function Home() {
                                             <img src={data.img} alt="" />
                                         </div>
                                         <div className="intro">
-                                            <h6>Udit Sharma</h6>
+                                            <h6>{data.name}</h6>
                                             <span>{data.designation}</span>
                                             <ul className='socialMediaIcons'>
                                                     <li><a href="https://www.facebook.com/theyoungminds.org/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f utility"></i></a></li>
