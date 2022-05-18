@@ -8,7 +8,7 @@ function Nav() {
             <div className="mobile_nav">
                 {/* Mobile view top nav */}
                 <ul>
-                    <li><img src="img/young minds watermark 1.png" alt="logo" /></li>
+                    <li><img src="image/young minds watermark 1.png" alt="logo" /></li>
                     <li><h2>The Young Minds</h2></li>
                 </ul>
             </div>
@@ -25,7 +25,7 @@ function Nav() {
             {/* Desktop view for navigation */}
             <div className="navigation">
                 <ul className="topNav">
-                    <li><img src="img/young minds watermark 1.png" alt="logo" /></li>
+                    <li><img src="image/young minds watermark 1.png" alt="logo" /></li>
                     <li><h2>THE YOUNG MINDS</h2></li>
                     <li></li>
                 </ul>

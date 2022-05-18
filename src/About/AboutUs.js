@@ -12,18 +12,18 @@ export default function AboutUs() {
             name: "Udit Sharma",
             para: "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
             post: "president",
-            image: "img/uditSharma.jpg",
+            image: "image/uditSharma.jpg",
             id: 1
         },
         {
             name: "Pradyuma Agarwal",
             para: "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.",
             post: "leader",
-            image: "img/pradyuma.png",
+            image: "image/pradyuma.png",
             id: 2
         }
     ]
-    const Careers = [{img: "img/uditSharma.jpg"},{img: "img/pradyuma.png"},{img: "img/dilshad.jpg"},{img: "img/aanchal.jpg"},{img: "img/sayan.jpg"},{img: "img/gulafsan.jpg"},{img: "img/inish.jpg"},{img: "img/harsh.jpg"},{img: "img/young minds watermark 1.png"},{img: "img/young minds watermark 1.png"}]
+    const Careers = [{img: "image/uditSharma.jpg"},{img: "image/pradyuma.png"},{img: "image/dilshad.jpg"},{img: "image/aanchal.jpg"},{img: "image/sayan.jpg"},{img: "image/gulafsan.jpg"},{img: "image/inish.jpg"},{img: "image/harsh.jpg"},{img: "image/young minds watermark 1.png"},{img: "image/young minds watermark 1.png"}]
 
     const [currentSlide, setCurrentSlide] = useState(0)
     const [testReview, settestReview] = useState(1)
@@ -111,7 +111,7 @@ export default function AboutUs() {
         <>
             <div className="aboutDOM">
                 <div className="introductionAbout">
-                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="img/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
+                    <Mainpage title = "About Us" midHeading ="Never Stop Learning___" companyName="Sustainable" purpose= "Development" community="" display="none" img="image/aboutWallpaper.png" toggleDisplay="block" buttonDisplay= "none" headingDisplay="none" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
                     <div className="qualityEducation">
                         {qualityEducation.map((data,index)=>{
                             return (                      
@@ -153,7 +153,7 @@ export default function AboutUs() {
                                     <h4>Why</h4>
                                 <h2>The Young Minds</h2>
                                 </div>
-                                <img src="img/unnamed 1.png" alt="" />
+                                <img src="image/unnamed 1.png" alt="" />
                             </div>
                         <div className="ourStatement">
                             <div className="statement">

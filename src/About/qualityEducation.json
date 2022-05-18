@@ -1,6 +1,6 @@
 [
     {
-        "img": "img/QE3.png",
+        "img": "image/QE3.png",
         "heading1":"Quality",
         "heading2":" Education",
         "list1": "1. Free Primary & Secondary Education",
@@ -16,7 +16,7 @@
         "list11":""
     },
     {
-        "img": "img/QE2.png",
+        "img": "image/QE2.png",
         "heading1":"Industry, Innovation",
         "heading2":"and Infrastructure",
         "list1": "1. Universal Access to Information & Communication Technology",
@@ -32,7 +32,7 @@
         "list11":""
     },
     {
-        "img": "img/QE1.png",
+        "img": "image/QE1.png",
         "heading1":"Patnerships",
         "heading2":"For The Goal",
         "list1": "1. Mobilise Resources to Improve Domestic Revenue Collection",

@@ -9,7 +9,7 @@ import our_products from './our_products.json'
 
 
 export default function Services() {
-    const fieldExpertise = [{name: "Udit Sharma", img: "img/uditSharma.jpg"},{name: "Pradyuma Agarwal", img: "img/pradyuma.png"},{name: "Aanchal Gupta", img: "img/aanchal.jpg"},{name: "Vignesh Shukla", img: "img/young minds watermark 1.png"}]
+    const fieldExpertise = [{name: "Udit Sharma", img: "image/uditSharma.jpg"},{name: "Pradyuma Agarwal", img: "image/pradyuma.png"},{name: "Aanchal Gupta", img: "image/aanchal.jpg"},{name: "Vignesh Shukla", img: "image/young minds watermark 1.png"}]
     const [currentSlide, setCurrentSlide] = useState(1)
 
     // functions for slider
@@ -22,11 +22,11 @@ export default function Services() {
       const changeProductSlide = (index)=>{
         setCurrentSlide(index+1)
       }
-    const client = [{ name: "Something", img: "img/client 1.jpg" }, { name: "Something", img: "img/client 2.jpg" }, { name: "Something", img: "img/client 3.jpg" }, { name: "Something", img: "img/client 4.jpg" }, { name: "Something", img: "img/client 5.jpg" }]
+    const client = [{ name: "Something", img: "image/client 1.jpg" }, { name: "Something", img: "image/client 2.jpg" }, { name: "Something", img: "image/client 3.jpg" }, { name: "Something", img: "image/client 4.jpg" }, { name: "Something", img: "image/client 5.jpg" }]
     return (
         <div>
             <div className="serviceDOM">
-                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="img/testservice.jpg" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block" homeDisplayBtn="none"/>
+                <Mainpage title="." midHeading="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose="CREATE AN IMPACT" community="" display="none" img="image/testservice.jpg" toggleDisplay="none" buttonDisplay="none" headingDisplay="none" btnText="Search" _display="block" buttonDisplay_store="block" homeDisplayBtn="none"/>
                 {/* Section 1 ideas */}
                 <div className="services_idea">
                     <h4 style={{marginLeft: "20px"}}>Turn your</h4>
@@ -92,7 +92,9 @@ export default function Services() {
                 <a className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {currentSlide === data.slider && (
                     <>
-                  <img src={data.img} alt="our_product" />
+                 <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
@@ -118,7 +120,9 @@ export default function Services() {
             {our_products.map((data, index) => {
               return (            
                 <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
-                  <img src={data.img} alt="our_product" />
+                  <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>

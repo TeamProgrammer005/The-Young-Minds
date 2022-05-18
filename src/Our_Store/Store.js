@@ -34,7 +34,7 @@ export default function Store() {
     <div>
       <div className="storeDOM">
         {/* Adding main page */}
-      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="img/store.jpg" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" _display="none" btnLink="https://store.theyoungminds.org"  buttonDisplay_store="none" homeDisplayBtn="none"/>
+      <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="flex" img="image/store.jpg" toggleDisplay="none" buttonDisplay= "block" headingDisplay="none" btnText="Search" _display="none" btnLink="https://store.theyoungminds.org"  buttonDisplay_store="none" homeDisplayBtn="none"/>
       {/* section 1 feautured product */}
         <div className="store_featured">
           <div className="featured_nav">
@@ -55,7 +55,9 @@ export default function Store() {
                 <a className={productSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {productSlider === data.slider && (
                     <>
-                  <img src={data.img} alt="our_product" />
+                    <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
@@ -81,7 +83,9 @@ export default function Store() {
             {storeProduct.map((data, index) => {
               return (     
                 <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
-                  <img src={data.img} alt="our_product" />
+                   <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
@@ -127,7 +131,9 @@ export default function Store() {
                 <a className={trendProductSlider === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                   {trendProductSlider === data.slider && (
                     <>
-                  <img src={data.img} alt="our_product" />
+                  <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>
@@ -153,7 +159,9 @@ export default function Store() {
             {trendingproduct.map((data, index) => {
               return (        
                 <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
-                  <img src={data.img} alt="our_product" />
+               <div className="productIMG">
+                      <img src={data.img} alt="our_product" />
+                    </div>
                   <div className="product_desc">
                     <h4>{data.title}</h4>        
                   </div>

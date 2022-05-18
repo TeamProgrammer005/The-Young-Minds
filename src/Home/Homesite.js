@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState} from 'react'
 // import { Link } from 'react-router-dom'
-import "./Home.css"
+import "./Homesite.css"
 import "./homeblog.css"
 import "./resposiveHome.css"
 import homeData from "./homeData.json"
@@ -10,7 +10,7 @@ import Update from "./updates.json"
 import Mainpage from '../Mainpage/Mainpage'
 
 export default function Home() {
-    const categoryData =[{title: "Learner", img:"img/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/img/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"img/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"img/institute.png", id: 3, link: "institute"}]
+    const categoryData =[{title: "Learner", img:"image/Learner 1.png", id : 0, link: "learner"},{title: "Teacher", img:"/image/teacher.png", id: 1, link: "teacher"},{title: "Parent",img:"image/parent 1.png", id: 2, link: "parent"},{title: "Institute", img:"image/institute.png", id: 3, link: "institute"}]
     const categoryNameData=[{title: "Science", link: "science", class: "fab fa-react"},{title: "Technology", link: "technology", class: "fas fa-code"},{title: "Engineering",link: "engineering", class:"fas fa-cog"},{title: "Arts", link: "arts", class:"fas fa-paint-brush", className: "align"},{title: "Mathematics", link: "mathematics", class:"fas fa-calculator"}]
     const [color, setcolor] = useState("#97A7C3")
     const [firstColor, setfirstColor] = useState("#97A7C3")
@@ -67,7 +67,7 @@ export default function Home() {
 
   return (
         <div className="homeDOM">
-        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="img/about.jpg" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="block"/>
+        <Mainpage title = "." midHeading ="Never Stop Learning___" companyName="TOGETHER WE CAN" purpose= "CREATE AN IMPACT" community="" display="none" img="image/about.jpg" toggleDisplay="none" buttonDisplay= "none" headingDisplay="none" btnText="Know More" btnLink="/homeblog" _display="none" buttonDisplay_store="none" homeDisplayBtn="block"/>
         {/* section 1 with all 3 step for our journey */}
             <div className="startYourJourney">
             <div className="category_nav">
@@ -185,11 +185,12 @@ export default function Home() {
                     <div className="eventDOM eventDOMDis">
                         {homeEvent.map((data, index)=>{
                             return(
-                             
                                 <a className={currentEvent === data.slide ? "eventDetails eventSlide":"eventDetails"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
                                     {currentEvent === data.slide && (
                                         <>
-                                    <img src={data.img} alt="Event" />
+                                    <div className="eventIMG">
+                                         <img src={data.img} alt="Event" />
+                                    </div>
                                     <div className='eventTiming'>
                                        <span> {data.date} <br /> {data.month}</span>
                                     </div>
@@ -228,7 +229,9 @@ export default function Home() {
                         {homeEvent.map((data, index)=>{
                             return(                      
                                 <a className="eventDetails eventChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={data.img} alt="Event" />
+                                    <div className="eventIMG">
+                                         <img src={data.img} alt="Event" />
+                                    </div>
                                     <div className='eventTiming'>
                                        <span> {data.date} <br /> {data.month}</span>
                                     </div>

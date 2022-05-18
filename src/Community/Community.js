@@ -14,7 +14,7 @@ export default function Community() {
     <div>
         <div className="communityDOM">
             {/* Adding main landing page */}
-        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="img/community.jpg" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="http://library.theyoungminds.org/blogs/" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
+        <Mainpage title = "" midHeading ="Never Stop Learning___" companyName="Discover scientific" LibraryDetail="Knowledge and stay"  LibraryDetails= "connect to the world" purpose= "of STEAM" community="" display="none" img="image/community.jpg" toggleDisplay="none" buttonDisplay= "block" headingDisplay="block" btnText="Go To Our Library" btnLink="http://library.theyoungminds.org/blogs/" _display="none" buttonDisplay_store="none" homeDisplayBtn="none"/>
         {/* section 1 for discover steam */}
         <div className="discoverSteam">
             <h4>DISCOVER</h4>
@@ -35,7 +35,7 @@ export default function Community() {
                     </div>
                 </div>
                 <div className="blankedLine"></div>
-                <img src="img/unnamed 1.png" alt="" />
+                <img src="image/unnamed 1.png" alt="" />
             </div>
         </div>
         {/* section 2 for steam community */}

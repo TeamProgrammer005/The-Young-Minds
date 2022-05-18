@@ -72,7 +72,7 @@ body{
 .psuedoBg::before{
     content: "";
     position: absolute;
-    background: url('/public/img/aboutBg.png') no-repeat center center/cover;
+    background: url('/public/image/aboutBg.png') no-repeat center center/cover;
     top: 0;
     width: 90%;
     height: 100%;

@@ -18,7 +18,7 @@ export default function Footer() {
                     </ul>
                     {/* Footer intro */}
                     <div className="shortIntro">
-                        <img src="img/young minds watermark 1.png" alt="" />
+                        <img src="image/young minds watermark 1.png" alt="" />
                         <h4>THE YOUNG MINDS</h4>
                         <p>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place .</p>
                     </div>

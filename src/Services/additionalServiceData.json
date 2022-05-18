@@ -5,7 +5,7 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali firstOuterGradiant",
         "innerClass":"innerKhali firstInnerGradiant",
-        "img":"img/automation.png",
+        "img":"image/automation.png",
         "link":"https://zfrmz.in/SsbZ3dMRAojxvkAaYfxk"
     },
     {
@@ -14,8 +14,8 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali secondOuterGradiant",
         "innerClass":"innerKhali secondInnerGradiant",
-        "img":"img/robotics.png",
-        "link":"https://zfrmz.in/Nd24nchirZkqEWrWd9B9"
+        "img":"image/robotics.png",
+        "link":"https://zfrmz.in/Kjd3nvticUz2kcNLoetC"
     },
     {
         "number": 3,
@@ -23,7 +23,7 @@
         "desc":"Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing.",
         "outerClass":"khali thirdOuterGradiant",
         "innerClass":"innerKhali thirdInnerGradiant",
-        "img":"img/printer.png",
+        "img":"image/printer.png",
         "link":"https://theyoungminds.org/askforrepair"
     }
 

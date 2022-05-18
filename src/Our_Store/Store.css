@@ -95,11 +95,14 @@
     z-index: -1;
     opacity: 1;
 }
-.store_products .store-product_details img{
+.store-product_details .productIMG{
     width: 100%;
-    border-radius: 14px 14px 0 0;
     height: 72%;
-    /* transform: translate(-4%, -4%);  */
+}
+.store_products .store-product_details .productIMG img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
 }
 .store-product_details .product_desc{
     margin-top: 20px;
