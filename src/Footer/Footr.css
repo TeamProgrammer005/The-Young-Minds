@@ -94,6 +94,13 @@
     .footer .navigate{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        padding-left:0;
+    }
+    .toggle{
+        display: block;
+    }
+    .try{
+        display: none;
     }
     .footer .navigate h4{
         grid-column: 1/-1;
@@ -123,24 +130,19 @@
         margin-right: 9px;
         font-size: 10px;
     }
-    .toggle{
-        display: block;
-    }
-    .try{
-        display: none;
-    }
     .copyright{
         font-size: 10px;
     }
 }
 @media screen and (max-width: 350px){
+    .toggle{
+        grid-column-start: 3;
+    }
     .footer{
         padding: 0 5px;
         padding-top: 20px;
     }
-    .toggle{
-        grid-column-start: 3;
-    }
+  
 }
 /* @media screen and (max-width: 310px){
     .footer .shortIntro{
