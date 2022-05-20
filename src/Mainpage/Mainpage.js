@@ -11,12 +11,12 @@ export default function Mainpage(props) {
     const headingDisplay = props.headingDisplay;
     const buttonDisplay =props.buttonDisplay;
     const buttonDisplay_store= props.buttonDisplay_store
-    const [linking, setlinking] = useState("")
+    const [linking, setlinking] = useState("services")
     const [disabled, setdisabled] = useState(true)
     const [disabled2, setdisabled2] = useState(false)
     const toggleLink = (event) => {
         setdisabled(event.target.value === "services" ? true : false)
-       setlinking(`https://theyoungminds.org/${event.target.value}`)
+       setlinking(`/${event.target.value}`)
     }
     const toggleSelection = (event) =>{
         setdisabled2(event.target.value === "select_cateogry" ? true : false)
@@ -37,7 +37,7 @@ export default function Mainpage(props) {
                         <h2 className="heading">{props.companyName}</h2>
                         <h2 style={{display: headingDisplay}} className="heading">{props.LibraryDetail}</h2>
                         <h2 style={{display: headingDisplay}}className="heading">{props.LibraryDetails}</h2>
-                        <h2 className='heading shadow'>{props.purpose}</h2>
+                        <h2 className='heading shadowheading'>{props.purpose}</h2>
                         <h4>{props.community}</h4>
                         <p style={{display: toggleDisplay}}>Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing design resources and how those at the top of the industry get things done through our podcast, interviews, articles, and live events.</p>
                         <div className="inputDOM" style={{display: display}}>

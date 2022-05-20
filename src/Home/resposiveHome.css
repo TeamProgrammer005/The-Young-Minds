@@ -131,9 +131,7 @@
     .startYourJourney .topHeading, .category_section .category_nav h2, .home_featured .featured_nav h2, .updateFromCommunity h2, .upcomingEvents h2, .headingWorkshop h2, .discoverSteam h2, .steamCommunity h2, .blogsContainer h2{
         font-size: 28px;
     }
-    .upcomingEvents h2::before, .headingWorkshop h2::before{    
-        left: 6%;
-    }
+
   
     .startYourJourney span{
         font-size: 15px;
@@ -214,6 +212,7 @@
     }
     .eventDetails .eventIMG{
         height: 65%;
+        min-height: 220px;
     }
     .courses .courseDetail{
         min-width: 370px;
@@ -242,6 +241,9 @@
     }
 }
 @media screen and (max-width: 500px){
+    .eventDetails .eventIMG{
+        min-height: 190px;
+    }
     .basic_journey::after{   
         bottom: -6%;
         height: 10px;

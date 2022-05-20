@@ -15,7 +15,7 @@
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali secondOuterGradiant",
         "innerClass":"innerKhali secondInnerGradiant",
-        "link": "https://theyoungminds.org/3d_design"
+        "link": "/3d_design"
     },
     {
         "number": 3,
@@ -33,7 +33,7 @@
         "mobileDesc": "Beyond the sense of community and opportunity that we strive to provide, XYZ is also the place to find out about amazing",
         "outerClass":"khali fourthOuterGradiant",
         "innerClass":"innerKhali fourthInnerGradiant",
-        "link": "https://theyoungminds.org/order3d"
+        "link": "/order3d"
     },
     {  
         "number": 5,

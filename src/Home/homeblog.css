@@ -25,7 +25,6 @@ max-width: 1200px;
 .blogBody .blogImg{
     width: 30%;
     height: 420px;
-    z-index: -1;
 }
 .blogBody .blogImg img{
     width: auto;
@@ -111,8 +110,6 @@ max-width: 1200px;
 @media screen and (max-width: 850px){
     .blogBody .blogImg{
         height: 350px;
-    }
-    .blogBody .blogImg img{
     }
     .blogDesc h4{
         font-size: 18px;

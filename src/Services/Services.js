@@ -64,12 +64,12 @@ export default function Services() {
                     <div className="additional_feature">
                         {additionalServiceData.map((data, index) => {
                             return (              
-                                    <div className='additional_feature_section' key={index}>
-                                        <h4>{data.title}</h4>
-                                        <img src={data.img} alt="logo" />
-                                        <p>{data.desc}</p>
-                                        <a href={data.link} target="_blank" className='btn_service' rel="noopener noreferrer"><button >Know More</button></a>
-                                    </div>                         
+                                <a className='additional_feature_section' href={data.link} target="_blank" rel="noopener noreferrer" key={index}>
+                                <h4>{data.title}</h4>
+                                <img src={data.img} alt="logo" />
+                                <p>{data.desc}</p>
+                             <button className='btn_service'>Know More</button>
+                            </a>                          
                             )
                         })}
                     </div>
@@ -89,7 +89,7 @@ export default function Services() {
                     <div className="store_products store_productDis">
             {our_products.map((data, index) => {
               return (                       
-                <a className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} href={data.link} target="_blank" rel="noopener noreferrer">
+                <div className={currentSlide === data.slider ? "store-product_details productSlide" : "store-product_details"} key={index} >
                   {currentSlide === data.slider && (
                     <>
                  <div className="productIMG">
@@ -101,7 +101,7 @@ export default function Services() {
                   <h6>{data.name}</h6> 
                     </>
                   )}
-                </a>
+                </div>
               )
             })}
           </div>
@@ -119,7 +119,7 @@ export default function Services() {
           <div className="store_products">
             {our_products.map((data, index) => {
               return (            
-                <a className="store-product_details productFixChanges" key={index} href={data.link} target="_blank" rel="noopener noreferrer">
+                <div className="store-product_details productFixChanges" key={index}>
                   <div className="productIMG">
                       <img src={data.img} alt="our_product" />
                     </div>
@@ -127,7 +127,7 @@ export default function Services() {
                     <h4>{data.title}</h4>        
                   </div>
                   <h6>{data.name}</h6> 
-                </a>
+                </div>
               )
             })}
           </div>

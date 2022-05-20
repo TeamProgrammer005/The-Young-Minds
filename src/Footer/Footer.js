@@ -11,7 +11,7 @@ export default function Footer() {
                         <h4>Navigate To</h4>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/services">Services</Link></li>
+                        <li><Link to="/service">Services</Link></li>
                         <li><Link to="/privacy_policy" className='toggleGrid'>Privacy Policy</Link></li>
                         <li className='try'><Link to="/conditions">Terms & Condition</Link></li>
                         <li className='toggle'><Link to="/conditions">T & C</Link></li>

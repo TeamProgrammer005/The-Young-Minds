@@ -40,7 +40,7 @@ export default function Store() {
           <div className="featured_nav">
             <div className="nav_heading">
               <h4>FEATURED</h4>
-              <h2>PRODUCT</h2>
+              <h2 className="let_me_try">PRODUCT</h2>
             </div>
             <div className="viewAll">
             {/* <i className="fas fa-thumbtack utility"></i>
@@ -102,12 +102,12 @@ export default function Store() {
           <div className="categories_DOM">
             {storeCategory.map((data, index) => {
               return (
-                  <div className='categories_box' key={index}>
-                    <h4>{data.title}</h4>
-                    <h4>{data.title2}</h4>
-                    <img src={data.img} alt="" />
-                    <a href={data.link} className='navButton' target='_blank' rel="noopener noreferrer"><button>Go To</button></a>
-                  </div>
+                <a className='categories_box'href={data.link} target='_blank' rel="noopener noreferrer" key={index}>
+                <h4>{data.title}</h4>
+                <h4>{data.title2}</h4>
+                <img src={data.img} alt="" />
+                <button className='navButton'>Go To</button>
+              </a>
               )
             })}
           </div>

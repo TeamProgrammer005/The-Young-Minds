@@ -15,9 +15,9 @@ function Nav() {
             {/* Mobile view bottom nav for navigatiom */}
             <div className="mobileRouting">
                 <ul className="mobileNav">
-                <li><NavLink to="/" activelassname='active'><i className="fas fa-home "></i></NavLink></li>
+                <li><NavLink to="/" activelassname='active' exact={true}><i className="fas fa-home "></i></NavLink></li>
                     <li><NavLink to="/community" activelassname='active'><i className="fas fa-users"></i></NavLink></li>
-                    <li><NavLink to="/services" activeclassname='active'><i className="fas fa-business-time"></i></NavLink></li>
+                    <li><NavLink to="/service" activeclassname='active'><i className="fas fa-business-time"></i></NavLink></li>
                     <li><NavLink to="/our_store" activeclassname='active'><i className="fas fa-shopping-bag"></i></NavLink></li>
                     <li><NavLink to="/about" activeclassname='active'><i className="fas fa-id-badge"></i></NavLink></li>
                 </ul>
@@ -30,13 +30,13 @@ function Nav() {
                     <li></li>
                 </ul>
                 <ul className='mainNav'>
-                    <li><NavLink to="/" activelassname='active'>Home</NavLink></li>
+                    <li><NavLink to="/" activelassname='active' exact={true} >Home</NavLink></li>
                     <li><NavLink to="/community" activelassname='active'>Our Community</NavLink></li>
-                    <li><NavLink to="/services" activeclassname='active'>Services</NavLink></li>
+                    <li><NavLink to="/service" activeclassname='active'>Services</NavLink></li>
                     <li><NavLink to="/our_store" activeclassname='active'>Our Store</NavLink></li>
                     <li><NavLink to="/about" activeclassname='active'>About Us</NavLink></li>
                 </ul>
-                <div className='blank'></div>
+                <div className='navblank'></div>
             </div>
         </>
     )

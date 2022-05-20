@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-bottom: 0 !important;
 }
 .navigation .mainNav li{
     padding-bottom: 5px;
@@ -32,6 +33,7 @@
     color: #193566;
     margin: 0 25px;
     font-weight: bold;
+    font-size: 18px;
 }
 .navigation .mainNav .active{
     padding-bottom: 5px;
@@ -41,7 +43,7 @@
     padding-top: 20px;
     border-top: 3px solid #193566;
 }
-.navigation .blank{
+.navigation .navblank{
     width: 80%;
     margin: auto;
     height: 0;
